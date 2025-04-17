@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Davi Medeiros | Portfolio</title>
+</head>
+
+<body data-scroll-container>
+    <div data-scroll-section>
+        <nav class="navbar">
+            <div class="nav-left">Davi Medeiros</div>
+            <div class="nav-center">2025</div>
+            <div class="nav-right">Rio de Janeiro</div>
+        </nav>
+
+        <section class="intro-section">
+            <div>
+                <h1>Entre arte e psicologia, crio experiências visuais.</h1>
+            </div>
+
+            <div class="intro">
+                <p class="intro-description">
+                    Oi, sou Davi Medeiros, designer e artista. Crio experiências visuais que unem arte e psicologia.
+                </p>
+                <p class="hover-link">Bora conversar?</p>
+            </div>
+        </section>
+
+        <main>
+            <div data-scroll-container>
+                <section class="scroll-wrapper">
+                    <div class="gallery">
+                        <img src="assets/poster-apocalipse.webp" alt="2">
+                        <img src="assets/poster-gil.webp" alt="2">
+                        <img src="assets/poster-gil.webp" alt="2">
+                        <img src="assets/poster-gil.webp" alt="2">
+                    </div>
+                </section>
+            </div>
+
+            <section class="sobre">
+                <p>
+                    Meu nome é Davi Medeiros, tenho 19 anos e sou do Rio de Janeiro. Atualmente curso Psicologia no Instituto Brasileiro de Medicina e Reabilitação e sou integrante do coletivo artístico Paradoxo Casa Atelier. Sou formado como Técnico em Informática, mas desde cedo fui capturado pelo universo visual
+                    — e hoje, minha prática une arte, design gráfico e, mais recentemente, a psicologia.
+                </p>
+                <span>
+                    Minhas criações individuais nascem da intersecção entre o sensível e o funcional.<br> Atualmente, estou começando a incluir o meio psicológico nas minhas artes e campanhas individuais — buscando imprimir sentimentos, afetos e perguntas no cotidiano visual.
+                </span>
+            </section>
+
+            <section class="projetos">
+                <h2>Minhas Artes</h2>
+                <div class="carousel-container">
+
+                    <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button>
+                    <button class="carousel-btn next" onclick="moveCarousel(1)">›</button>
+
+                    <div class="carousel-track" id="carouselTrackProjects">
+                        <div class="card">
+                            <img src="/assets/outros trabalhos.jpg" alt="Foto 3">
+                            <div class="card-info">
+                                <h3>Paradoxo Casa Atelier</h3>
+                                <div class="tags">
+                                    <span class="tag">Design Gráfico</span>
+                                    <span class="tag">Social Midia</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="/assets/poster-gil.webp" alt="Foto 1">
+                            <div class="card-info">
+                                <h3>Premiação Honoris Causa para Gilberto Gil</h3>
+                                <div class="tags">
+                                    <span class="tag">Design Gráfico</span>
+                                    <span class="tag">Poster</span>
+                                    <span class="tag">Estudo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="/assets/poster-apocalipse.webp" alt="Foto 2">
+                            <div class="card-info">
+                                <h3>Projeto Apocalipse</h3>
+                                <div class="tags">
+                                    <span class="tag">Design Gráfico</span>
+                                    <span class="tag">Social Midia</span>
+                                    <span class="tag">Poster</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="/assets/poster-apocalipse.webp" alt="Foto 2">
+                            <div class="card-info">
+                                <h3>Projeto Apocalipse</h3>
+                                <div class="tags">
+                                    <span class="tag">Design Gráfico</span>
+                                    <span class="tag">Social Midia</span>
+                                    <span class="tag">Poster</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="/assets/poster-apocalipse.webp" alt="Foto 2">
+                            <div class="card-info">
+                                <h3>Outros Trabalhos</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div class="footer-left">
+                    <h2>Bora Conversar?</h2>
+                    <a href="mailto:seuemail@email.com" class="contato-btn">Entrar em contato</a>
+                </div>
+                <div class="footer-right">
+                    <h1>Informações</h1>
+                    <p>Instagram</p>
+                    <p>Behance</p>
+                    <p>Email</p>
+                </div>
+            </div>
+
+            <div class="me">
+                <h2>Davi Medeiros</h2>
+            </div>
+
+            <p class="p">2025 | Rio de Janeiro</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+        <script>
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector('[data-scroll-container]'),
+                smooth: true,
+            });
+
+            const gallery = document.querySelector('.gallery');
+
+            scroll.on('scroll', (args) => {
+                const scrollY = args.scroll.y;
+                const scrollSpeed = scrollY * 0.4; 
+                gallery.style.transform = `translateX(-${scrollSpeed}px)`;
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
