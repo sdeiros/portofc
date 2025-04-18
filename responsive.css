@@ -192,7 +192,7 @@
 
     .sobre {
         margin-top: -8rem;
-        padding: 2rem 1rem;
+        padding: 3.5rem 1rem;
         max-width: 100rem;
         font-size: 2.5rem;
     }
@@ -206,7 +206,160 @@
     }
 
     .projetos h2 {
+        margin-bottom: -4.5rem;
         font-size: 4rem;
+    }
+
+    .projetos .carousel-container {
+        margin-bottom: -1rem;
+    }
+
+    .card-info h3 {
+        width: 95%;
+        margin-left: 0rem;
+        line-height: 3.2rem;
+        margin-bottom: 1rem;
+        font-size: 2.8rem;
+    }
+
+    .card-info {
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+    .card-info .tags {
+        gap: 0.6rem;
+    }
+
+    .tag {
+        padding: 0.4rem 1rem;
+        border: 2px solid white;
+        border-radius: 0.6rem;
+        white-space: nowrap;
+        margin-bottom: 2rem;
+        font-size: 1.57rem;
+        margin-left: 0rem;
+    }
+
+    .card img {
+        height: 92%;
+        border-radius: 2.4rem;
+        cursor: pointer;
+    }
+
+    footer {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .footer-top {
+        gap: 2rem;
+    }
+
+    .footer-left h2,
+    .footer-right h1 {
+        text-align: center;
+        font-size: 2.8rem;
+    }
+
+    .footer-right p {
+        font-size: 1.5rem;
+    }
+
+    .footer-right p:hover {
+        font-size: 1.55rem;
+    }
+
+    .contato-btn {
+        font-size: 1.5rem;
+        border: 0.15rem solid #FFFCF8;
+    }
+
+    footer p {
+        margin-top: 4rem;
+        margin-bottom: 0rem;
+        text-align: center;
+        color: #b4b4b4;
+        font-size: 1.6rem;
+    }
+
+    .me h2 {
+        font-size: 15vw;
+        margin-bottom: 1.2rem;
+        line-height: 3.5rem;
+    }
+}
+
+@media (max-width: 1650px) {
+    .intro-section h1 {
+        font-size: 7rem;
+        line-height: 6.5rem;
+        max-width: 85%;
+        margin: 8rem 0;
+    }
+
+    .intro {
+        margin-top: 30rem;
+    }
+
+    .intro-description,
+    .hover-link {
+        font-size: 1.5rem;
+        margin: 0 auto;
+        margin-left: 6rem;
+    }
+
+    .navbar {
+        font-size: 3.2rem;
+        padding: 2.5rem 0;
+    }
+
+    .nav-right {
+        margin-right: 2rem;
+    }
+
+    .nav-left {
+        margin-left: 3rem;
+    }
+
+    .scroll-wrapper {
+        position: relative;
+        margin-top: 2rem;
+        height: 80vh;
+        overflow: hidden;
+    }
+
+    .gallery {
+        height: 80vh;
+        width: max-content;
+    }
+
+    .gallery img {
+        width: 30vw;
+    }
+
+    .sobre {
+        margin-top: -5.5rem;
+        padding: 3.5rem 1rem;
+        max-width: 100rem;
+        font-size: 2.5rem;
+    }
+
+    .sobre span {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        height: 100vh;
+    }
+
+    .projetos h2 {
+        margin-bottom: -4.5rem;
+        font-size: 4rem;
+    }
+
+    .projetos .carousel-container {
+        margin-bottom: -1rem;
     }
 
     .card-info h3 {
@@ -329,7 +482,7 @@
     }
 
     .sobre {
-        margin-top: -0rem;
+        margin-top: 6rem;
         padding: 2rem 1rem;
         max-width: 80rem;
         font-size: 1.8rem;
@@ -340,11 +493,16 @@
     }
 
     .projetos h2 {
+        margin-top: 3.5rem;
+        margin-bottom: -4rem;
         font-size: 3rem;
     }
 
-    .card{
-        margin-bottom: 0rem;
+    .projetos .carousel-container {
+        width: 100vw;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: -2rem;
     }
 
     .card-info h3 {
@@ -370,6 +528,143 @@
         border-radius: 0.6rem;
         white-space: nowrap;
         margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        margin-left: 0rem;
+    }
+
+    .card img {
+        height: 92%;
+        border-radius: 2rem;
+        cursor: pointer;
+    }
+
+    footer {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .footer-top {
+        gap: 2rem;
+    }
+
+    .footer-left h2,
+    .footer-right h1 {
+        text-align: center;
+        font-size: 2.5rem;
+
+    }
+
+    .footer-right p {
+        font-size: 1rem;
+    }
+
+    .footer-right p:hover {
+        font-size: 1.02rem;
+    }
+
+    .contato-btn {
+        font-size: 1.3rem;
+        border: 0.15rem solid #FFFCF8;
+    }
+
+    footer p {
+        margin-top: 4rem;
+        margin-bottom: 0rem;
+        text-align: center;
+        color: #b4b4b4;
+        font-size: 1.3rem;
+    }
+
+    .me h2 {
+        font-size: 15vw;
+        margin-bottom: 1rem;
+        line-height: 3.5rem;
+    }
+}
+
+@media (max-width: 1585px) {
+    .intro-section h1 {
+        font-size: 6rem;
+        line-height: 5.5rem;
+        max-width: 86%;
+        margin: 12rem 0;
+    }
+
+    .intro {
+        margin-top: 26rem;
+    }
+
+    .intro-description,
+    .hover-link {
+        font-size: 1.4rem;
+        margin: 0 auto;
+        margin-left: 6rem;
+    }
+
+    .navbar {
+        font-size: 2.6rem;
+        padding: 2rem 0;
+    }
+
+    .nav-left {
+        margin-left: 1.8rem;
+    }
+
+    .scroll-wrapper {
+        position: relative;
+        height: 80vh;
+        overflow: hidden;
+    }
+
+    .gallery {
+        height: 80vh;
+        width: max-content;
+    }
+
+    .gallery img {
+        width: 30vw;
+    }
+
+    .sobre {
+        margin-top: -9.5rem;
+        padding: 2rem 1rem;
+        max-width: 80rem;
+        font-size: 1.8rem;
+        margin-bottom: 5rem;
+    }
+
+    .sobre span {
+        font-size: 1.4rem;
+    }
+
+    .projetos h2 {
+        margin-bottom: -5rem;
+        font-size: 3rem;
+    }
+
+    .card-info h3 {
+        width: 95%;
+        margin-left: 0rem;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .card-info {
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+    .card-info .tags {
+        gap: 0.9rem;
+    }
+
+    .tag {
+        padding: 0.4rem 0.4rem;
+        border: 2px solid white;
+        border-radius: 0.6rem;
+        white-space: nowrap;
+        margin-bottom: 2rem;
         font-size: 1.5rem;
         margin-left: 0rem;
     }
@@ -425,8 +720,6 @@
 }
 
 @media (max-width: 1562px) {
-    .intro-section {}
-
     .intro-section h1 {
         font-size: 6rem;
         line-height: 5.5rem;
@@ -471,9 +764,10 @@
 
     .sobre {
         margin-top: -8rem;
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
         max-width: 80rem;
         font-size: 1.8rem;
+        margin-bottom: 5rem;
     }
 
     .sobre span {
@@ -481,6 +775,7 @@
     }
 
     .projetos h2 {
+        margin-bottom: -5rem;
         font-size: 3rem;
     }
 
@@ -562,13 +857,11 @@
 }
 
 @media (max-width: 1510px) {
-    .intro-section {}
-
     .intro-section h1 {
         font-size: 6rem;
         line-height: 5.5rem;
         max-width: 86%;
-        margin: 12rem 0;
+        margin: 6rem 0;
     }
 
     .intro {
@@ -607,8 +900,8 @@
     }
 
     .sobre {
-        margin-top: -8rem;
-        padding: 2rem 1rem;
+        margin-top: -5rem;
+        padding: 3rem 1rem;
         max-width: 80rem;
         font-size: 1.8rem;
     }
@@ -618,6 +911,7 @@
     }
 
     .projetos h2 {
+        margin-bottom: -4.5rem;
         font-size: 3rem;
     }
 
@@ -698,12 +992,12 @@
     }
 }
 
-@media (max-width: 1285px) {
+@media (max-width: 1280px) {
     .intro-section h1 {
         font-size: 5rem;
         line-height: 4.5rem;
         max-width: 86%;
-        margin: 12rem 0;
+        margin: 6rem 0;
     }
 
     .intro {
@@ -746,8 +1040,8 @@
     }
 
     .sobre {
-        margin-top: -8rem;
-        padding: 2rem 1rem;
+        margin-top: -6rem;
+        padding: 3rem 1rem;
         max-width: 80rem;
         font-size: 1.8rem;
     }
@@ -757,7 +1051,9 @@
     }
 
     .projetos h2 {
-        font-size: 3rem;
+        margin-top: -5rem;
+        margin-bottom: -5rem;
+        font-size: 2.5rem;
     }
 
     .card-info h3 {
@@ -794,7 +1090,7 @@
     }
 
     footer {
-        height: auto;
+        height: 95vh;
         padding: 2rem 1rem;
     }
 
@@ -806,7 +1102,6 @@
     .footer-right h1 {
         text-align: center;
         font-size: 2.5rem;
-
     }
 
     .footer-right p {
@@ -823,7 +1118,7 @@
     }
 
     footer p {
-        margin-top: 13rem;
+        margin-top: 4rem;
         margin-bottom: 0rem;
         text-align: center;
         color: #b4b4b4;
@@ -832,15 +1127,13 @@
 
     .me h2 {
         font-size: 14.9vw;
-        margin-top: 4rem;
-        margin-bottom: -12rem;
+        margin-top: -3rem;
+        margin-bottom: 0rem;
         line-height: 3.5rem;
     }
 }
 
-@media (max-width: 1125px) {
-    .intro-section {}
-
+@media (max-width: 1130px) {
     .intro-section h1 {
         font-size: 4rem;
         line-height: 3.8rem;
@@ -869,17 +1162,21 @@
     }
 
     .sobre {
+        margin-top: 0rem;
         padding: 2rem 1rem;
         max-width: 65rem;
         font-size: 1.4rem;
     }
 
     .sobre span {
-        font-size: 1.1rem;
+        margin-bottom: -3.5rem;
+        font-size: 1.2rem;
     }
 
     .projetos h2 {
-        font-size: 1.5rem;
+        margin-top: 0rem;
+        margin-bottom: -4rem;
+        font-size: 2rem;
     }
 
     .card-info h3 {
@@ -909,14 +1206,22 @@
         margin-bottom: 0.4rem;
     }
 
+    .scroll-wrapper {
+        height: 100vh;
+    }
+    
+    .gallery {
+        height: 100vh;
+        gap: 2vw;
+        padding: 0 4vw;
+    }
+
     .card img {
-        height: 92%;
         border-radius: 2rem;
-        cursor: pointer;
     }
 
     footer {
-        height: auto;
+        height: 90vh;
         padding: 2rem 1rem;
     }
 
@@ -928,7 +1233,6 @@
     .footer-right h1 {
         text-align: center;
         font-size: 2rem;
-
     }
 
     .footer-right p {
@@ -945,7 +1249,7 @@
     }
 
     footer p {
-        margin-top: 2rem;
+        margin-top: 0rem;
         margin-bottom: -1.5rem;
         text-align: center;
         color: #b4b4b4;
@@ -954,115 +1258,220 @@
 
     .me h2 {
         font-size: 14.8vw;
-        margin-bottom: 1rem;
+        margin-bottom: -8rem;
+        margin-top: -12rem;
         line-height: 3.5rem;
     }
 }
 
-/* Mobile-first adjustments */
-@media (max-width: 1024px) {
+
+
+@media (max-width: 440px) {
+    .nav-center, .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
     .intro-section {
+        width: 100vw;
+        display: flex;
         flex-direction: column;
-        padding: 2rem;
+        align-items: center;
         text-align: center;
-        height: auto;
+        padding: 2rem 0rem;
+        margin-top: 6rem;
+        margin-bottom: -10rem;
     }
 
     .intro-section h1 {
         font-size: 3rem;
+        margin-left: 10vw;
         line-height: 3.2rem;
-        max-width: 100%;
-        margin: 2rem 0;
     }
 
     .intro {
-        max-width: 100%;
         margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 0.4rem;
     }
 
     .intro-description,
     .hover-link {
-        font-size: 1rem;
-        margin: 0 auto;
+        font-size: 1.20rem;
         text-align: center;
+        margin-left: -30vw;
+        width: 100vw;
     }
 
-    .hover-link {
-        margin-top: 1rem;
+    .card {
+        width: 10vw;
     }
 
-    .navbar {
-        flex-direction: column;
-        font-size: 1.2rem;
-        height: auto;
-        padding: 1rem 0;
+    .card {
+        flex: 0 0 100%;
+        padding: 0.8rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease-in-out;
     }
 
-    .nav-left,
-    .nav-center,
-    .nav-right {
-        margin: 0.3rem 0;
-        text-align: center;
+    .gallery {
+        padding: 0 5vw; /* espaço igual nos lados */
+        gap: 4vw;
+        justify-content: center; /* reforça centralização */
     }
-
+    
+    .gallery img {
+        width: 80vw;
+        height: 65vh;
+        object-fit: cover;
+        border-radius: 2rem;
+        margin-bottom: 5rem;
+        flex-shrink: 0;
+    }
+    
     .sobre {
-        padding: 2rem 1rem;
-        font-size: 1.2rem;
+        padding: 0rem 1rem;
+        max-width: 60rem;
     }
-
-    .projetos h2 {
+    
+    .sobre {
         font-size: 1.5rem;
+        font-family: 'Lora', serif;
+        text-align: center;
+        margin-bottom: 0rem;
+        color: #444;
+        margin: auto;
+    }
+    
+    .sobre span {
+        display: block;
+        font-size: 1.2rem;
+        margin-top: 4rem;
+        color: #888;
+        font-style: italic;
+        text-align: left;
     }
 
+    .projetos .carousel-container {
+        margin-bottom: -8rem;
+    }
+
+    .projetos .card img {
+        margin-bottom: 6rem;
+        height: 90vh;
+    }
+    
+    .projetos h2 {
+        margin-top: 7.5rem;
+        margin-bottom: 0rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
     .card-info h3 {
-        font-size: 1.3rem;
+        position: relative;
+        z-index: 2;
+        width: 95%;
+        margin: 0;
+        margin-left: 0rem;
+        margin-bottom: 0.8rem;
+        font-size: 2rem;
+        text-align: left;
+        font-weight: 300;
+        line-height: 2rem;
     }
-
+    
+    .card-info .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.1rem;
+    }
+    
     .tag {
-        font-size: 0.9rem;
-        padding: 0.3rem 0.6rem;
+        padding: 0.4rem 0.6rem;
+        border: 2px solid white;
+        border-radius: 0.5rem;
+        white-space: nowrap;
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+        z-index: 2;
+        margin-bottom: 6rem;
     }
 
     footer {
-        height: auto;
-        padding: 2rem 1rem;
+        height: 90vh;
     }
 
     .footer-top {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
-    }
-
-    .footer-left h2,
-    .footer-right h1 {
         text-align: center;
     }
 
+    .footer-left h2 {
+        font-size: 2.8rem;
+        font-family: 'Lora', serif;
+    }
+
+    .footer-right h1 {
+        margin: 0.2rem 0;
+        font-size: 2.8rem;
+        text-align: right;
+        font-family: 'Lora', serif;
+    }
+
+    .footer-right{
+        margin-top: 2rem;
+    }
+
+    .footer-right p {
+        margin: 0.2rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Lora', serif;
+        transition: all 0.3s ease;
+    }
+
+    .footer-right p:hover {
+        font-size: 1.25rem;
+    }
+    
+
+    .contato-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.7rem 2rem;
+        color: #FFFCF8;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        border: 0.1rem solid #FFFCF8;
+        border-radius: 0.6rem;
+        transition: all 1.8s ease;
+    }
+
+    footer p {
+        width: 100%;
+        margin-top: 0rem;
+        margin-bottom: -1rem;
+        font-size: 1.2rem;
+    }
+
     .me h2 {
-        font-size: 10vw;
-        line-height: 3.5rem;
+        font-size: 14.2vw;
     }
 }
 
-/* Muito pequeno (ex: 400px ou menos) */
-@media (max-width: 480px) {
-    .intro-section h1 {
-        font-size: 2rem;
-        line-height: 2.5rem;
-    }
-
-    .hover-link,
-    .intro-description {
-        font-size: 0.9rem;
-    }
-
-    .carousel-btn {
-        font-size: 1.5rem;
-        padding: 0.3rem 0.6rem;
-    }
-
-    .me h2 {
-        font-size: 14vw;
-    }
-}

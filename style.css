@@ -238,16 +238,6 @@ body {
     display: block;
 }
 
-@media (max-width: 768px) {
-    .carousel-container {
-        width: 100vw;
-    }
-
-    .carousel-item {
-        min-width: 100vw;
-    }
-}
-
 .projetos .carousel-container {
     width: 100vw;
     margin: 0 auto;
@@ -263,9 +253,9 @@ body {
 .projetos h2 {
     text-align: center;
     font-family: Lora, serif;
-    margin-top: 1rem;
+    margin-top: 0rem;
     margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -442,22 +432,6 @@ footer p {
     border-radius: 3rem;
     flex-shrink: 0;
     transition: transform 0.3s ease;
-}
-
-@media (max-width: 768px) {
-    .gallery {
-        flex-wrap: nowrap;
-        gap: 4vw;
-        padding: 0 4vw;
-    }
-
-    .gallery img {
-        width: 80vw;
-    }
-
-    .scroll-wrapper {
-        height: 250vh;
-    }
 }
 
 .image-box {
