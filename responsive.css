@@ -1410,7 +1410,7 @@
     }
 
     footer {
-        height: 90vh;
+        height: 70vh;
     }
 
     .footer-top {
@@ -1437,7 +1437,7 @@
 
     .footer-right p {
         margin: 0.2rem 0;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         text-align: center;
         color: #ffffff;
         font-family: 'Lora', serif;
@@ -1445,7 +1445,7 @@
     }
 
     .footer-right p:hover {
-        font-size: 1.25rem;
+        font-size: 1.45rem;
     }
     
 
@@ -1465,14 +1465,234 @@
 
     footer p {
         width: 100%;
-        margin-top: 0rem;
+        margin-top: -1rem;
         margin-bottom: 0rem;
         font-size: 1.2rem;
     }
 
+    .me{
+        margin-top: 0rem;
+    }
+
     .me h2 {
         font-size: 14.2vw;
+        margin-top: 12rem;
+        margin-bottom: 1rem;
+
+    }
+}
+
+@media (max-width: 430px) {
+    .nav-center, .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .intro-section {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 0rem;
+        margin-top: 6rem;
+        margin-bottom: -10rem;
+    }
+
+    .intro-section h1 {
+        font-size: 3rem;
+        margin-left: 10vw;
+        line-height: 3.2rem;
+    }
+
+    .intro {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 0.4rem;
+    }
+
+    .intro-description,
+    .hover-link {
+        font-size: 1.20rem;
+        text-align: center;
+        margin-left: -30vw;
+        width: 100vw;
+    }
+
+    .card {
+        width: 10vw;
+    }
+
+    .card {
+        flex: 0 0 100%;
+        padding: 0.8rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery {
+        padding: 0 5vw; /* espaço igual nos lados */
+        gap: 4vw;
+        justify-content: center; /* reforça centralização */
+    }
+    
+    .gallery img {
+        width: 80vw;
+        height: 60vh;
+        object-fit: cover;
+        border-radius: 2rem;
+        margin-bottom: 0rem;
+        flex-shrink: 0;
+    }
+    
+    .sobre {
+        padding: -28rem 1rem;
+        max-width: 60rem;
+    }
+    
+    .sobre {
+        font-size: 1.5rem;
+        font-family: 'Lora', serif;
+        text-align: center;
+        margin-bottom: 0rem;
+        color: #444;
+        margin: auto;
+    }
+    
+    .sobre span {
+        display: block;
+        font-size: 1.2rem;
+        margin-top: 4rem;
+        color: #888;
+        font-style: italic;
+        text-align: left;
+    }
+
+    .projetos .carousel-container {
+        margin-bottom: -8rem;
+    }
+
+    .projetos .card img {
+        margin-bottom: 6rem;
+        height: 90vh;
+    }
+    
+    .projetos h2 {
+        margin-top: 8.5rem;
+        margin-bottom: -0.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .card-info h3 {
+        position: relative;
+        z-index: 2;
+        width: 98%;
+        margin: 0;
+        margin-left: 0rem;
+        margin-bottom: 0.8rem;
+        font-size: 2.1rem;
+        text-align: left;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+    
+    .card-info .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.1rem;
+    }
+    
+    .tag {
+        padding: 0.4rem 0.6rem;
+        border: 2px solid white;
+        border-radius: 0.5rem;
+        white-space: nowrap;
+        font-size: 1.19rem;
+        color: white;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+        z-index: 2;
+        margin-bottom: 6rem;
+    }
+
+    footer {
+        height: 70vh;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left h2 {
+        font-size: 2.8rem;
+        font-family: 'Lora', serif;
+    }
+
+    .footer-right h1 {
+        margin: 0.2rem 0;
+        font-size: 2.8rem;
+        text-align: right;
+        font-family: 'Lora', serif;
+    }
+
+    .footer-right{
+        margin-top: 2rem;
+    }
+
+    .footer-right p {
+        margin: 0.2rem 0;
+        font-size: 1.4rem;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Lora', serif;
+        transition: all 0.3s ease;
+    }
+
+    .footer-right p:hover {
+        font-size: 1.45rem;
+    }
+    
+
+    .contato-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.7rem 2rem;
+        color: #FFFCF8;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        border: 0.1rem solid #FFFCF8;
+        border-radius: 0.6rem;
+        transition: all 1.8s ease;
+    }
+
+    footer p {
+        width: 100%;
+        margin-top: -1rem;
+        margin-bottom: 0rem;
+        font-size: 1.2rem;
+    }
+
+    .me{
         margin-top: 0rem;
+    }
+
+    .me h2 {
+        font-size: 14.2vw;
+        margin-top: 12rem;
         margin-bottom: 1rem;
 
     }
@@ -1576,6 +1796,7 @@
 
     .projetos .carousel-container {
         margin-bottom: -8rem;
+        margin-top: 1.5rem;
     }
 
     .projetos .card img {
@@ -1584,7 +1805,7 @@
     }
     
     .projetos h2 {
-        margin-top: 5rem;
+        margin-top: 7rem;
         margin-bottom: -0.5rem;
         font-size: 2rem;
         font-weight: bold;
@@ -1644,7 +1865,7 @@
     }
 
     .footer-right{
-        margin-top: 2rem;
+        margin-top: 6rem;
     }
 
     .footer-right p {
@@ -1660,7 +1881,6 @@
         font-size: 1.25rem;
     }
     
-
     .contato-btn {
         display: inline-block;
         margin-top: 1rem;
@@ -1677,14 +1897,14 @@
 
     footer p {
         width: 100%;
-        margin-top: 0rem;
+        margin-top: -1rem;
         margin-bottom: 0rem;
         font-size: 1.2rem;
     }
 
     .me h2 {
-        font-size: 14.2vw;
-        margin-top: 0rem;
+        font-size: 14vw;
+        margin-top: 15rem;
         margin-bottom: 1rem;
 
     }
@@ -1730,8 +1950,8 @@
     .hover-link {
         font-size: 1rem;
         text-align: center;
-        margin-left: -25vw;
-        width: 90vw;
+        margin-left: -15vw;
+        width: 70vw;
     }
 
     .card {
@@ -1785,6 +2005,7 @@
         display: block;
         font-size: 1.1rem;
         margin-top: 2rem;
+        margin-bottom: 0.8rem;
         color: #888;
         font-style: italic;
         text-align: justify;
@@ -1800,8 +2021,8 @@
     }
     
     .projetos h2 {
-        margin-top: 3.5rem;
-        margin-bottom: -0.5rem;
+        margin-top: -2rem;
+        margin-bottom: -1rem;
         font-size: 2rem;
         font-weight: bold;
     }
@@ -1876,7 +2097,6 @@
         font-size: 1.25rem;
     }
     
-
     .contato-btn {
         display: inline-block;
         margin-top: 1rem;
@@ -1893,15 +2113,15 @@
 
     footer p {
         width: 100%;
-        margin-top: 0rem;
+        margin-top: -18rem;
         margin-bottom: 0rem;
         font-size: 1.2rem;
     }
 
     .me h2 {
-        font-size: 14.2vw;
-        margin-top: 0rem;
-        margin-bottom: 1rem;
+        font-size: 14vw;
+        margin-top: -30rem;
+        margin-bottom: 0rem;
 
     }
 }
