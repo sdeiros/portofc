@@ -6,7 +6,7 @@
     let autoSlideInterval;
 
     function getVisibleCards() {
-        return window.innerWidth <= 430 ? 1 : 3;
+        return window.innerWidth <= 830 ? 1 : 3;
     }
 
     function moveCarousel(direction) {
