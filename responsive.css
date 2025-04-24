@@ -1264,7 +1264,9 @@
     }
 }
 
-@media (max-width: 800px) {
+
+
+@media (max-width: 810px) {
     .intro-section h1 {
         font-size: 4.4rem;
         line-height: auto;
@@ -1452,6 +1454,7 @@
 }
 
 @media (max-width: 440px) {
+
     .nav-center,
     .nav-right {
         display: none;
@@ -1671,7 +1674,6 @@
 }
 
 @media (max-width: 430px) {
-
     .nav-center,
     .nav-right {
         display: none;
@@ -1694,13 +1696,13 @@
     }
 
     .intro-section h1 {
-        font-size: 3rem;
+        font-size: 2.6rem;
         margin-left: 10vw;
-        line-height: 3.2rem;
+        line-height: 2.8rem;
     }
 
     .intro {
-        margin-top: 1rem;
+        margin-top: -4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1712,8 +1714,8 @@
     .hover-link {
         font-size: 1.20rem;
         text-align: center;
-        margin-left: -30vw;
-        width: 100vw;
+        margin-left: -20vw;
+        width: 80vw;
     }
 
     .card {
@@ -1735,12 +1737,12 @@
         /* espaço igual nos lados */
         gap: 4vw;
         justify-content: center;
-        /* reforça centralização */
+        margin-top: 0rem;
     }
 
     .gallery img {
-        width: 80vw;
-        height: 60vh;
+        width: 85vw;
+        height: 90vh;
         object-fit: cover;
         border-radius: 2rem;
         margin-bottom: 0rem;
@@ -1891,6 +1893,7 @@
 }
 
 @media (max-width: 415px) {
+
     .nav-center,
     .nav-right {
         display: none;
@@ -1952,25 +1955,25 @@
 
     .gallery {
         padding: 0 5vw;
-        /* espaço igual nos lados */
         gap: 4vw;
+        height: auto;
         justify-content: center;
-        margin-top: 10rem;
-        /* reforça centralização */
     }
 
     .gallery img {
         width: 80vw;
-        height: 75vh;
+        height: 95vh;
         object-fit: cover;
         border-radius: 2rem;
-        margin-top: -12rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
         flex-shrink: 0;
     }
 
     .sobre {
-        padding: 1rem 1rem;
+        padding: 0rem 1rem;
         max-width: 60rem;
+        z-index: 2;
     }
 
     .sobre {
@@ -1986,7 +1989,8 @@
         display: block;
         font-size: 1.2rem;
         margin-top: 2rem;
-        margin-bottom: -4rem;
+        margin-bottom: 1rem;
+        margin-left: 0rem;
         color: #888;
         font-style: italic;
         text-align: left;
@@ -2105,14 +2109,13 @@
 
     .me h2 {
         font-size: 14.16vw;
-        margin-top: 14rem;
+        margin-top: 20rem;
         margin-bottom: 1rem;
 
     }
 }
 
 @media (max-width: 395px) {
-
     .nav-center,
     .nav-right {
         display: none;
@@ -2135,13 +2138,228 @@
     }
 
     .intro-section h1 {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         margin-left: 10vw;
         line-height: 2.6rem;
     }
 
     .intro {
-        margin-top: -2rem;
+        margin-top: -8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 0.4rem;
+    }
+
+    .intro-description,
+    .hover-link {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: -24vw;
+        width: 85vw;
+    }
+
+    .card {
+        width: 10vw;
+    }
+
+    .card {
+        flex: 0 0 100%;
+        padding: 0.8rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery {
+        padding: 0 5vw;
+        /* espaço igual nos lados */
+        gap: 4vw;
+        justify-content: center;
+        /* reforça centralização */
+    }
+
+    .gallery img {
+        width: 85vw;
+        height: 95vh;
+        object-fit: cover;
+        border-radius: 2rem;
+        margin-bottom: 6rem;
+        flex-shrink: 0;
+    }
+
+    .sobre {
+        padding: 0rem 1rem;
+        max-width: 60rem;
+    }
+
+    .sobre {
+        font-size: 1.5rem;
+        font-family: 'Lora', serif;
+        text-align: center;
+        margin-bottom: 0rem;
+        color: #444;
+        margin: auto;
+    }
+
+    .sobre span {
+        display: block;
+        font-size: 1.15rem;
+        margin-top: 4rem;
+        color: #888;
+        font-style: italic;
+        text-align: left;
+    }
+
+    .projetos .carousel-container {
+        margin-bottom: -8rem;
+        margin-top: 1.5rem;
+    }
+
+    .projetos .card img {
+        margin-bottom: 6rem;
+        height: 90vh;
+    }
+
+    .projetos h2 {
+        margin-top: 6.5rem;
+        margin-bottom: -1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .card-info h3 {
+        position: relative;
+        z-index: 2;
+        width: 98%;
+        margin: 0;
+        margin-left: 0rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.91rem;
+        text-align: left;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+
+    .card-info .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.1rem;
+    }
+
+    .tag {
+        padding: 0.4rem 0.5rem;
+        border: 1.99px solid white;
+        border-radius: 0.5rem;
+        white-space: nowrap;
+        font-size: 1.08rem;
+        color: white;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+        z-index: 2;
+        margin-bottom: 5rem;
+    }
+
+    footer {
+        height: 90vh;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left h2 {
+        font-size: 2.8rem;
+        font-family: 'Lora', serif;
+    }
+
+    .footer-right h1 {
+        margin: 0.2rem 0;
+        font-size: 2.8rem;
+        text-align: right;
+        font-family: 'Lora', serif;
+    }
+
+    .footer-right {
+        margin-top: 6rem;
+    }
+
+    .footer-right p {
+        margin: 0.2rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Lora', serif;
+        transition: all 0.3s ease;
+    }
+
+    .footer-right p:hover {
+        font-size: 1.25rem;
+    }
+
+    .contato-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.7rem 2rem;
+        color: #FFFCF8;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        border: 0.1rem solid #FFFCF8;
+        border-radius: 0.6rem;
+        transition: all 1.8s ease;
+    }
+
+    footer p {
+        width: 100%;
+        margin-top: -2.5rem;
+        margin-bottom: 0rem;
+        font-size: 1.2rem;
+    }
+
+    .me h2 {
+        font-size: 14vw;
+        margin-top: 8rem;
+        margin-bottom: 1rem;
+
+    }
+}
+
+@media (max-width: 385px) {
+    .nav-center,
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .intro-section {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0rem;
+        margin-top: 6rem;
+        margin-bottom: -10rem;
+    }
+
+    .intro-section h1 {
+        font-size: 2.4rem;
+        margin-left: 10vw;
+        line-height: 2.6rem;
+    }
+
+    .intro {
+        margin-top: -3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2328,7 +2546,6 @@
 }
 
 @media (max-width: 375px) {
-
     .nav-center,
     .nav-right {
         display: none;
@@ -2424,9 +2641,10 @@
 
     .sobre span {
         display: block;
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-top: 2rem;
         margin-bottom: 0.8rem;
+        margin-left: 0rem;
         color: #888;
         font-style: italic;
         text-align: justify;
@@ -2541,7 +2759,7 @@
 
     .me h2 {
         font-size: 14vw;
-        margin-top: -30rem;
+        margin-top: -4rem;
         margin-bottom: 0rem;
 
     }
@@ -2767,7 +2985,228 @@
     }
 }
 
+@media (max-width: 360px) {
+
+    .nav-center,
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .intro-section {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0rem;
+        margin-top: 2rem;
+        margin-bottom: -10rem;
+    }
+
+    .intro-section h1 {
+        font-size: 2.3rem;
+        margin-left: 10vw;
+        line-height: 2.4rem;
+    }
+
+    .intro {
+        margin-top: -3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 0.4rem;
+    }
+
+    .intro-description,
+    .hover-link {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-left: -15vw;
+        width: 75vw;
+    }
+
+    .card {
+        width: 10vw;
+    }
+
+    .card {
+        flex: 0 0 100%;
+        padding: 0.8rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery {
+        padding: 0 5vw;
+        /* espaço igual nos lados */
+        gap: 4vw;
+        height: 90vh;
+        margin-top: 22rem;
+        justify-content: center;
+        /* reforça centralização */
+    }
+
+    .gallery img {
+        width: 80vw;
+        height: 85vh;
+        object-fit: cover;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 35rem;
+        flex-shrink: 0;
+    }
+
+    .sobre {
+        margin-top: 38rem;
+        padding: 2rem 1rem;
+        max-width: 70rem;
+    }
+
+    .sobre {
+        font-size: 1.2rem;
+        font-family: 'Lora', serif;
+        text-align: center;
+        margin-bottom: 0rem;
+        color: #444;
+        margin: auto;
+    }
+
+    .sobre span {
+        display: block;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 0.8rem;
+        color: #888;
+        font-style: italic;
+        text-align: justify;
+    }
+
+    .projetos .carousel-container {
+        margin-bottom: -6rem;
+    }
+
+    .projetos .card img {
+        margin-bottom: 4rem;
+        height: 90vh;
+    }
+
+    .projetos h2 {
+        margin-top: 1.5rem;
+        margin-bottom: -1rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .card-info h3 {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        margin: 0;
+        margin-left: 0rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.6rem;
+        text-align: left;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+
+    .card-info .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.09rem;
+    }
+
+    .tag {
+        padding: 0.4rem 0.5rem;
+        border: 2px solid white;
+        border-radius: 0.5rem;
+        white-space: nowrap;
+        font-size: 0.93rem;
+        color: white;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+        z-index: 2;
+        margin-bottom: 4rem;
+    }
+
+    footer {
+        height: 90vh;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left h2 {
+        font-size: 2.8rem;
+        font-family: 'Lora', serif;
+    }
+
+    .footer-right h1 {
+        margin: 0.2rem 0;
+        font-size: 2.8rem;
+        text-align: right;
+        font-family: 'Lora', serif;
+    }
+
+    .footer-right {
+        margin-top: 2rem;
+    }
+
+    .footer-right p {
+        margin: 0.2rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Lora', serif;
+        transition: all 0.3s ease;
+    }
+
+    .footer-right p:hover {
+        font-size: 1.25rem;
+    }
+
+    .contato-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.7rem 2rem;
+        color: #FFFCF8;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        border: 0.1rem solid #FFFCF8;
+        border-radius: 0.6rem;
+        transition: all 1.8s ease;
+    }
+
+    footer p {
+        width: 100%;
+        margin-top: -0.5rem;
+        margin-bottom: 0rem;
+        font-size: 1.2rem;
+    }
+
+    .me h2 {
+        font-size: 13.99vw;
+        margin-top: 9rem;
+        margin-bottom: 0rem;
+
+    }
+}
+
 @media (max-width: 320px) {
+
     .nav-center,
     .nav-right {
         display: none;
