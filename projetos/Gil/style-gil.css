@@ -10,7 +10,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-family: sans-serif;
-    background: #FFFCF8;
+    background: #fff8f8;
 }
 
 nav{
@@ -52,7 +52,7 @@ nav{
 h4{
     font-size: 0.9rem;
     margin-left: 2rem;
-    margin-top: 0.9rem;
+    margin-top: 1.6rem;
     color: rgb(126, 126, 126);
     font-family: 'inter', sans-serif;
     font-weight: 400;
