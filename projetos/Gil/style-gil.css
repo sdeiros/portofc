@@ -26,8 +26,8 @@ nav {
 }
 
 .work-title {
-    width: 45vw;
-    font-size: 4.5em;
+    width: 46vw;
+    font-size: 4.4em;
     font-weight: 400;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -74,15 +74,16 @@ h4 {
     height: auto;
     margin-right: 2rem;
     margin-top: 0rem;
+
 }
 
 .gif {
     width: 100vw;
     height: auto;
     padding: 2rem;
-    border-radius: 3rem;
     border-color: none;
-    box-shadow: 0 80px 80px rgba(255, 0, 0, 0.8);
+    border-radius: 3rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
 
     margin-bottom: -2rem;
