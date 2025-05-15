@@ -10,15 +10,15 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-family: sans-serif;
-    background: #fff8f8;
+    background: #001aff;
 }
 
-nav{
+nav {
     width: 100vw;
-    height: 8vh;
+    height: 6vh;
     top: 0;
     left: 0;
-    background-color: #FFFCF8;
+    background-color: #001aff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,28 +32,28 @@ nav{
     margin-bottom: 1rem;
     margin-left: 2rem;
     margin-top: 0rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 251, 0);
     font-family: 'Lora', sans-serif;
     font-weight: 800;
     letter-spacing: -0.06em;
     line-height: 4rem;
 }
 
-.work-description p{
+.work-description p {
     width: 45vw;
     font-size: 1.44rem;
     margin-left: 2rem;
     margin-top: 1.1rem;
-    color: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
     font-family: 'inter', sans-serif;
     font-weight: 400;
 }
 
-h4{
+h4 {
     font-size: 0.9rem;
     margin-left: 2rem;
     margin-top: 1.6rem;
-    color: rgb(126, 126, 126);
+    color: rgb(230, 230, 230);
     font-family: 'inter', sans-serif;
     font-weight: 400;
     letter-spacing: -0.04em;
@@ -64,10 +64,10 @@ h4{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; /* para ser responsivo */
+    flex-wrap: wrap;
+    /* para ser responsivo */
     gap: 2rem;
 }
-
 
 .work-img {
     width: 29vw;
@@ -76,9 +76,18 @@ h4{
     margin-top: 0rem;
 }
 
-.gif{
-    width: 100%;
+.gif {
+    width: 100vw;
     height: auto;
     padding: 2rem;
     border-radius: 3rem;
+    border-color: none;
+    box-shadow: 0 80px 80px rgba(255, 0, 0, 0.8);
+
+
+    margin-bottom: -2rem;
+    margin-top: 2rem;
+
+
+    /* sombra suave */
 }
