@@ -10,7 +10,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-family: sans-serif;
-    background: #001aff;
+    background: #1F8C3A;
 }
 
 nav {
@@ -18,7 +18,7 @@ nav {
     height: 8vh;
     top: 0;
     left: 0;
-    background-color: #001aff;
+    background-color: #1F8C3A;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +32,7 @@ nav {
     margin-bottom: 1rem;
     margin-left: 2rem;
     margin-top: 0rem;
-    color: rgb(255, 251, 0);
+    color: #FFFFFF;
     font-family: 'Lora', sans-serif;
     font-weight: 800;
     letter-spacing: -0.06em;
@@ -44,7 +44,7 @@ nav {
     font-size: 1.44rem;
     margin-left: 2rem;
     margin-top: 1.1rem;
-    color: rgb(255, 255, 255);
+    color: #F5F5F5;
     font-family: 'inter', sans-serif;
     font-weight: 400;
 }
