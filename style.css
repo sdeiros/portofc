@@ -13,6 +13,11 @@ body {
     background: #FFFCF8;
 }
 
+::selection {
+    background-color: #7C8C99;
+    color: #ffffff;
+}
+
 .carousel-container {
     width: 100vw;
     height: 108vh;
