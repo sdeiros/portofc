@@ -6,9 +6,7 @@
 
 ::selection {
     background: #D9A441;
-    /* rosa destaque */
     color: #fefefe;
-    /* branco leitoso */
 }
 
 
@@ -89,7 +87,6 @@ h4 {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    /* para ser responsivo */
     gap: 2rem;
 }
 
@@ -98,21 +95,21 @@ h4 {
     height: auto;
     margin-right: 2rem;
     margin-top: 0rem;
-
 }
 
 .container {
-  display: inline-block; 
-  border-radius: 3rem;  
-  box-shadow: 0 0px 0.8rem rgba(0, 0, 0, 0.397); 
-  overflow: hidden;      
-  margin-left: 2rem;
-  margin-right: 2rem;
+    display: inline-block;
+    border-radius: 3rem;
+    box-shadow: 0 0px 0.8rem rgba(0, 0, 0, 0.397);
+    overflow: hidden;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
 }
 
 .gif {
-  display: block;
-  border-radius: 3rem; 
-  width: 100vw;        
-  height: auto;
+    display: block;
+    border-radius: 3rem;
+    width: 100vw;
+    height: auto;
 }
