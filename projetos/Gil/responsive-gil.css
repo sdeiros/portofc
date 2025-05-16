@@ -8,6 +8,12 @@
     .nav-right{
         display: none;
     }
+
+     .back-btn img {
+        width: 6vw;
+        height: auto;
+        margin-left: -1.5rem;
+    }
     
     .work-container {
         flex-direction: column;
