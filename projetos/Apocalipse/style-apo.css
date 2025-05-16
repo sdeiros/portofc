@@ -23,6 +23,21 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    color: #FFFFFF;
+    font-family: 'Lora', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.back-btn img {
+    width: 2vw;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.back-btn:hover img {
+    transform: translateX(-0.2vw);
+    opacity: 0.8;
 }
 
 .work-title {

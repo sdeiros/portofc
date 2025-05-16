@@ -1,13 +1,12 @@
-@media (max-width: 800px) {
+@media (max-width: 810px) {
     * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     }    
     
-    nav{
-        border-bottom: 1rwm;
-        border-color: #FFFFFF;
+    .nav-right{
+        display: none;
     }
     
     .work-container {
