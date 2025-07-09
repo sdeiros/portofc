@@ -1,1137 +1,3 @@
-@media (max-width: 1920px) {
-    .intro-section h1 {
-        font-size: 7rem;
-        line-height: 6.5rem;
-        max-width: 85%;
-        margin: 13rem 0;
-    }
-
-    .intro {
-        margin-top: 30rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.5rem;
-        margin: 0 auto;
-        margin-left: 14rem;
-    }
-
-    .navbar {
-        font-size: 3.2rem;
-        padding: 2.5rem 0;
-    }
-
-    .nav-right {
-        margin-right: 2rem;
-    }
-
-    .nav-left {
-        margin-left: 3rem;
-    }
-
-    .scroll-wrapper {
-        position: relative;
-        margin-top: 2rem;
-        height: 80vh;
-        overflow: hidden;
-    }
-
-    .gallery {
-        height: 80vh;
-        width: max-content;
-    }
-
-    .gallery img {
-        width: 32vw;
-    }
-
-    .sobre {
-        margin-top: 0rem;
-        padding: 2rem 1rem;
-        max-width: 100rem;
-        font-size: 2.5rem;
-    }
-
-    .sobre span {
-        margin-top: 3rem;
-        font-size: 1.8rem;
-    }
-
-    .card {
-        height: 100vh;
-    }
-
-    .projetos h2 {
-        margin-top: 0rem;
-        margin-bottom: -4.5rem;
-        font-size: 4rem;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -5rem;
-    }
-
-    .card-info h3 {
-        width: 95%;
-        margin-left: 0rem;
-        line-height: 3.2rem;
-        margin-bottom: 1rem;
-        font-size: 3rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 1rem;
-    }
-
-    .tag {
-        padding: 0.4rem 1rem;
-        border: 2px solid white;
-        border-radius: 0.6rem;
-        white-space: nowrap;
-        margin-bottom: 2rem;
-        font-size: 1.7rem;
-        margin-left: 0rem;
-    }
-
-    .card img {
-        height: 92%;
-        border-radius: 2.4rem;
-        cursor: pointer;
-    }
-
-    footer {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .footer-top {
-        gap: 2rem;
-    }
-
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
-        font-size: 2.8rem;
-    }
-
-    .footer-right p {
-        font-size: 1.5rem;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.55rem;
-    }
-
-    .contato-btn {
-        font-size: 1.5rem;
-        border: 0.15rem solid #FFFCF8;
-    }
-
-    footer p {
-        margin-top: 4rem;
-        margin-bottom: 0rem;
-        text-align: center;
-        color: #b4b4b4;
-        font-size: 1.6rem;
-    }
-
-    .me h2 {
-        font-size: 14.6vw;
-        margin-bottom: 1.2rem;
-        line-height: 3.5rem;
-    }
-}
-
-@media (max-width: 1730px) {
-    .intro-section h1 {
-        font-size: 7rem;
-        line-height: 6.5rem;
-        max-width: 85%;
-        margin: 13rem 0;
-    }
-
-    .intro {
-        margin-top: 30rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.5rem;
-        margin: 0 auto;
-        margin-left: 8rem;
-    }
-
-    .navbar {
-        font-size: 3.2rem;
-        padding: 2.5rem 0;
-    }
-
-    .nav-right {
-        margin-right: 2rem;
-    }
-
-    .nav-left {
-        margin-left: 3rem;
-    }
-
-    .scroll-wrapper {
-        position: relative;
-        margin-top: 2rem;
-        height: 80vh;
-        overflow: hidden;
-    }
-
-    .gallery {
-        height: 80vh;
-        width: max-content;
-    }
-
-    .gallery img {
-        width: 30vw;
-    }
-
-    .sobre {
-        margin-top: -8rem;
-        padding: 3.5rem 1rem;
-        max-width: 100rem;
-        font-size: 2.5rem;
-    }
-
-    .sobre span {
-        font-size: 1.8rem;
-    }
-
-    .card {
-        height: 100vh;
-    }
-
-    .projetos h2 {
-        margin-bottom: -4.5rem;
-        font-size: 4rem;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -1rem;
-    }
-
-    .card-info h3 {
-        width: 95%;
-        margin-left: 0rem;
-        line-height: 3.2rem;
-        margin-bottom: 1rem;
-        font-size: 2.8rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.6rem;
-    }
-
-    .tag {
-        padding: 0.4rem 1rem;
-        border: 2px solid white;
-        border-radius: 0.6rem;
-        white-space: nowrap;
-        margin-bottom: 2rem;
-        font-size: 1.57rem;
-        margin-left: 0rem;
-    }
-
-    .card img {
-        height: 92%;
-        border-radius: 2.4rem;
-        cursor: pointer;
-    }
-
-    footer {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .footer-top {
-        gap: 2rem;
-    }
-
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
-        font-size: 2.8rem;
-    }
-
-    .footer-right p {
-        font-size: 1.5rem;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.55rem;
-    }
-
-    .contato-btn {
-        font-size: 1.5rem;
-        border: 0.15rem solid #FFFCF8;
-    }
-
-    footer p {
-        margin-top: 4rem;
-        margin-bottom: 0rem;
-        text-align: center;
-        color: #b4b4b4;
-        font-size: 1.6rem;
-    }
-
-    .me h2 {
-        font-size: 15vw;
-        margin-bottom: 1.2rem;
-        line-height: 3.5rem;
-    }
-}
-
-@media (max-width: 1680px) {
-    .intro-section h1 {
-        font-size: 7rem;
-        line-height: 6.5rem;
-        max-width: 85%;
-        margin: 8rem 0;
-    }
-
-    .intro {
-        margin-top: 30rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.5rem;
-        margin: 0 auto;
-        margin-left: 6rem;
-    }
-
-    .navbar {
-        font-size: 3.2rem;
-        padding: 2.5rem 0;
-    }
-
-    .nav-right {
-        margin-right: 2rem;
-    }
-
-    .nav-left {
-        margin-left: 3rem;
-    }
-
-    .scroll-wrapper {
-        position: relative;
-        margin-top: 2rem;
-        height: 80vh;
-        overflow: hidden;
-    }
-
-    .gallery {
-        height: 80vh;
-        width: max-content;
-    }
-
-    .gallery img {
-        width: 30vw;
-    }
-
-    .sobre {
-        margin-top: 0rem;
-        padding: 3.5rem 1rem;
-        max-width: 100rem;
-        font-size: 2.5rem;
-    }
-
-    .sobre span {
-        font-size: 1.8rem;
-    }
-
-    .card {
-        height: 100vh;
-    }
-
-    .projetos h2 {
-        margin-top: 1rem;
-        margin-bottom: -4.5rem;
-        font-size: 4rem;
-    }
-
-    .card-info h3 {
-        width: 95%;
-        margin-left: 0rem;
-        line-height: 3.2rem;
-        margin-bottom: 1rem;
-        font-size: 2.8rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.6rem;
-    }
-
-    .tag {
-        padding: 0.4rem 1rem;
-        border: 2px solid white;
-        border-radius: 0.6rem;
-        white-space: nowrap;
-        margin-bottom: 2rem;
-        font-size: 1.5rem;
-        margin-left: 0rem;
-    }
-
-    .card img {
-        height: 92%;
-        border-radius: 2.4rem;
-        cursor: pointer;
-    }
-
-    footer {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .footer-top {
-        gap: 2rem;
-    }
-
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
-        font-size: 2.8rem;
-    }
-
-    .footer-right p {
-        font-size: 1.5rem;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.55rem;
-    }
-
-    .contato-btn {
-        font-size: 1.5rem;
-        border: 0.15rem solid #FFFCF8;
-    }
-
-    footer p {
-        margin-top: 4rem;
-        margin-bottom: 0rem;
-        text-align: center;
-        color: #b4b4b4;
-        font-size: 1.6rem;
-    }
-
-    .me h2 {
-        font-size: 14.6vw;
-        margin-bottom: 1.2rem;
-        line-height: 3.5rem;
-    }
-}
-
-@media (max-width: 1600px) {
-    .intro-section h1 {
-        font-size: 6rem;
-        line-height: 5.5rem;
-        max-width: 86%;
-        margin: 8rem 0;
-    }
-
-    .intro {
-        margin-top: 26rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.3rem;
-        margin: 0 auto;
-        margin-left: 6rem;
-    }
-
-    .navbar {
-        font-size: 2.6rem;
-        padding: 2rem 0;
-    }
-
-    .nav-left {
-        margin-left: 1.8rem;
-    }
-
-    .scroll-wrapper {
-        position: relative;
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    .gallery {
-        height: 100vh;
-        width: max-content;
-    }
-
-    .gallery img {
-        width: 30vw;
-    }
-
-    .sobre {
-        margin-top: 6rem;
-        padding: 2rem 1rem;
-        max-width: 80rem;
-        font-size: 1.8rem;
-    }
-
-    .sobre span {
-        font-size: 1.4rem;
-    }
-
-    .projetos h2 {
-        margin-top: 3.5rem;
-        margin-bottom: -4rem;
-        font-size: 3rem;
-    }
-
-    .projetos .carousel-container {
-        width: 100vw;
-        margin: 0 auto;
-        margin-top: 1rem;
-        margin-bottom: -2rem;
-    }
-
-    .card-info h3 {
-        width: 95%;
-        margin-left: 0rem;
-        line-height: 2.5rem;
-        margin-bottom: 1rem;
-        font-size: 2.5rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.6rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.6rem;
-        border: 2px solid white;
-        border-radius: 0.6rem;
-        white-space: nowrap;
-        margin-bottom: 0.5rem;
-        font-size: 1.5rem;
-        margin-left: 0rem;
-    }
-
-    .card img {
-        height: 92%;
-        border-radius: 2rem;
-        cursor: pointer;
-    }
-
-    footer {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .footer-top {
-        gap: 2rem;
-    }
-
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
-        font-size: 2.5rem;
-
-    }
-
-    .footer-right p {
-        font-size: 1rem;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.02rem;
-    }
-
-    .contato-btn {
-        font-size: 1.3rem;
-        border: 0.15rem solid #FFFCF8;
-    }
-
-    footer p {
-        margin-top: 4rem;
-        margin-bottom: 0rem;
-        text-align: center;
-        color: #b4b4b4;
-        font-size: 1.3rem;
-    }
-
-    .me h2 {
-        font-size: 15vw;
-        margin-bottom: 1rem;
-        line-height: 3.5rem;
-    }
-}
-
-@media (max-width: 1585px) {
-    .intro-section h1 {
-        font-size: 6rem;
-        line-height: 5.5rem;
-        max-width: 86%;
-        margin: 12rem 0;
-    }
-
-    .intro {
-        margin-top: 26rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.4rem;
-        margin: 0 auto;
-        margin-left: 6rem;
-    }
-
-    .navbar {
-        font-size: 2.6rem;
-        padding: 2rem 0;
-    }
-
-    .nav-left {
-        margin-left: 1.8rem;
-    }
-
-    .scroll-wrapper {
-        position: relative;
-        height: 80vh;
-        overflow: hidden;
-    }
-
-    .gallery {
-        height: 80vh;
-        width: max-content;
-    }
-
-    .gallery img {
-        width: 30vw;
-    }
-
-    .sobre {
-        margin-top: -9.5rem;
-        padding: 2rem 1rem;
-        max-width: 80rem;
-        font-size: 1.8rem;
-        margin-bottom: 5rem;
-    }
-
-    .sobre span {
-        font-size: 1.4rem;
-    }
-
-    .projetos h2 {
-        margin-bottom: -5rem;
-        font-size: 3rem;
-    }
-
-    .card-info h3 {
-        width: 95%;
-        margin-left: 0rem;
-        line-height: 2.5rem;
-        margin-bottom: 1rem;
-        font-size: 2.5rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.9rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.4rem;
-        border: 2px solid white;
-        border-radius: 0.6rem;
-        white-space: nowrap;
-        margin-bottom: 2rem;
-        font-size: 1.5rem;
-        margin-left: 0rem;
-    }
-
-    .card img {
-        height: 92%;
-        border-radius: 2rem;
-        cursor: pointer;
-    }
-
-    footer {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .footer-top {
-        gap: 2rem;
-    }
-
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
-        font-size: 2.5rem;
-
-    }
-
-    .footer-right p {
-        font-size: 1.5rem;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.55rem;
-    }
-
-    .contato-btn {
-        font-size: 1.3rem;
-        border: 0.15rem solid #FFFCF8;
-    }
-
-    footer p {
-        margin-top: 4rem;
-        margin-bottom: 0rem;
-        text-align: center;
-        color: #b4b4b4;
-        font-size: 1.3rem;
-    }
-
-    .me h2 {
-        font-size: 15vw;
-        margin-bottom: 1rem;
-        line-height: 3.5rem;
-    }
-}
-
-@media (max-width: 1562px) {
-    .intro-section h1 {
-        font-size: 6rem;
-        line-height: 5.5rem;
-        max-width: 86%;
-        margin: 12rem 0;
-    }
-
-    .intro {
-        margin-top: 26rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.4rem;
-        margin: 0 auto;
-        margin-left: 6rem;
-    }
-
-    .navbar {
-        font-size: 2.6rem;
-        padding: 2rem 0;
-    }
-
-    .nav-left {
-        margin-left: 1.8rem;
-    }
-
-    .scroll-wrapper {
-        position: relative;
-        height: 80vh;
-        overflow: hidden;
-    }
-
-    .gallery {
-        height: 80vh;
-        width: max-content;
-    }
-
-    .gallery img {
-        width: 30vw;
-    }
-
-    .sobre {
-        margin-top: -8rem;
-        padding: 1rem 1rem;
-        max-width: 80rem;
-        font-size: 1.8rem;
-        margin-bottom: 5rem;
-    }
-
-    .sobre span {
-        font-size: 1.4rem;
-    }
-
-    .projetos h2 {
-        margin-bottom: -5rem;
-        font-size: 3rem;
-    }
-
-    .card-info h3 {
-        width: 95%;
-        margin-left: 0rem;
-        line-height: 2.5rem;
-        margin-bottom: 1rem;
-        font-size: 2.5rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.9rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.4rem;
-        border: 2px solid white;
-        border-radius: 0.6rem;
-        white-space: nowrap;
-        margin-bottom: 2rem;
-        font-size: 1.5rem;
-        margin-left: 0rem;
-    }
-
-    .card img {
-        height: 92%;
-        border-radius: 2rem;
-        cursor: pointer;
-    }
-
-    footer {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .footer-top {
-        gap: 2rem;
-    }
-
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
-        font-size: 2.5rem;
-
-    }
-
-    .footer-right p {
-        font-size: 1.5rem;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.55rem;
-    }
-
-    .contato-btn {
-        font-size: 1.3rem;
-        border: 0.15rem solid #FFFCF8;
-    }
-
-    footer p {
-        margin-top: 4rem;
-        margin-bottom: 0rem;
-        text-align: center;
-        color: #b4b4b4;
-        font-size: 1.3rem;
-    }
-
-    .me h2 {
-        font-size: 15vw;
-        margin-bottom: 1rem;
-        line-height: 3.5rem;
-    }
-}
-
-@media (max-width: 1510px) {
-    .intro-section h1 {
-        font-size: 6rem;
-        line-height: 5.5rem;
-        max-width: 86%;
-        margin: 6rem 0;
-    }
-
-    .intro {
-        margin-top: 26rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.4rem;
-        margin: 0 auto;
-        margin-left: 6rem;
-    }
-
-    .navbar {
-        font-size: 2.6rem;
-        padding: 2rem 0;
-    }
-
-    .nav-left {
-        margin-left: 1.8rem;
-    }
-
-    .scroll-wrapper {
-        position: relative;
-        height: 80vh;
-        overflow: hidden;
-    }
-
-    .gallery {
-        height: 80vh;
-        width: max-content;
-    }
-
-    .gallery img {
-        width: 30vw;
-    }
-
-    .sobre {
-        margin-top: -5rem;
-        padding: 3rem 1rem;
-        max-width: 80rem;
-        font-size: 1.8rem;
-    }
-
-    .sobre span {
-        font-size: 1.4rem;
-    }
-
-    .projetos h2 {
-        margin-bottom: -4.5rem;
-        font-size: 3rem;
-    }
-
-    .card-info h3 {
-        width: 95%;
-        margin-left: 0rem;
-        line-height: 2.5rem;
-        margin-bottom: 1rem;
-        font-size: 2.4rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.3rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.5rem;
-        border: 2px solid white;
-        border-radius: 0.6rem;
-        white-space: nowrap;
-        margin-bottom: 1.5rem;
-        font-size: 1.5rem;
-        margin-left: 0rem;
-    }
-
-    .card img {
-        height: 92%;
-        border-radius: 2rem;
-        cursor: pointer;
-    }
-
-    footer {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .footer-top {
-        gap: 2rem;
-    }
-
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
-        font-size: 2.5rem;
-
-    }
-
-    .footer-right p {
-        font-size: 1.5rem;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.55rem;
-    }
-
-    .contato-btn {
-        font-size: 1.3rem;
-        border: 0.15rem solid #FFFCF8;
-    }
-
-    footer p {
-        margin-top: 4rem;
-        margin-bottom: 0rem;
-        text-align: center;
-        color: #b4b4b4;
-        font-size: 1.5rem;
-    }
-
-    .me h2 {
-        font-size: 14.99vw;
-        margin-bottom: 1rem;
-        line-height: 3.5rem;
-    }
-}
-
-@media (max-width: 1450px) {
-    .intro-section h1 {
-        font-size: 6rem;
-        line-height: 5.5rem;
-        max-width: 86%;
-        margin: 6rem 0;
-    }
-
-    .intro {
-        margin-top: 26rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.4rem;
-        margin: 0 auto;
-        margin-left: 4rem;
-    }
-
-    .navbar {
-        font-size: 2.6rem;
-        padding: 2rem 0;
-    }
-
-    .nav-left {
-        margin-left: 1.8rem;
-    }
-
-    .scroll-wrapper {
-        position: relative;
-        height: 80vh;
-        overflow: hidden;
-    }
-
-    .gallery {
-        height: 80vh;
-        width: max-content;
-    }
-
-    .gallery img {
-        width: 30vw;
-    }
-
-    .sobre {
-        margin-top: 1rem;
-        padding: 2rem 1rem;
-        max-width: 80rem;
-        font-size: 1.8rem;
-    }
-
-    .sobre span {
-        font-size: 1.4rem;
-    }
-
-    .projetos h2 {
-        margin-top: 0rem;
-        margin-bottom: -4.5rem;
-        font-size: 3rem;
-    }
-
-    .card-info h3 {
-        width: 98%;
-        margin-left: 0rem;
-        line-height: 2.5rem;
-        margin-bottom: 1rem;
-        font-size: 2rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.35rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.5rem;
-        border: 2px solid white;
-        border-radius: 0.6rem;
-        white-space: nowrap;
-        margin-bottom: 1.5rem;
-        font-size: 1.32rem;
-        margin-left: 0rem;
-    }
-
-    .card img {
-        height: 92%;
-        border-radius: 2rem;
-        cursor: pointer;
-    }
-
-    footer {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .footer-top {
-        gap: 2rem;
-    }
-
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
-        font-size: 2.5rem;
-
-    }
-
-    .footer-right p {
-        font-size: 1.5rem;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.55rem;
-    }
-
-    .contato-btn {
-        font-size: 1.3rem;
-        border: 0.15rem solid #FFFCF8;
-    }
-
-    footer p {
-        margin-top: 4rem;
-        margin-bottom: 0rem;
-        text-align: center;
-        color: #b4b4b4;
-        font-size: 1.5rem;
-    }
-
-    .me h2 {
-        font-size: 14.6vw;
-        margin-bottom: 1rem;
-        line-height: 3.5rem;
-    }
-}
-
 @media (max-width: 1370px) {
     .intro-section h1 {
         font-size: 6rem;
@@ -1361,52 +227,100 @@
     }
 
     .card img {
-        height: 92%;
-        border-radius: 2rem;
+        height: 100%;
+        border-radius: 3rem;
         cursor: pointer;
     }
+}
 
-    footer {
-        height: 95vh;
-        padding: 2rem 1rem;
+@media (max-width: 1200px) {
+    .intro-section h1 {
+        font-size: 5rem;
+        line-height: 4.5rem;
+        max-width: 86%;
+        margin: 6rem 0;
     }
 
-    .footer-top {
-        gap: 2rem;
+    .intro {
+        margin-top: 22rem;
     }
 
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
+    .intro-description,
+    .hover-link {
+        font-size: 1.2rem;
+        margin: 0 auto;
+        margin-left: 6rem;
+    }
+
+    .navbar {
+        font-size: 2.6rem;
+        padding: 2rem 0;
+    }
+
+    .nav-center {
+        display: none;
+    }
+
+    .nav-left {
+        margin-left: 1.8rem;
+    }
+
+    .scroll-wrapper {
+        position: relative;
+        height: 90vh;
+        overflow: hidden;
+    }
+
+    .gallery {
+        height: 90vh;
+        width: max-content;
+    }
+
+    .gallery img {
+        width: 34vw;
+    }
+
+    .sobre {
+        margin: 0rem;
+        padding: 3rem 1rem;
+        max-width: 75rem;
+        font-size: 1.4rem;
+    }
+
+    .sobre span {
+        font-size: 1.1rem;
+    }
+
+    .projetos h2 {
         font-size: 2.5rem;
+        margin-top: 0rem;
     }
 
-    .footer-right p {
-        font-size: 1.5rem;
+    .card-info h3 {
+        margin-left: 0rem;
+        line-height: 1.8rem;
+        font-size: 1.8rem;
     }
 
-    .footer-right p:hover {
-        font-size: 1.55rem;
+    .card-info .tags {
+        gap: 0.4rem;
     }
 
-    .contato-btn {
-        font-size: 1.3rem;
-        border: 0.15rem solid #FFFCF8;
+    .tag {
+        padding: 0.4rem 0.8rem;
+        border: 2px solid white;
+        border-radius: 0.6rem;
+        white-space: nowrap;
+        margin-bottom: 1rem;
+        font-size: 1.05rem;
+        margin-left: 0rem;
     }
 
-    footer p {
-        margin-top: 4rem;
-        margin-bottom: 0rem;
-        text-align: center;
-        color: #b4b4b4;
-        font-size: 1.3rem;
-    }
-
-    .me h2 {
-        font-size: 14.6vw;
-        margin-top: -3rem;
-        margin-bottom: 0rem;
-        line-height: 3.5rem;
+    .card {
+        margin-top: 5rem;
+        /* muito importante */
+        padding: 0.8rem;
+        border-radius: 4rem;
     }
 }
 
@@ -1496,49 +410,6 @@
     .card img {
         border-radius: 2rem;
     }
-
-    footer {
-        height: 90vh;
-        padding: 2rem 1rem;
-    }
-
-    .footer-top {
-        gap: 2rem;
-    }
-
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    .footer-right p {
-        font-size: 0.9rem;
-    }
-
-    .footer-right p:hover {
-        font-size: 1rem;
-    }
-
-    .contato-btn {
-        font-size: 1rem;
-        border: 0.1rem solid #FFFCF8;
-    }
-
-    footer p {
-        margin-top: 0rem;
-        margin-bottom: -1.5rem;
-        text-align: center;
-        color: #b4b4b4;
-        font-size: 1.3rem;
-    }
-
-    .me h2 {
-        font-size: 14.8vw;
-        margin-bottom: -8rem;
-        margin-top: -12rem;
-        line-height: 3.5rem;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -1626,49 +497,6 @@
 
     .card img {
         border-radius: 2rem;
-    }
-
-    footer {
-        height: 90vh;
-        padding: 2rem 1rem;
-    }
-
-    .footer-top {
-        gap: 2rem;
-    }
-
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    .footer-right p {
-        font-size: 0.9rem;
-    }
-
-    .footer-right p:hover {
-        font-size: 1rem;
-    }
-
-    .contato-btn {
-        font-size: 1rem;
-        border: 0.1rem solid #FFFCF8;
-    }
-
-    footer p {
-        margin-top: 0rem;
-        margin-bottom: -1.5rem;
-        text-align: center;
-        color: #b4b4b4;
-        font-size: 1.3rem;
-    }
-
-    .me h2 {
-        font-size: 14.2vw;
-        margin-bottom: -8rem;
-        margin-top: -12rem;
-        line-height: 3.5rem;
     }
 }
 
@@ -1785,78 +613,6 @@
     .projetos .card img {
         height: 92vh;
     }
-
-    footer {
-        height: 90vh;
-        padding: 1rem 1rem;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 5rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 5em;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 3rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 2rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 2.06rem;
-    }
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.6rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        border: 0.15rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -1rem;
-        margin-bottom: 0rem;
-        font-size: 2rem;
-    }
-
-    .me {
-        margin-top: 0rem;
-    }
-
-    .me h2 {
-        font-size: 14vw;
-        margin-top: 16rem;
-        margin-bottom: 1rem;
-
-    }
 }
 
 @media (max-width: 725px) {
@@ -1972,81 +728,10 @@
     .projetos .card img {
         height: 92vh;
     }
-
-    footer {
-        height: 90vh;
-        padding: 1rem 1rem;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 5rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 5em;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 3rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 2rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 2.06rem;
-    }
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.6rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        border: 0.15rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -1rem;
-        margin-bottom: 0rem;
-        font-size: 2rem;
-    }
-
-    .me {
-        margin-top: 0rem;
-    }
-
-    .me h2 {
-        font-size: 14vw;
-        margin-top: 16rem;
-        margin-bottom: 1rem;
-
-    }
 }
 
 @media (max-width: 482px) {
+
     .nav-center,
     .nav-right {
         display: none;
@@ -2191,77 +876,6 @@
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
         z-index: 2;
         margin-bottom: 6rem;
-    }
-
-    footer {
-        height: 70vh;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 2.8rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 2.8rem;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 2rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 1.4rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.45rem;
-    }
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        border: 0.1rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -1rem;
-        margin-bottom: 0rem;
-        font-size: 1.2rem;
-    }
-
-    .me {
-        margin-top: 0rem;
-    }
-
-    .me h2 {
-        font-size: 12.3vw;
-        margin-top: 9rem;
-        margin-bottom: 1rem;
-
     }
 }
 
@@ -2412,80 +1026,10 @@
         margin-bottom: 6rem;
     }
 
-    footer {
-        height: 70vh;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 2.8rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 2.8rem;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 2rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 1.4rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.45rem;
-    }
-
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        border: 0.1rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -1rem;
-        margin-bottom: 0rem;
-        font-size: 1.2rem;
-    }
-
-    .me {
-        margin-top: 0rem;
-    }
-
-    .me h2 {
-        font-size: 14.2vw;
-        margin-top: 12rem;
-        margin-bottom: 1rem;
-
-    }
 }
 
 @media (max-width: 435px) {
+
     .nav-center,
     .nav-right {
         display: none;
@@ -2631,79 +1175,10 @@
         margin-bottom: 6rem;
     }
 
-    footer {
-        height: 70vh;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 2.8rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 2.8rem;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 2rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 1.4rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.45rem;
-    }
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        border: 0.1rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -1rem;
-        margin-bottom: 0rem;
-        font-size: 1.2rem;
-    }
-
-    .me {
-        margin-top: 0rem;
-    }
-
-    .me h2 {
-        font-size: 12.4vw;
-        margin-top: 6rem;
-        margin-bottom: 1rem;
-
-    }
 }
 
 @media (max-width: 416px) {
+
     .nav-center,
     .nav-right {
         display: none;
@@ -2853,82 +1328,12 @@
         z-index: 2;
         margin-bottom: 6rem;
     }
-
-    footer {
-        height: 90vh;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 2.8rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 2.8rem;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 2rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 1.4rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.45rem;
-    }
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        border: 0.1rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -1rem;
-        margin-bottom: 0rem;
-        font-size: 1.2rem;
-    }
-
-    .me {
-        margin-top: 0rem;
-    }
-
-    .me h2 {
-        font-size: 12vw;
-        margin-top: 10rem;
-        margin-bottom: 1rem;
-
-    }
 }
 
 
 
 @media (max-width: 396px) {
+
     .nav-center,
     .nav-right {
         display: none;
@@ -3074,76 +1479,10 @@
         z-index: 2;
         margin-bottom: 4rem;
     }
-
-    footer {
-        height: 90vh;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 2.8rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 2.8rem;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 6rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.25rem;
-    }
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        border: 0.1rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -2.5rem;
-        margin-bottom: 0rem;
-        font-size: 1.2rem;
-    }
-
-    .me h2 {
-        font-size: 12vw;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-
-    }
 }
 
 @media (max-width: 386px) {
+
     .nav-center,
     .nav-right {
         display: none;
@@ -3290,76 +1629,10 @@
         z-index: 2;
         margin-bottom: 4rem;
     }
-
-    footer {
-        height: 90vh;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 2.8rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 2.8rem;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 6rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.25rem;
-    }
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        border: 0.1rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -2.5rem;
-        margin-bottom: 0rem;
-        font-size: 1.2rem;
-    }
-
-    .me h2 {
-        font-size: 12vw;
-        margin-top: 0rem;
-        margin-bottom: 1rem;
-
-    }
 }
 
 @media (max-width: 376px) {
+
     .nav-center,
     .nav-right {
         display: none;
@@ -3510,76 +1783,10 @@
         z-index: 2;
         margin-bottom: 4rem;
     }
-
-    footer {
-        height: 90vh;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 2.8rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 2.8rem;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 2rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.25rem;
-    }
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        border: 0.1rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -18rem;
-        margin-bottom: 0rem;
-        font-size: 1.2rem;
-    }
-
-    .me h2 {
-        font-size: 12.2vw;
-        margin-top: -12rem;
-        margin-bottom: 0rem;
-
-    }
 }
 
 @media (max-width: 370px) {
+
     .nav-center,
     .nav-right {
         display: none;
@@ -3729,76 +1936,10 @@
         z-index: 2;
         margin-bottom: 4rem;
     }
-
-    footer {
-        height: 90vh;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 2.8rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 2.8rem;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 2rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.25rem;
-    }
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        border: 0.1rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -0.5rem;
-        margin-bottom: 0rem;
-        font-size: 1.2rem;
-    }
-
-    .me h2 {
-        font-size: 13.99vw;
-        margin-top: 9rem;
-        margin-bottom: 0rem;
-
-    }
 }
 
 @media (max-width: 360px) {
+
     .nav-center,
     .nav-right {
         display: none;
@@ -3948,76 +2089,10 @@
         z-index: 2;
         margin-bottom: 4rem;
     }
-
-    footer {
-        height: 90vh;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 2.8rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 2.8rem;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 2rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.25rem;
-    }
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        border: 0.1rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -0.5rem;
-        margin-bottom: 0rem;
-        font-size: 1.2rem;
-    }
-
-    .me h2 {
-        font-size: 12.1vw;
-        margin-top: 6rem;
-        margin-bottom: 0rem;
-
-    }
 }
 
 @media (max-width: 320px) {
+
     .nav-center,
     .nav-right {
         display: none;
@@ -4166,72 +2241,5 @@
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
         z-index: 2;
         margin-bottom: 1rem;
-    }
-
-    footer {
-        height: 90vh;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left h2 {
-        font-size: 2rem;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right h1 {
-        margin: 0.2rem 0;
-        font-size: 2rem;
-        text-align: right;
-        font-family: 'Lora', serif;
-    }
-
-    .footer-right {
-        margin-top: 2rem;
-    }
-
-    .footer-right p {
-        margin: 0.2rem 0;
-        font-size: 1rem;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Lora', serif;
-        transition: all 0.3s ease;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.02rem;
-    }
-
-    .contato-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.7rem 2rem;
-        color: #FFFCF8;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        border: 0.1rem solid #FFFCF8;
-        border-radius: 0.6rem;
-        transition: all 1.8s ease;
-    }
-
-    footer p {
-        width: 100%;
-        margin-top: -0.5rem;
-        margin-bottom: 0rem;
-        font-size: 1rem;
-    }
-
-    .me h2 {
-        font-size: 11.7vw;
-        margin-top: 3.5rem;
-        margin-bottom: 0rem;
-
     }
 }
