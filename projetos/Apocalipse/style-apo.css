@@ -46,7 +46,7 @@ nav {
 }
 
 .work-title {
-    width: 45vw;
+    width: 50vw;
     font-size: 4.5em;
     font-weight: 400;
     margin-bottom: 1rem;
@@ -85,68 +85,70 @@ h4 {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    /* para ser responsivo */
-    gap: 2rem;
+    margin-bottom: 0rem;
 }
 
 .work-img {
-    width: 29vw;
+    width: 32vw;
     height: auto;
     margin-right: 2rem;
-    margin-top: 0rem;
 }
 
 .gif {
     width: 100vw;
     height: auto;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    margin-bottom: -2rem;
     margin-top: 2rem;
 
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    /* sombra suave */
 }
 
 .gif2 {
     width: 100vw;
     height: auto;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    margin-top: 0rem;
-    margin-bottom: -2rem;
-
-    border-top-left-radius: 0rem;
-    border-top-right-radius: 0rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    /* sombra suave */
+    margin-top: -2rem;
 }
 
 .gif3 {
     width: 100vw;
     height: auto;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    margin-top: 1.79rem;
-    margin-bottom: 0rem;
-
-    border-top-left-radius: 0rem;
-    border-top-right-radius: 0rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    /* sombra suave */
+    margin-bottom: none;
+    margin-top: -2rem;
 }
 
 section {
     width: 100vw;
-    margin-bottom: 3rem;
+    margin-bottom: none;
     height: auto;
-    margin-right: 4rem;
+}
+
+.footer {
+    width: 100%;
+    padding: 0rem;
+    margin: none;
+    background-color: #940404;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-top: -1rem;
+
+}
+
+.footer-copy {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Rubik', serif;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+}
+
+@media (max-width: 600px) {
+    .footer-copy {
+        font-size: 0.92rem;
+    }
 }
