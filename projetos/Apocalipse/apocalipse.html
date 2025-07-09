@@ -2,30 +2,66 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Charset e Viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO básico -->
     <meta name="theme-color" content="#FFFFFF">
     <meta name="description"
         content="Detalhes sobre a Premiação Honoris Causa para Gilberto Gil - projeto de design gráfico por Davi Medeiros.">
-    <meta name="keywords" content="Davi Medeiros, design gráfico, Gilberto Gil, premiação, projeto">
+    <meta name="keywords" content="Davi Medeiros, design gráfico, Gilberto Gil, premiação, projeto, UERJ, pôster, arte">
     <meta name="author" content="Davi Medeiros">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <!-- SEO para redes sociais (Open Graph e Twitter) -->
+    <meta property="og:title" content="Projeto Apocalipse | Davi Medeiros">
+    <meta property="og:description" content="Design gráfico para a Premiação Honoris Causa de Gilberto Gil.">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/ddpvact5z/image/upload/q_auto,f_auto,w_1200/v1747412433/Poster_BallRoom_oiehn2.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seudominio.com/projeto-apocalipse">
+    <!-- atualiza isso quando tiver domínio -->
 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projeto Apocalipse | Davi Medeiros">
+    <meta name="twitter:description" content="Design gráfico inspirado na dualidade entre caos e esperança.">
+    <meta name="twitter:image"
+        content="https://res.cloudinary.com/ddpvact5z/image/upload/q_auto,f_auto,w_1200/v1747412433/Poster_BallRoom_oiehn2.jpg">
+
+    <!-- DNS prefetch + Performance -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="//res.cloudinary.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- PWA e Mobile Enhancement -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Projeto Apocalipse">
+
+    <!-- Ícone de atalho (opcional, mas bom) -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Fontes -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style-apo.css" rel="preload" as="style">
-    <link rel="stylesheet" href="responsive-apo.css" rel="preload" as="style">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="style-apo.css">
+    <link rel="stylesheet" href="responsive-apo.css">
+
+    <!-- Preloads estratégicos -->
+    <link rel="preload" as="image"
+        href="https://res.cloudinary.com/ddpvact5z/image/upload/q_auto,f_auto,w_1200/v1747412433/Poster_BallRoom_oiehn2.jpg">
     <link rel="preload" as="video"
         href="https://res.cloudinary.com/ddpvact5z/video/upload/q_auto,f_auto/VIDEO_2_jdby44.mp4" type="video/mp4">
 
     <title>Projeto Apocalipse | Davi Medeiros</title>
-
 </head>
+
 
 <body data-scroll-container>
     <div data-scroll-section>
@@ -61,7 +97,7 @@
                             para engajar o público e despertar a curiosidade sobre o universo criativo do Apocalipse.
                         </p>
                         <h4>Davi Medeiros | Poster & Designer Gráfico • 2024<BR>Curadoria: Diogo Santos e Isaac Nicácio,
-                            Assitente de Curadoria: Nana Rosas, Produção: Hugo Bernabé.</h4>
+                            Assistente de Curadoria: Nana Rosas, Produção: Hugo Bernabé.</h4>
                     </div>
                 </div>
 
@@ -80,7 +116,8 @@
                         src="https://res.cloudinary.com/ddpvact5z/image/upload/v1747412756/01_jurtzh.gif"
                         alt="Pôster de Gilberto Gil" class="gil-poster">
 
-                    <img class="gif2" src="../../assets/Apocalipse/apocalipsetv.gif" alt="Vídeo TV" class="gil-poster">
+                    <img class="gif2" rel="preload" src="../../assets/Apocalipse/apocalipsetv.gif" alt="Vídeo TV"
+                        class="gil-poster">
 
                     <video class="gif2" autoplay loop muted playsinline preload="metadata" loading="lazy">
                         <source src="https://res.cloudinary.com/ddpvact5z/video/upload/q_auto,f_auto/VIDEO_2_jdby44.mp4"
