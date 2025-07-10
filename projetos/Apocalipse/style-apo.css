@@ -126,16 +126,15 @@ section {
 
 .footer {
     width: 100%;
-    padding: 0rem;
-    margin: none;
-    background-color: #940404;
+    padding: 1.5rem;
+    margin: 0;
+    background-color: #940405;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 10;
-    margin-top: -1rem;
-
+    margin-top: -1rem; /* se isso for proposital, ok! */
 }
 
 .footer-copy {
@@ -146,6 +145,7 @@ section {
     font-weight: 400;
     margin-bottom: 0.2rem;
 }
+
 
 @media (max-width: 600px) {
     .footer-copy {
