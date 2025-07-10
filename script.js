@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let touchEndY = 0
   let isDragging = false
   let hasUserInteracted = false
+  let isModalOpen = false // NOVA VARIÁVEL PARA CONTROLAR MODAL
 
   // Debounce function para otimizar performance
   function debounce(func, wait) {
@@ -106,6 +107,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function startAutoSlide() {
+    // NÃO INICIAR SE MODAL ESTIVER ABERTO
+    if (isModalOpen) return
+
     if (hasUserInteracted && window.innerWidth <= 810) {
       // No mobile, se o usuário interagiu, espera mais tempo antes de retomar
       setTimeout(() => {
@@ -117,9 +121,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function actuallyStartAutoSlide() {
+    // NÃO INICIAR SE MODAL ESTIVER ABERTO
+    if (isModalOpen) return
+
     stopAutoSlide()
     autoSlideInterval = setInterval(() => {
-      if (!isTransitioning && !isDragging) {
+      if (!isTransitioning && !isDragging && !isModalOpen) {
         moveCarousel("next", false)
       }
     }, 4500)
@@ -133,8 +140,33 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function resetAutoSlide() {
+    // NÃO RESETAR SE MODAL ESTIVER ABERTO
+    if (isModalOpen) return
+
     stopAutoSlide()
     setTimeout(startAutoSlide, 1000)
+  }
+
+  // FUNÇÕES PARA CONTROLE EXTERNO (MODAL)
+  function pauseAutoSlideForModal() {
+    isModalOpen = true
+    stopAutoSlide()
+  }
+
+  function resumeAutoSlideFromModal() {
+    isModalOpen = false
+    // Pequeno delay antes de retomar
+    setTimeout(() => {
+      if (!isModalOpen) {
+        startAutoSlide()
+      }
+    }, 1000)
+  }
+
+  // EXPOR FUNÇÕES GLOBALMENTE PARA O MODAL
+  window.carouselController = {
+    pauseAutoSlide: pauseAutoSlideForModal,
+    resumeAutoSlide: resumeAutoSlideFromModal,
   }
 
   // Event listeners otimizados para botões

@@ -205,6 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // MODAL COM CONTROLE DO CAROUSEL
     const gloriaCard = document.getElementById("gloriaMariaCard");
     let currentModal = null;
 
@@ -321,6 +322,11 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         e.stopPropagation();
         
+        // PAUSAR CAROUSEL AUTOMÁTICO
+        if (window.carouselController && window.carouselController.pauseAutoSlide) {
+            window.carouselController.pauseAutoSlide();
+        }
+        
         if (scroll) scroll.stop();
         
         currentModal = createModal();
@@ -348,6 +354,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 document.body.style.overflow = "auto";
                 if (scroll) scroll.start();
+                
+                // RETOMAR CAROUSEL AUTOMÁTICO
+                if (window.carouselController && window.carouselController.resumeAutoSlide) {
+                    window.carouselController.resumeAutoSlide();
+                }
             }, 300);
         }
     };
