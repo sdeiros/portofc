@@ -248,6 +248,10 @@
         font-size: 2rem;
         padding: 0.4rem 0.8rem;
     }
+
+    .body {
+        background: #fffcf8;
+    }
 }
 
 /* Mobile Grande (480px - 599px) */
@@ -342,6 +346,10 @@
     .tag {
         font-size: 0.9rem;
         padding: 0.3rem 0.6rem;
+    }
+
+    .body {
+        background: #fffcf8;
     }
 }
 
@@ -474,6 +482,10 @@
         margin: 0rem;
         height: 0rem;
     }
+
+    .body {
+        background: #fffcf8;
+    }
 }
 
 /* iPhone SE e Mobile Pequeno (320px - 374px) */
@@ -482,6 +494,10 @@
         font-size: 1.2rem;
         padding: 0 0.5rem;
         height: 2.2rem;
+    }
+
+    .body {
+        background: #fffcf8;
     }
 
     .nav-center,
@@ -612,6 +628,9 @@
 
 /* Ajustes Gerais para Mobile */
 @media (max-width: 767px) {
+    .body {
+        background: #fffcf8;
+    }
 
     /* Garantir que elementos não quebrem o layout */
     * {
