@@ -136,7 +136,6 @@
         text-align: center;
         padding: 4rem 2rem;
         min-height: 100vh;
-        background-color: #fffcf8;
     }
 
     .intro-content {
@@ -177,7 +176,6 @@
     .carousel-container {
         height: 85vh;
         overflow: hidden;
-        background-color: #fffcf8;
     }
 
     .card {
@@ -212,7 +210,6 @@
     .footer-copy {
         font-size: 1rem;
         padding: 0.4rem 0.8rem;
-        background-color: #fffcf8;
         margin: 0rem;
         height: 0rem;
     }
@@ -221,14 +218,11 @@
         width: 100vw;
         height: 100vh;
         margin-top: -6rem;
-        background-color: #fffcf8;
-
     }
 
     .gallery {
         width: 100vw;
         height: 100vh;
-        background-color: #fffcf8;
     }
 
     .gallery img {
@@ -272,18 +266,18 @@
         position: static;
         font-size: 3rem;
         line-height: 2.8rem;
-        width: 100%;
+        width: 90%;
         margin: 0;
         text-align: center;
     }
 
     .intro-description {
         position: static;
-        margin: 0;
+        margin: 0 auto 0.5rem auto;
         padding: 0;
-        width: 100%;
+        width: 85%;
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .hover-link {
@@ -299,9 +293,20 @@
         flex: 0 0 100%;
     }
 
+    .scroll-wrapper {
+        width: 100vw;
+        height: 100vh;
+        margin-top: -10rem;
+    }
+
+    .gallery {
+        width: 100vw;
+        height: 80vh;
+    }
+
     .gallery img {
-        width: 70vw;
-        height: 75vh;
+        width: 80vw;
+        height: 80vh;
     }
 
     .sobre {
@@ -318,8 +323,8 @@
         padding: 0.4rem 0.8rem;
     }
 
-    .body {
-        background: #fffcf8;
+    .footer {
+        padding: 0.8rem 0;
     }
 }
 
@@ -417,15 +422,14 @@
         padding: 0.3rem 0.6rem;
     }
 
-    .body {
-        background: #fffcf8;
+    .footer {
+        padding: 0.8rem 0;
     }
 }
 
 /* Mobile Médio (375px - 479px) */
 @media (max-width: 479px) and (min-width: 375px) {
     .navbar {
-        font-size: 1.4rem;
         padding: 0 0.8rem;
         height: 2.5rem;
     }
@@ -548,7 +552,7 @@
 
     .footer-copy {
         font-size: 0.85rem;
-        padding: 0.4rem 0.8rem;
+        padding: 0.8rem 0.8rem;
         margin: 0rem;
         height: 0rem;
     }
@@ -624,12 +628,12 @@
     .scroll-wrapper {
         width: 100vw;
         height: 100%;
+        margin-top: -1rem;
     }
 
     .gallery {
         width: 100vw;
         height: 85vh;
-        margin-top: -1rem;
     }
 
     .gallery img {
@@ -686,7 +690,7 @@
 
     .footer-copy {
         font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
+        padding: 0.8rem 0.8rem;
         margin: 0rem;
         height: 0rem;
     }
