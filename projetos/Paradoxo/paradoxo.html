@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Medeiros - Paradoxo Casa Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-poxo.css">
+</head>
+<body>
+    <!-- Tela Inicial - Texto -->
+    <section class="intro-screen" id="introScreen">
+        <div class="container">
+            <main class="intro-content">
+                <h2 class="project-title">Paradoxo Casa Atelier</h2>
+                
+                <div class="text-content">
+                    <p>Atuo como designer gráfico, artista visual e social media no Paradoxo Casa Atelier, coletivo independente que promove exposições, oficinas e ações culturais no Rio de Janeiro.</p>
+                    
+                    <p>Crio pôsteres em A3 para presentear artistas, artes digitais para redes sociais e vídeos que registram as atividades do espaço. Também alimento o perfil do coletivo, buscando comunicar com clareza e identidade.</p>
+                    
+                    <p>Além da criação gráfica, desenvolvo experimentações em lambe-lambe, que em breve serão levadas às ruas, ampliando o projeto para o espaço urbano. Acompanho de perto os eventos e colaboro no registro audiovisual, criando peças que dialogam com o espírito do coletivo.</p>
+                    
+                    <p>Em breve apresentarei minha primeira exposição individual no Parque das Ruínas (antigo Parque Glória Maria), fruto de uma parceria com a Secretaria Municipal de Cultura. Essa oportunidade surgiu do trabalho que venho desenvolvendo no Paradoxo e é uma extensão natural das minhas experiências artísticas e audiovisuais.</p>
+                </div>
+                
+                <div class="intro-meta">
+                    <span class="period">2025 (Atualmente)</span>
+                </div>
+                
+                <button class="cta-button" onclick="showGallery()">
+                    Ver Projetos
+                    <span class="arrow">→</span>
+                </button>
+            </main>
+        </div>
+    </section>
+
+    <!-- Tela da Galeria -->
+    <section class="gallery-screen" id="galleryScreen">
+        <header class="gallery-header">
+            <div class="gallery-container">
+                <button class="back-button" onclick="showIntro()">
+                    <span class="arrow">←</span>
+                    Voltar
+                </button>
+                <h1 class="gallery-title">Projetos</h1>
+                <div class="gallery-subtitle">Paradoxo Casa Atelier</div>
+            </div>
+        </header>
+
+        <main class="gallery-main">
+            <div class="gallery-container">
+                <!-- Filtros -->
+                <div class="filter-section">
+                    <div class="filter-container">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="poster">Pôsteres A3</button>
+                        <button class="filter-btn" data-filter="social">Redes Sociais</button>
+                        <button class="filter-btn" data-filter="video">Vídeos</button>
+                        <button class="filter-btn" data-filter="experimental">Experimentações</button>
+                    </div>
+                </div>
+
+                <!-- Galeria Masonry -->
+                <div class="masonry-grid" id="masonryGrid">
+                    <!-- Conteúdo inserido via JavaScript -->
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-backdrop" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-media" id="modalMedia">
+                <!-- Conteúdo inserido via JavaScript -->
+            </div>
+            <div class="modal-info">
+                <h3 class="modal-title"></h3>
+                <p class="modal-description"></p>
+                <div class="modal-meta">
+                    <span class="modal-category"></span>
+                    <span class="modal-date"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,2245 +1,664 @@
-@media (max-width: 1370px) {
+/* ===== RESPONSIVE CSS - TV até iPhone SE ===== */
+
+/* TV e Monitores Grandes (1920px+) */
+@media (min-width: 1920px) {
     .intro-section h1 {
         font-size: 6rem;
         line-height: 5.5rem;
-        max-width: 86%;
-        margin: 6rem 0;
+        width: 45%;
     }
 
-    .intro {
-        margin-top: 26rem;
+    .intro-description {
+        font-size: 1.4rem;
+        margin-left: 70rem;
+        padding-top: 26rem;
+        width: 22%;
     }
 
-    .intro-description,
     .hover-link {
         font-size: 1.4rem;
-        margin: 0 auto;
-        margin-left: 6rem;
-    }
-
-    .navbar {
-        font-size: 2.6rem;
-        padding: 2rem 0;
-    }
-
-    .nav-left {
-        margin-left: 1.8rem;
-    }
-
-    .scroll-wrapper {
-        position: relative;
-        height: 80vh;
-        overflow: hidden;
-    }
-
-    .gallery {
-        height: 80vh;
-        width: max-content;
+        margin-left: 70rem;
+        padding-top: 30rem;
     }
 
     .gallery img {
-        width: 30vw;
+        width: 35vw;
+        max-width: 500px;
     }
 
     .sobre {
-        margin-top: 1rem;
-        padding: 2rem 1rem;
-        max-width: 80rem;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        max-width: 85rem;
     }
 
     .sobre span {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+    }
+}
+
+/* Desktop Grande (1440px - 1919px) */
+@media (max-width: 1919px) and (min-width: 1440px) {
+    .intro-section h1 {
+        font-size: 5.4rem;
+        line-height: 5.2rem;
+        width: 50%;
     }
 
-    .projetos h2 {
-        margin-top: 0rem;
-        margin-bottom: -4.5rem;
+    .intro-description {
+        margin-left: 66rem;
+        padding-top: 24rem;
+        width: 24%;
+    }
+
+    .hover-link {
+        margin-left: 66rem;
+        padding-top: 28rem;
+    }
+}
+
+/* Desktop Médio (1200px - 1439px) */
+@media (max-width: 1439px) and (min-width: 1200px) {
+    .intro-section h1 {
+        font-size: 4.8rem;
+        line-height: 4.5rem;
+        width: 55%;
+    }
+
+    .intro-description {
+        margin-left: 58rem;
+        padding-top: 22rem;
+        width: 26%;
+    }
+
+    .hover-link {
+        margin-left: 58rem;
+        padding-top: 26rem;
+    }
+
+    .gallery img {
+        width: 32vw;
+    }
+}
+
+/* Desktop Pequeno (1024px - 1199px) */
+@media (max-width: 1199px) and (min-width: 1024px) {
+    .intro-section h1 {
+        font-size: 4.2rem;
+        line-height: 4rem;
+        width: 60%;
+    }
+
+    .intro-description {
+        margin-left: 50rem;
+        padding-top: 20rem;
+        width: 28%;
+    }
+
+    .hover-link {
+        margin-left: 50rem;
+        padding-top: 24rem;
+    }
+
+    .card {
+        flex: 0 0 50%;
+        /* 2 cards por vez */
+    }
+
+    .gallery img {
+        width: 40vw;
+    }
+}
+
+/* Tablet Landscape (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .nav-center {
+        display: none;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 4rem 2rem;
+        min-height: 100vh;
+    }
+
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .intro-section h1 {
+        position: static;
+        font-size: 3.5rem;
+        line-height: 3.2rem;
+        width: 100%;
+        margin: 0 0 2rem 0;
+        text-align: center;
+    }
+
+    .intro-description {
+        position: static;
+        margin: 0 0 1rem 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .hover-link {
+        position: static;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .card {
+        flex: 0 0 100%;
+        /* 1 card por vez */
+    }
+
+    .gallery img {
+        width: 60vw;
+        height: 80vh;
+    }
+
+    .carousel-btn {
+        display: block;
+    }
+}
+
+/* Tablet Portrait (600px - 767px) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .navbar {
+        font-size: 1.8rem;
+        padding: 0 1.5rem;
+    }
+
+    .nav-center {
+        display: none;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1.5rem;
+        min-height: 100vh;
+    }
+
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 1.5rem;
+    }
+
+    .intro-section h1 {
+        position: static;
         font-size: 3rem;
+        line-height: 2.8rem;
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
 
-    .card-info h3 {
-        width: 98%;
-        margin-left: 0rem;
-        line-height: 2.5rem;
-        margin-bottom: 1rem;
+    .intro-description {
+        position: static;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .hover-link {
+        position: static;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .card {
+        flex: 0 0 100%;
+    }
+
+    .gallery img {
+        width: 70vw;
+        height: 75vh;
+    }
+
+    .sobre {
+        font-size: 1.3rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .sobre span {
+        font-size: 1.1rem;
+    }
+
+    .carousel-btn {
         font-size: 2rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Mobile Grande (480px - 599px) */
+@media (max-width: 599px) and (min-width: 480px) {
+    .navbar {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+        height: 2.5rem;
     }
 
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
+    .nav-center {
+        display: none;
     }
 
-    .card-info .tags {
-        gap: 0.35rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.5rem;
-        border: 2px solid white;
-        border-radius: 0.6rem;
-        white-space: nowrap;
-        margin-bottom: 1.5rem;
-        font-size: 1.32rem;
-        margin-left: 0rem;
-    }
-
-    .card img {
-        height: 92%;
-        border-radius: 2rem;
-        cursor: pointer;
-    }
-
-    footer {
-        height: auto;
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
         padding: 2rem 1rem;
+        min-height: 100vh;
+        padding-top: 4rem;
     }
 
-    .footer-top {
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
         gap: 2rem;
     }
 
-    .footer-left h2,
-    .footer-right h1 {
-        text-align: center;
+    .intro-section h1 {
+        position: static;
         font-size: 2.5rem;
-
-    }
-
-    .footer-right p {
-        font-size: 1.5rem;
-    }
-
-    .footer-right p:hover {
-        font-size: 1.55rem;
-    }
-
-    .contato-btn {
-        font-size: 1.3rem;
-        border: 0.15rem solid #FFFCF8;
-    }
-
-    footer p {
-        margin-top: 4rem;
-        margin-bottom: 0rem;
+        line-height: 2.3rem;
+        width: 100%;
+        margin: 0;
         text-align: center;
-        color: #b4b4b4;
-        font-size: 1.5rem;
     }
 
-    .me h2 {
-        font-size: 14.6vw;
-        margin-bottom: 1rem;
-        line-height: 3.5rem;
+    .intro-description {
+        position: static;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .hover-link {
+        position: static;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .card {
+        flex: 0 0 100%;
+        padding: 0.5rem;
+    }
+
+    .gallery img {
+        width: 80vw;
+        height: 70vh;
+    }
+
+    .sobre {
+        font-size: 1.2rem;
+        padding: 2rem 1rem;
+    }
+
+    .sobre span {
+        font-size: 1rem;
+    }
+
+    .carousel-btn {
+        display: none;
+        /* Esconder em mobile para melhor UX touch */
+    }
+
+    .card-info {
+        padding: 1.5rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+
+    .tag {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
     }
 }
 
-@media (max-width: 1280px) {
-    .intro-section h1 {
-        font-size: 5rem;
-        line-height: 4.5rem;
-        max-width: 86%;
-        margin: 6rem 0;
-    }
-
-    .intro {
-        margin-top: 22rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.2rem;
-        margin: 0 auto;
-        margin-left: 6rem;
-    }
-
+/* Mobile Médio (375px - 479px) */
+@media (max-width: 479px) and (min-width: 375px) {
     .navbar {
-        font-size: 2.6rem;
-        padding: 2rem 0;
+        font-size: 1.4rem;
+        padding: 0 0.8rem;
+        height: 2.5rem;
     }
 
-    .nav-center {
+    .nav-center,
+    .nav-right {
         display: none;
     }
 
     .nav-left {
-        margin-left: 1.8rem;
+        text-align: center;
+        flex: 1;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 0.8rem;
+        padding-top: 4rem;
+    }
+
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .intro-section h1 {
+        position: static;
+        font-size: 2.2rem;
+        line-height: 2rem;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .intro-description {
+        position: static;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .hover-link {
+        position: static;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        text-align: center;
+        font-size: 0.95rem;
     }
 
     .scroll-wrapper {
-        position: relative;
-        height: 80vh;
-        overflow: hidden;
+        width: 100vw;
+        height: 100rem;
     }
 
     .gallery {
-        height: 80vh;
-        width: max-content;
-    }
-
-    .gallery img {
-        width: 30vw;
-    }
-
-    .sobre {
-        margin-top: 0rem;
-        padding: 3rem 1rem;
-        max-width: 80rem;
-        font-size: 1.8rem;
-    }
-
-    .sobre span {
-        font-size: 1.4rem;
-    }
-
-    .projetos h2 {
-        margin-top: -5rem;
-        margin-bottom: -5rem;
-        font-size: 2.5rem;
-    }
-
-    .card-info h3 {
-        width: 95%;
-        margin-left: 0rem;
-        line-height: 1.8rem;
-        margin-bottom: 1rem;
-        font-size: 2rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.4rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.8rem;
-        border: 2px solid white;
-        border-radius: 0.6rem;
-        white-space: nowrap;
-        margin-bottom: 1rem;
-        font-size: 1.05rem;
-        margin-left: 0rem;
-    }
-
-    .card img {
+        width: 100vw;
         height: 100%;
-        border-radius: 3rem;
-        cursor: pointer;
-    }
-}
-
-@media (max-width: 1200px) {
-    .intro-section h1 {
-        font-size: 5rem;
-        line-height: 4.5rem;
-        max-width: 86%;
-        margin: 6rem 0;
     }
 
-    .intro {
-        margin-top: 22rem;
+    .gallery img {
+        width: 100vw;
+        height: 100%;
     }
 
-    .intro-description,
-    .hover-link {
-        font-size: 1.2rem;
-        margin: 0 auto;
-        margin-left: 6rem;
+    .sobre {
+        font-size: 1.1rem;
+        margin-top: 2rem;
+        padding: 1.5rem 0.8rem;
     }
 
-    .navbar {
-        font-size: 2.6rem;
-        padding: 2rem 0;
+    .sobre span {
+        font-size: 0.95rem;
     }
 
-    .nav-center {
+    .carousel-btn {
         display: none;
     }
 
-    .nav-left {
-        margin-left: 1.8rem;
-    }
-
-    .scroll-wrapper {
-        position: relative;
-        height: 90vh;
+    .carousel-container {
+        height: 75vh;
         overflow: hidden;
     }
 
-    .gallery {
-        height: 90vh;
-        width: max-content;
-    }
-
-    .gallery img {
-        width: 34vw;
-    }
-
-    .sobre {
-        margin: 0rem;
-        padding: 3rem 1rem;
-        max-width: 75rem;
-        font-size: 1.4rem;
-    }
-
-    .sobre span {
-        font-size: 1.1rem;
-    }
-
-    .projetos h2 {
-        font-size: 2.5rem;
-        margin-top: 0rem;
-    }
-
-    .card-info h3 {
-        margin-left: 0rem;
-        line-height: 1.8rem;
-        font-size: 1.8rem;
-    }
-
-    .card-info .tags {
-        gap: 0.4rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.8rem;
-        border: 2px solid white;
-        border-radius: 0.6rem;
-        white-space: nowrap;
-        margin-bottom: 1rem;
-        font-size: 1.05rem;
-        margin-left: 0rem;
-    }
-
-    .card {
-        margin-top: 5rem;
-        /* muito importante */
-        padding: 0.8rem;
-        border-radius: 4rem;
-    }
-}
-
-@media (max-width: 1130px) {
-    .intro-section h1 {
-        font-size: 4rem;
-        line-height: 3.8rem;
-        max-width: 80%;
-        margin: 6rem 0;
-    }
-
-    .intro {
-        margin-top: 14rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1rem;
-        margin: 0 auto;
-        margin-left: 6rem;
-    }
-
-    .navbar {
-        font-size: 2rem;
-        padding: 1.5rem 0;
-    }
-
-    .nav-left {
-        margin-left: 1.8rem;
-    }
-
-    .sobre {
-        margin-top: 0rem;
-        padding: 2rem 1rem;
-        max-width: 65rem;
-        font-size: 1.4rem;
-    }
-
-    .sobre span {
-        margin-bottom: -3.5rem;
-        font-size: 1.2rem;
-    }
-
-    .projetos h2 {
-        margin-top: 0rem;
-        margin-bottom: -4rem;
-        font-size: 2rem;
-    }
-
-    .card-info h3 {
-        width: 95%;
-        margin-left: 0rem;
-        margin-bottom: 0.2rem;
-        line-height: 1.5rem;
-        font-size: 1.7rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.4rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.4rem;
-        border: 1px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 1rem;
-        margin-left: 0rem;
-        margin-bottom: 0.4rem;
-    }
-
-    .scroll-wrapper {
-        height: 100vh;
-    }
-
-    .gallery {
-        height: 100vh;
-        gap: 2vw;
-        padding: 0 4vw;
-    }
-
-    .card img {
-        border-radius: 2rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    .intro-section h1 {
-        font-size: 4rem;
-        line-height: 3.8rem;
-        max-width: 80%;
-        margin: 6rem 0;
-    }
-
-    .intro {
-        margin-top: 14rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1rem;
-        margin: 0 auto;
-        margin-left: 6rem;
-    }
-
-    .navbar {
-        font-size: 2rem;
-        padding: 1.5rem 0;
-    }
-
-    .nav-left {
-        margin-left: 1.8rem;
-    }
-
-    .sobre {
-        margin-top: 0rem;
-        padding: 2rem 1rem;
-        max-width: 65rem;
-        font-size: 1.4rem;
-    }
-
-    .sobre span {
-        margin-bottom: -3.5rem;
-        font-size: 1.2rem;
-    }
-
-    .projetos h2 {
-        margin-top: 0rem;
-        margin-bottom: -4rem;
-        font-size: 2rem;
-    }
-
-    .card-info h3 {
-        width: 98%;
-        margin-left: 0rem;
-        margin-bottom: 0.2rem;
-        line-height: 1.5rem;
-        font-size: 1.6rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.3rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.4rem;
-        border: 1px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 0.89rem;
-        margin-left: 0rem;
-        margin-bottom: 0.4rem;
-    }
-
-    .scroll-wrapper {
-        height: 100vh;
-    }
-
-    .gallery {
-        height: 100vh;
-        gap: 2vw;
-        padding: 0 4vw;
-    }
-
-    .card img {
-        border-radius: 2rem;
-    }
-}
-
-@media (max-width: 810px) {
-    .intro-section h1 {
-        font-size: 4.4rem;
-        line-height: auto;
-        width: 80VW;
-        margin: 12rem 0;
-        margin-left: 4rem;
-        text-align: center;
-    }
-
-    .intro {
-        margin-top: 40rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.6rem;
-        margin: 0 auto;
-        margin-left: -40rem;
-        width: 70vw;
-        text-align: center;
-    }
-
-    .navbar {
-        font-size: 2rem;
-        padding: 1.8rem 0;
-    }
-
-    .nav-left {
-        margin-left: 1.8rem;
-    }
-
-    .sobre {
-        margin-top: 0rem;
-        padding: 0rem 1rem;
-        max-width: 65rem;
-        font-size: 1.6rem;
-    }
-
-    .sobre span {
-        margin-bottom: -3rem;
-        margin-top: 2rem;
-        font-size: 1.5rem;
-        margin-left: 4vw;
-        width: 90vw;
-        text-align: center;
-
-    }
-
-    .projetos h2 {
-        margin-top: 6.8rem;
-        margin-bottom: -5rem;
-        font-size: 3rem;
-    }
-
-    .card-info h3 {
-        width: 75%;
-        margin-left: 0rem;
-        margin-bottom: 0.8rem;
-        line-height: 2.5rem;
-        font-size: 3rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.8rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.8rem;
-        border: 2px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 1.8rem;
-        margin-left: 0rem;
-        margin-bottom: 2rem;
-    }
-
-    .scroll-wrapper {
-        height: 98vh;
-    }
-
-    .gallery {
-        height: 95vh;
-        gap: 2vw;
-        padding: 0 4vw;
-    }
-
-    .gallery img {
-        width: 85vw;
-    }
-
     .card {
         flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -4rem;
-    }
-
-    .projetos .card img {
-        height: 92vh;
-    }
-}
-
-@media (max-width: 725px) {
-    .intro-section h1 {
-        font-size: 4.4rem;
-        line-height: auto;
-        width: 80VW;
-        margin: 12rem 0;
-        margin-left: 4rem;
-        text-align: center;
-    }
-
-    .intro {
-        margin-top: 38rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.6rem;
-        margin: 0 auto;
-        margin-left: -40rem;
-        width: 70vw;
-        text-align: center;
-    }
-
-    .navbar {
-        font-size: 2rem;
-        padding: 1.8rem 0;
-    }
-
-    .nav-left {
-        margin-left: 1.8rem;
-    }
-
-    .sobre {
-        margin-top: 0rem;
-        padding: 0rem 1rem;
-        max-width: 65rem;
-        font-size: 1.6rem;
-    }
-
-    .sobre span {
-        margin-bottom: -3rem;
-        margin-top: 2rem;
-        font-size: 1.5rem;
-        margin-left: 4vw;
-        width: 90vw;
-        text-align: center;
-
-    }
-
-    .projetos h2 {
-        margin-top: 6.8rem;
-        margin-bottom: -5rem;
-        font-size: 3rem;
-    }
-
-    .card-info h3 {
-        width: 75%;
-        margin-left: 0rem;
-        margin-bottom: 0.8rem;
-        line-height: 2.5rem;
-        font-size: 3rem;
-    }
-
-    .card-info {
-        padding: 2rem;
-        box-sizing: border-box;
-    }
-
-    .card-info .tags {
-        gap: 0.8rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.8rem;
-        border: 2px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 1.8rem;
-        margin-left: 0rem;
-        margin-bottom: 2rem;
-    }
-
-    .scroll-wrapper {
-        height: 98vh;
-    }
-
-    .gallery {
-        height: 95vh;
-        gap: 2vw;
-        padding: 0 4vw;
-    }
-
-    .gallery img {
-        width: 90vw;
-    }
-
-    .card {
-        flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -4rem;
-    }
-
-    .projetos .card img {
-        height: 92vh;
-    }
-}
-
-@media (max-width: 482px) {
-
-    .nav-center,
-    .nav-right {
-        display: none;
-    }
-
-    .nav-left {
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-    .intro-section {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 2rem 0rem;
-        margin-top: 6rem;
-        margin-bottom: -10rem;
-    }
-
-    .intro-section h1 {
-        font-size: 3rem;
-        margin-left: 10vw;
-        line-height: 3.2rem;
-    }
-
-    .intro {
-        margin-top: -4rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 0.4rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.20rem;
-        text-align: center;
-        margin-left: -26vw;
-        width: 90vw;
-    }
-
-    .card {
-        width: 10vw;
-    }
-
-    .card {
-        flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .gallery {
-        padding: 0 5vw;
-        /* espaço igual nos lados */
-        gap: 4vw;
-        justify-content: center;
-        /* reforça centralização */
-    }
-
-    .gallery img {
-        width: 80vw;
-        height: 90vh;
-        object-fit: cover;
-        border-radius: 2rem;
-        margin-bottom: -5rem;
-        flex-shrink: 0;
-    }
-
-    .sobre {
-        padding: 0rem 1rem;
-        max-width: 60rem;
-        padding-top: 1rem;
-    }
-
-    .sobre {
-        font-size: 1.5rem;
-        font-family: 'Lora', serif;
-        text-align: center;
-        margin-bottom: 0rem;
-        color: #444;
-        margin: auto;
-    }
-
-    .sobre span {
-        display: block;
-        font-size: 1.2rem;
-        margin-top: 4rem;
-        color: #888;
-        font-style: italic;
-        text-align: left;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -8rem;
-    }
-
-    .projetos .card img {
-        margin-bottom: 6rem;
-        height: 90vh;
-    }
-
-    .projetos h2 {
-        margin-top: 5rem;
-        margin-bottom: -0.5rem;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .card-info h3 {
-        position: relative;
-        z-index: 2;
-        width: 98%;
-        margin: 0;
-        margin-left: 0rem;
-        margin-bottom: 0.8rem;
-        font-size: 2.1rem;
-        text-align: left;
-        font-weight: 300;
-        line-height: 2rem;
-    }
-
-    .card-info .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.1rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.6rem;
-        border: 2px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 1.19rem;
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        z-index: 2;
-        margin-bottom: 6rem;
-    }
-}
-
-@media (max-width: 440px) {
-
-    .nav-center,
-    .nav-right {
-        display: none;
-    }
-
-    .nav-left {
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-    .intro-section {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 2rem 0rem;
-        margin-top: 6rem;
-        margin-bottom: -10rem;
-    }
-
-    .intro-section h1 {
-        font-size: 3rem;
-        margin-left: 10vw;
-        line-height: 3.2rem;
-    }
-
-    .intro {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 0.4rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.20rem;
-        text-align: center;
-        margin-left: -30vw;
-        width: 100vw;
-    }
-
-    .card {
-        width: 10vw;
-    }
-
-    .card {
-        flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .gallery {
-        padding: 0 5vw;
-        /* espaço igual nos lados */
-        gap: 4vw;
-        justify-content: center;
-        /* reforça centralização */
-    }
-
-    .gallery img {
-        width: 80vw;
-        height: 65vh;
-        object-fit: cover;
-        border-radius: 2rem;
-        margin-bottom: 5rem;
-        flex-shrink: 0;
-    }
-
-    .sobre {
-        padding: 0rem 1rem;
-        max-width: 60rem;
-    }
-
-    .sobre {
-        font-size: 1.5rem;
-        font-family: 'Lora', serif;
-        text-align: center;
-        margin-bottom: 0rem;
-        color: #444;
-        margin: auto;
-    }
-
-    .sobre span {
-        display: block;
-        font-size: 1.2rem;
-        margin-top: 4rem;
-        color: #888;
-        font-style: italic;
-        text-align: left;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -8rem;
-    }
-
-    .projetos .card img {
-        margin-bottom: 6rem;
-        height: 90vh;
-    }
-
-    .projetos h2 {
-        margin-top: 5rem;
-        margin-bottom: -0.5rem;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .card-info h3 {
-        position: relative;
-        z-index: 2;
-        width: 98%;
-        margin: 0;
-        margin-left: 0rem;
-        margin-bottom: 0.8rem;
-        font-size: 2.1rem;
-        text-align: left;
-        font-weight: 300;
-        line-height: 2rem;
-    }
-
-    .card-info .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.1rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.6rem;
-        border: 2px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 1.19rem;
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        z-index: 2;
-        margin-bottom: 6rem;
-    }
-
-}
-
-@media (max-width: 435px) {
-
-    .nav-center,
-    .nav-right {
-        display: none;
-    }
-
-    .nav-left {
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-    .intro-section {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 2rem 0rem;
-        margin-top: 6rem;
-        margin-bottom: -10rem;
-    }
-
-    .intro-section h1 {
-        font-size: 2.6rem;
-        margin-left: 10vw;
-        line-height: 2.8rem;
-    }
-
-    .intro {
-        margin-top: -10rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 0.4rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.20rem;
-        text-align: center;
-        margin-left: -20vw;
-        width: 80vw;
-    }
-
-    .card {
-        width: 10vw;
-    }
-
-    .card {
-        flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .gallery {
-        padding: 0 5vw;
-        /* espaço igual nos lados */
-        gap: 4vw;
-        justify-content: center;
-        margin-top: 0rem;
-    }
-
-    .gallery img {
-        width: 85vw;
-        height: 90vh;
-        object-fit: cover;
-        border-radius: 2rem;
-        margin-bottom: 0rem;
-        flex-shrink: 0;
-    }
-
-    .sobre {
-        padding: -28rem 1rem;
-        max-width: 60rem;
-    }
-
-    .sobre {
-        font-size: 1.5rem;
-        font-family: 'Lora', serif;
-        text-align: center;
-        margin-bottom: 0rem;
-        color: #444;
-        margin: auto;
-    }
-
-    .sobre span {
-        display: block;
-        font-size: 1.2rem;
-        margin-top: 4rem;
-        color: #888;
-        font-style: italic;
-        text-align: left;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -6rem;
-    }
-
-    .projetos .card img {
-        margin-bottom: 5rem;
-        height: 90vh;
-    }
-
-    .projetos h2 {
-        margin-top: 4rem;
-        margin-bottom: -0.5rem;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .card-info h3 {
-        position: relative;
-        z-index: 2;
-        width: 98%;
-        margin: 0;
-        margin-left: 0rem;
-        margin-bottom: 0.8rem;
-        font-size: 2.1rem;
-        text-align: left;
-        font-weight: 300;
-        line-height: 2rem;
-    }
-
-    .card-info .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.1rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.6rem;
-        border: 2px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 1.19rem;
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        z-index: 2;
-        margin-bottom: 6rem;
-    }
-
-}
-
-@media (max-width: 416px) {
-
-    .nav-center,
-    .nav-right {
-        display: none;
-    }
-
-    .nav-left {
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-    .intro-section {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0rem 0rem;
-        margin-top: 4rem;
-        margin-bottom: -12rem;
-
-    }
-
-    .intro-section h1 {
-        font-size: 2.5rem;
-        margin-left: 10vw;
-        line-height: 2.4rem;
-    }
-
-    .intro {
-        margin-top: -10rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0rem 0.4rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.20rem;
-        text-align: center;
-        margin-left: -20vw;
-        width: 80vw;
-    }
-
-    .card {
-        width: 14vw;
-    }
-
-    .card {
-        flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .gallery {
-        padding: 0 5vw;
-        gap: 4vw;
-        height: auto;
-        justify-content: center;
-        margin-top: 6rem;
-    }
-
-    .gallery img {
-        width: 80vw;
-        height: 80vh;
-        object-fit: cover;
-        border-radius: 2rem;
-        margin-bottom: 0rem;
-        margin-top: 0rem;
-        flex-shrink: 0;
-    }
-
-    .sobre {
-        padding: 0rem 1rem;
-        max-width: 60rem;
-        z-index: 2;
-    }
-
-    .sobre {
-        font-size: 1.5rem;
-        font-family: 'Lora', serif;
-        text-align: center;
-        margin-bottom: 0rem;
-        color: #444;
-        margin: auto;
-    }
-
-    .sobre span {
-        display: block;
-        font-size: 1.2rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        margin-left: 0rem;
-        color: #888;
-        font-style: italic;
-        text-align: left;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -6rem;
-    }
-
-    .projetos .card img {
-        margin-bottom: 4rem;
-        height: 90vh;
-    }
-
-    .projetos h2 {
-        margin-top: 3rem;
-        margin-bottom: -0.6rem;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .card-info h3 {
-        position: relative;
-        z-index: 2;
-        width: 98%;
-        margin: 0;
-        margin-left: 0rem;
-        margin-bottom: 0.8rem;
-        font-size: 2rem;
-        text-align: left;
-        font-weight: 300;
-        line-height: 2rem;
-    }
-
-    .card-info .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.1rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.6rem;
-        border: 2px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 1.12rem;
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        z-index: 2;
-        margin-bottom: 6rem;
-    }
-}
-
-
-
-@media (max-width: 396px) {
-
-    .nav-center,
-    .nav-right {
-        display: none;
-    }
-
-    .nav-left {
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-    .intro-section {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 1rem 0rem;
-        margin-top: 6rem;
-        margin-bottom: -10rem;
-    }
-
-    .intro-section h1 {
-        font-size: 2.4rem;
-        margin-left: 10vw;
-        line-height: 2.6rem;
-    }
-
-    .intro {
-        margin-top: -10rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 0.4rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.2rem;
-        text-align: center;
-        margin-left: -24vw;
-        width: 85vw;
-    }
-
-    .card {
-        width: 10vw;
-    }
-
-    .card {
-        flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .gallery {
-        padding: 0 5vw;
-        /* espaço igual nos lados */
-        gap: 4vw;
-        justify-content: center;
-        /* reforça centralização */
-    }
-
-    .gallery img {
-        width: 85vw;
-        height: 82vh;
-        object-fit: cover;
-        border-radius: 2rem;
-        margin-bottom: 6rem;
-        flex-shrink: 0;
-    }
-
-    .sobre {
-        padding: 0rem 1rem;
-        max-width: 60rem;
-    }
-
-    .sobre {
-        font-size: 1.5rem;
-        font-family: 'Lora', serif;
-        text-align: center;
-        margin-bottom: 0rem;
-        color: #444;
-        margin: auto;
-    }
-
-    .sobre span {
-        display: block;
-        font-size: 1.15rem;
-        margin-top: 4rem;
-        color: #888;
-        font-style: italic;
-        text-align: left;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -6rem;
-        margin-top: 1.5rem;
-    }
-
-    .projetos .card img {
-        margin-bottom: 4rem;
-        height: 90vh;
-    }
-
-    .projetos h2 {
-        margin-top: 6rem;
-        margin-bottom: -1.5rem;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .card-info h3 {
-        position: relative;
-        z-index: 2;
-        width: 98%;
-        margin: 0;
-        margin-left: 0rem;
-        margin-bottom: 0.8rem;
-        font-size: 1.91rem;
-        text-align: left;
-        font-weight: 300;
-        line-height: 2rem;
-    }
-
-    .card-info .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.1rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.5rem;
-        border: 1.99px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 1rem;
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        z-index: 2;
-        margin-bottom: 4rem;
-    }
-}
-
-@media (max-width: 386px) {
-
-    .nav-center,
-    .nav-right {
-        display: none;
-    }
-
-    .nav-left {
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-    .intro-section {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 1rem 0rem;
-        margin-top: 0rem;
-        margin-bottom: -10rem;
-    }
-
-    .intro-section h1 {
-        font-size: 2.4rem;
-        margin-left: 10vw;
-        line-height: 2.6rem;
-    }
-
-    .intro {
-        margin-top: -10rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 0.4rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.2rem;
-        text-align: center;
-        margin-left: -24vw;
-        width: 85vw;
-    }
-
-    .card {
-        width: 10vw;
-    }
-
-    .card {
-        flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .gallery {
-        padding: 0 5vw;
-        /* espaço igual nos lados */
-        gap: 4vw;
-        justify-content: center;
-        /* reforça centralização */
-        margin-top: 8rem;
-    }
-
-    .gallery img {
-        width: 80vw;
-        height: 80vh;
-        object-fit: cover;
-        border-radius: 2rem;
-        margin-bottom: 6rem;
-        flex-shrink: 0;
-    }
-
-    .sobre {
-        padding: 0rem 1rem;
-        max-width: 60rem;
-    }
-
-    .sobre {
-        font-size: 1.5rem;
-        font-family: 'Lora', serif;
-        text-align: center;
-        margin-bottom: 0rem;
-        color: #444;
-        margin: auto;
-    }
-
-    .sobre span {
-        display: block;
-        font-size: 1.15rem;
-        margin-top: 4rem;
-        color: #888;
-        font-style: italic;
-        text-align: left;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -6rem;
-        margin-top: 1.5rem;
-    }
-
-    .projetos .card img {
-        margin-bottom: 4rem;
-        height: 90vh;
-    }
-
-    .projetos h2 {
-        margin-top: 2rem;
-        margin-bottom: -1rem;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .card-info h3 {
-        position: relative;
-        z-index: 2;
-        width: 98%;
-        margin: 0;
-        margin-left: 0rem;
-        margin-bottom: 0.8rem;
-        font-size: 1.8rem;
-        text-align: left;
-        font-weight: 300;
-        line-height: 2rem;
-    }
-
-    .card-info .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.1rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.5rem;
-        border: 1.99px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 1rem;
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        z-index: 2;
-        margin-bottom: 4rem;
-    }
-}
-
-@media (max-width: 376px) {
-
-    .nav-center,
-    .nav-right {
-        display: none;
-    }
-
-    .nav-left {
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-    .intro-section {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 1rem 0rem;
-        margin-top: 3rem;
-        margin-bottom: -10rem;
-    }
-
-    .intro-section h1 {
-        font-size: 2.4rem;
-        margin-left: 10vw;
-        line-height: 2.5rem;
-    }
-
-    .intro {
-        margin-top: -6rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 0.4rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1rem;
-        text-align: center;
-        margin-left: -15vw;
-        width: 70vw;
-    }
-
-    .card {
-        width: 10vw;
-    }
-
-    .card {
-        flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .gallery {
-        padding: 0 5vw;
-        /* espaço igual nos lados */
-        gap: 4vw;
-        height: 90vh;
-        margin-top: 22rem;
-        justify-content: center;
-        /* reforça centralização */
-    }
-
-    .gallery img {
-        width: 80vw;
-        height: 80vh;
-        object-fit: cover;
-        border-radius: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 35rem;
-        flex-shrink: 0;
-    }
-
-    .sobre {
-        margin-top: 38rem;
-        padding: 2rem 1rem;
-        max-width: 70rem;
-    }
-
-    .sobre {
-        font-size: 1.2rem;
-        font-family: 'Lora', serif;
-        text-align: center;
-        margin-bottom: 0rem;
-        color: #444;
-        margin: auto;
-    }
-
-    .sobre span {
-        display: block;
-        font-size: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 0.8rem;
-        margin-left: 0rem;
-        color: #888;
-        font-style: italic;
-        text-align: justify;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -5rem;
-    }
-
-    .projetos .card img {
-        margin-bottom: 4rem;
-        height: 90vh;
-    }
-
-    .projetos h2 {
-        margin-top: -2rem;
-        margin-bottom: -1rem;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .card-info h3 {
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        margin: 0;
-        margin-left: 0rem;
-        margin-bottom: 0.8rem;
-        font-size: 1.6rem;
-        text-align: left;
-        font-weight: 300;
-        line-height: 2rem;
-    }
-
-    .card-info .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.09rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.5rem;
-        border: 2px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 0.8rem;
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        z-index: 2;
-        margin-bottom: 4rem;
-    }
-}
-
-@media (max-width: 370px) {
-
-    .nav-center,
-    .nav-right {
-        display: none;
-    }
-
-    .nav-left {
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-    .intro-section {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 1rem 0rem;
-        margin-top: 3rem;
-        margin-bottom: -10rem;
-    }
-
-    .intro-section h1 {
-        font-size: 2.4rem;
-        margin-left: 10vw;
-        line-height: 2.4rem;
-    }
-
-    .intro {
-        margin-top: -0rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 0.4rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.1rem;
-        text-align: center;
-        margin-left: -15vw;
-        width: 75vw;
-    }
-
-    .card {
-        width: 10vw;
-    }
-
-    .card {
-        flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .gallery {
-        padding: 0 5vw;
-        /* espaço igual nos lados */
-        gap: 4vw;
-        height: 90vh;
-        margin-top: 22rem;
-        justify-content: center;
-        /* reforça centralização */
-    }
-
-    .gallery img {
-        width: 80vw;
-        height: 85vh;
-        object-fit: cover;
-        border-radius: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 35rem;
-        flex-shrink: 0;
-    }
-
-    .sobre {
-        margin-top: 38rem;
-        padding: 2rem 1rem;
-        max-width: 70rem;
-    }
-
-    .sobre {
-        font-size: 1.2rem;
-        font-family: 'Lora', serif;
-        text-align: center;
-        margin-bottom: 0rem;
-        color: #444;
-        margin: auto;
-    }
-
-    .sobre span {
-        display: block;
-        font-size: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 0.8rem;
-        color: #888;
-        font-style: italic;
-        text-align: justify;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -6rem;
-    }
-
-    .projetos .card img {
-        margin-bottom: 4rem;
-        height: 90vh;
-    }
-
-    .projetos h2 {
-        margin-top: 1.5rem;
-        margin-bottom: -1rem;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .card-info h3 {
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        margin: 0;
-        margin-left: 0rem;
-        margin-bottom: 0.8rem;
-        font-size: 1.6rem;
-        text-align: left;
-        font-weight: 300;
-        line-height: 2rem;
-    }
-
-    .card-info .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.09rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.5rem;
-        border: 2px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 0.93rem;
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        z-index: 2;
-        margin-bottom: 4rem;
-    }
-}
-
-@media (max-width: 360px) {
-
-    .nav-center,
-    .nav-right {
-        display: none;
-    }
-
-    .nav-left {
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-    .intro-section {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 1rem 0rem;
-        margin-top: 2rem;
-        margin-bottom: -10rem;
-    }
-
-    .intro-section h1 {
-        font-size: 2.3rem;
-        margin-left: 10vw;
-        line-height: 2.4rem;
-    }
-
-    .intro {
-        margin-top: -11rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 0.4rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1.1rem;
-        text-align: center;
-        margin-left: -15vw;
-        width: 75vw;
-    }
-
-    .card {
-        width: 10vw;
-    }
-
-    .card {
-        flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .gallery {
-        padding: 0 5vw;
-        /* espaço igual nos lados */
-        gap: 4vw;
-        height: 80vh;
-        margin-top: 22rem;
-        justify-content: center;
-        /* reforça centralização */
-    }
-
-    .gallery img {
-        width: 80vw;
-        height: 90vh;
-        object-fit: cover;
-        border-radius: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 35rem;
-        flex-shrink: 0;
-    }
-
-    .sobre {
-        margin-top: 30rem;
-        padding: 2rem 1rem;
-        max-width: 70rem;
-    }
-
-    .sobre {
-        font-size: 1.2rem;
-        font-family: 'Lora', serif;
-        text-align: center;
-        margin-bottom: 0rem;
-        color: #444;
-        margin: auto;
-    }
-
-    .sobre span {
-        display: block;
-        font-size: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 0.8rem;
-        color: #888;
-        font-style: italic;
-        text-align: justify;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -6rem;
-    }
-
-    .projetos .card img {
-        margin-bottom: 4rem;
-        height: 90vh;
-    }
-
-    .projetos h2 {
-        margin-top: 1.5rem;
-        margin-bottom: -1rem;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .card-info h3 {
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        margin: 0;
-        margin-left: 0rem;
-        margin-bottom: 0.8rem;
-        font-size: 1.6rem;
-        text-align: left;
-        font-weight: 300;
-        line-height: 2rem;
-    }
-
-    .card-info .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.09rem;
-    }
-
-    .tag {
-        padding: 0.4rem 0.5rem;
-        border: 2px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 0.93rem;
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        z-index: 2;
-        margin-bottom: 4rem;
-    }
-}
-
-@media (max-width: 320px) {
-
-    .nav-center,
-    .nav-right {
-        display: none;
-    }
-
-    .nav-left {
-        font-size: 1.6rem;
-        margin: 0;
-    }
-
-    .intro-section {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0rem 0rem;
-        margin-top: -5rem;
-        margin-bottom: -3rem;
-    }
-
-    .intro-section h1 {
-        font-size: 2rem;
-        margin-left: 10vw;
-        margin-bottom: 6rem;
-        line-height: 2.4rem;
-    }
-
-    .intro {
-        margin-top: -3rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 0.4rem;
-    }
-
-    .intro-description,
-    .hover-link {
-        font-size: 1rem;
-        text-align: center;
-        margin-left: -18vw;
-        width: 76vw;
-    }
-
-    .card {
-        width: 10vw;
-    }
-
-    .card {
-        flex: 0 0 100%;
-        padding: 0.8rem;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .gallery {
-        padding: 0 5vw;
-        /* espaço igual nos lados */
-        gap: 4vw;
-        height: 65vh;
-        margin-top: 18rem;
-        justify-content: center;
-        /* reforça centralização */
-    }
-
-    .gallery img {
-        width: 80vw;
+        padding: 1rem;
         height: 75vh;
-        object-fit: cover;
-        border-radius: 2rem;
-        margin-top: -30%;
         margin-bottom: 0rem;
-        flex-shrink: 0;
+        padding-bottom: 0rem;
     }
 
-    .sobre {
-        padding: 1rem 0.5rem;
-        max-width: 75rem;
-    }
-
-    .sobre {
-        font-size: 1.1rem;
-        font-family: 'Lora', serif;
-        text-align: center;
-        margin-bottom: 0rem;
-        color: #444;
-    }
-
-    .sobre span {
-        display: block;
-        font-size: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 0.8rem;
-        color: #888;
-        font-style: italic;
-        text-align: justify;
-    }
-
-    .projetos .carousel-container {
-        margin-bottom: -2rem;
-        width: 100vw;
-    }
-
-    .projetos .card img {
-        margin-bottom: 0rem;
-        height: 90vh;
-    }
-
-    .projetos h2 {
-        margin-top: -1.5rem;
-        margin-bottom: -3rem;
-        font-size: 1.6rem;
-        font-weight: bold;
+    .card-info {
+        padding: 0rem 0rem 2rem 3rem;
     }
 
     .card-info h3 {
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        margin: 0;
-        margin-left: 0rem;
-        margin-bottom: 0rem;
-        font-size: 1.4rem;
-        text-align: left;
-        font-weight: 300;
-        line-height: 2rem;
-    }
-
-    .card-info .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.09rem;
+        font-size: 1.7rem;
+        margin-bottom: 0.7rem;
+        line-height: 1.2;
+        width: 85%;
     }
 
     .tag {
-        padding: 0.4rem 0.4rem;
-        border: 1.2px solid white;
-        border-radius: 0.5rem;
-        white-space: nowrap;
-        font-size: 0.83rem;
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        z-index: 2;
-        margin-bottom: 1rem;
+        font-size: 1rem;
+        padding: 0.25rem 0.6rem;
+    }
+
+    .projetos h2 {
+        font-size: 1.8rem;
+        margin: -0.5rem 0;
+    }
+
+    .footer-copy {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        margin: 0rem;
+        height: 0rem;
+    }
+}
+
+/* iPhone SE e Mobile Pequeno (320px - 374px) */
+@media (max-width: 374px) {
+    .navbar {
+        font-size: 1.2rem;
+        padding: 0 0.5rem;
+        height: 2.2rem;
+    }
+
+    .nav-center,
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        text-align: center;
+        flex: 1;
+        font-size: 1.2rem;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0.5rem;
+        min-height: 100vh;
+        padding-top: 3rem;
+    }
+
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 1.5rem;
+    }
+
+    .intro-section h1 {
+        position: static;
+        font-size: 1.8rem;
+        line-height: 1.7rem;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .intro-description {
+        position: static;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .hover-link {
+        position: static;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        flex: 0 0 100%;
+        padding: 0.3rem;
+    }
+
+    .gallery img {
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .sobre {
+        font-size: 1rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .sobre span {
+        font-size: 0.9rem;
+    }
+
+    .carousel-btn {
+        display: none;
+    }
+
+    .card-info {
+        padding: 1rem;
+    }
+
+    .card-info h3 {
+        font-size: 1rem;
+        line-height: 1.1;
+        margin-bottom: 0.8rem;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .projetos h2 {
+        font-size: 1.5rem;
+        margin: 0.8rem 0;
+    }
+
+    .footer-copy {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajustes Gerais para Mobile */
+@media (max-width: 767px) {
+
+    /* Garantir que elementos não quebrem o layout */
+    * {
+        max-width: 100%;
+    }
+
+    /* Melhorar touch targets */
+    .carousel-btn,
+    .hover-link,
+    .card {
+        min-height: 44px;
+    }
+
+    /* Otimizar scroll */
+    .scroll-wrapper {
+        height: 80vh;
+    }
+
+    /* Ajustar modal para mobile */
+    .modal-content {
+        margin: 1rem;
+        max-width: calc(100vw - 2rem);
+    }
+
+    /* Garantir que imagens não quebrem */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Ajustes para orientação landscape em mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+    .intro-section {
+        min-height: 100vh;
+        padding: 1rem;
+    }
+
+    .intro-section h1 {
+        font-size: 2rem;
+        line-height: 1.8rem;
+    }
+
+    .gallery img {
+        height: 70vh;
+    }
+
+    .carousel-container {
+        height: 70vh;
+    }
+}
+
+/* Ajustes para acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+
+    .carousel-track,
+    .card,
+    .gallery img {
+        transition: none;
+    }
+}
+
+/* Ajustes para modo escuro do sistema */
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+
+    body {
+        background: #1a1a1a;
     }
 }

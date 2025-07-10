@@ -14,9 +14,9 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet" />
 
-
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+        <link rel="stylesheet" href="responsive.css" />
+
 </head>
 
 <body data-scroll-container>
@@ -30,13 +30,13 @@
 
         <!-- Intro -->
         <section class="intro-section">
-            <div>
+            <div class="intro-content">
                 <h1>Entre arte e psicologia, crio experiências visuais.</h1>
-            </div>
-            <div class="intro">
-                <p class="intro-description">Oi, sou Davi Medeiros, designer e artista. Crio experiências visuais que
-                    unem arte e psicologia.</p>
-                <p class="hover-link">Bora conversar?</p>
+                <div class="intro">
+                    <p class="intro-description">Oi, sou Davi Medeiros, designer e artista. Crio experiências visuais que
+                        unem arte e psicologia.</p>
+                    <p class="hover-link">Bora conversar?</p>
+                </div>
             </div>
         </section>
 
@@ -66,14 +66,13 @@
             <h2>Minhas Artes</h2>
 
             <div class="carousel-container">
-                <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button>
-                <button class="carousel-btn next" onclick="moveCarousel(1)">›</button>
+                <button class="carousel-btn prev" aria-label="Projeto anterior">‹</button>
+                <button class="carousel-btn next" aria-label="Próximo projeto">›</button>
 
                 <div class="carousel-track" id="carouselTrackProjects">
                     <!-- Cartão 1 -->
                     <div class="card" id="gloriaMariaCard">
-                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/v1748275196/pexels-jonathanborba-13071832_pcdjmt.jpg"
-                            alt="Glória Maria" />
+                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/v1748275196/pexels-jonathanborba-13071832_pcdjmt.jpg" alt="Parque das Ruinas" />
                         <div class="overlay"></div>
                         <div class="card-info">
                             <h3>Parque das Ruinas</h3>
@@ -85,8 +84,7 @@
                         </div>
                     </div>
 
-                    <!-- Cartão 2 -->
-                    <div class="card">
+                    <a href="./projetos/Paradoxo/paradoxo.html" class="card">
                         <img src="/assets/outros trabalhos.jpg" alt="Paradoxo" />
                         <div class="overlay"></div>
                         <div class="card-info">
@@ -96,12 +94,11 @@
                                 <span class="tag">Social Midia</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Cartão 3 -->
                     <a href="./projetos/Gil/gil.html" class="card">
-                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/v1747411948/poster-gil_nyvlwc.webp"
-                            alt="Gilberto Gil" />
+                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/v1747411948/poster-gil_nyvlwc.webp" alt="Gilberto Gil" />
                         <div class="card-info">
                             <h3>Premiação Honoris Causa para Gilberto Gil</h3>
                             <div class="tags">
@@ -114,8 +111,7 @@
 
                     <!-- Cartão 4 -->
                     <a href="./projetos/Apocalipse/apocalipse.html" class="card">
-                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/v1747412253/poster-apocalipse_i7wbdu.webp"
-                            alt="Apocalipse" />
+                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/v1747412253/poster-apocalipse_i7wbdu.webp" alt="Apocalipse" />
                         <div class="overlay"></div>
                         <div class="card-info">
                             <h3>Projeto Apocalipse</h3>
@@ -135,7 +131,7 @@
                 <div class="modal-content">
                     <button class="close-btn" aria-label="Fechar modal">&times;</button>
                     <h3 id="modalTitle">Projeto em Desenvolvimento</h3>
-                    <p id="modalDesc">O projeto “Parque Glória Maria” ainda está sendo desenvolvido e, por isso, não
+                    <p id="modalDesc">O projeto "Parque Glória Maria" ainda está sendo desenvolvido e, por isso, não
                         está disponível publicamente no momento.</p>
                 </div>
             </div>
@@ -150,7 +146,6 @@
         </footer>
 
     </div>
-
 
     <!-- Scripts -->
     <script src="script.js"></script>
