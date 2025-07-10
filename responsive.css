@@ -48,6 +48,10 @@
         width: 50%;
     }
 
+    .gallery img {
+        width: 30vw;
+    }
+
     .intro-description {
         margin-left: 66rem;
         padding-top: 24rem;
