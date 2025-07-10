@@ -36,7 +36,7 @@
     }
 
     .footer {
-        padding: 0rem 0;
+        padding: 0rem 0rem 0.6rem;
     }
 }
 
@@ -60,7 +60,7 @@
     }
 
     .footer {
-        padding: 0rem 0;
+        padding: 0rem 0rem 0.6rem;
     }
 }
 
@@ -88,7 +88,7 @@
     }
 
     .footer {
-        padding: 0rem 0;
+        padding: 0rem 0rem 0.6rem;
     }
 }
 
@@ -121,7 +121,7 @@
     }
 
     .footer {
-        padding: 0rem 0;
+        padding: 0rem 0rem 0.6rem;
     }
 }
 
@@ -725,6 +725,43 @@
         max-width: calc(100vw - 2rem);
     }
 
+    /* Ajustes do modal para mobile */
+    @media (max-width: 767px) {
+        .modal {
+            z-index: 9999;
+            padding: 1rem;
+        }
+
+        .modal-content {
+            margin: 1rem;
+            max-width: calc(100vw - 2rem);
+            border-radius: 20px;
+            padding: 1.5rem;
+            z-index: 10000;
+            /* Fallback para dispositivos que não suportam backdrop-filter */
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .close-btn {
+            top: 0.8rem;
+            right: 0.8rem;
+            width: 28px;
+            height: 28px;
+            font-size: 1.3rem;
+            z-index: 10001;
+        }
+
+        .modal-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .modal-content p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    }
+
     /* Garantir que imagens não quebrem */
     img {
         max-width: 100%;
@@ -760,5 +797,42 @@
     .card,
     .gallery img {
         transition: none;
+    }
+}
+
+/* Otimizações para dispositivos com menos poder de processamento */
+@media (prefers-reduced-motion: reduce) {
+
+    .modal,
+    .modal-content,
+    .close-btn {
+        transition: none !important;
+        animation: none !important;
+    }
+
+    .modal.show .modal-content {
+        transform: none;
+    }
+}
+
+/* Ajustes específicos para iPhone SE e dispositivos muito pequenos */
+@media (max-width: 374px) {
+    .modal {
+        padding: 0.5rem;
+    }
+
+    .modal-content {
+        margin: 0.5rem;
+        max-width: calc(100vw - 1rem);
+        padding: 1.2rem;
+        border-radius: 16px;
+    }
+
+    .modal-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content p {
+        font-size: 0.9rem;
     }
 }

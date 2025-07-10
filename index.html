@@ -4,18 +4,58 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Davi Medeiros | Portfolio</title>
+    
+    <!-- Meta tags de otimização de performance -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#fffcf8" />
+    
+    <!-- SEO e Performance -->
+    <meta name="description" content="Davi Medeiros - Designer e artista que une arte e psicologia. Portfolio com projetos de design gráfico, posters e campanhas visuais." />
+    <meta name="keywords" content="design gráfico, arte, psicologia, portfolio, designer, Rio de Janeiro, poster, visual" />
+    <meta name="author" content="Davi Medeiros" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Otimização de recursos -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000" />
+    <meta http-equiv="Expires" content="31536000" />
+    
+    <!-- DNS Prefetch para recursos externos -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="//res.cloudinary.com" />
+    
+    <!-- Preconnect para recursos críticos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" as="style" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" as="style" />
+    
+    <title>Davi Medeiros | Portfolio - Designer e Artista</title>
 
+    <!-- CSS Libraries -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet" />
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    
+    <!-- Favicon e PWA -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
 </head>
 
@@ -40,13 +80,13 @@
             </div>
         </section>
 
-        <!-- Galeria Horizontal -->
+        <!-- Galeria Horizontal - OTIMIZADA -->
         <section class="scroll-wrapper">
             <div class="gallery">
-                <img src="assets/poster-apocalipse.webp" alt="Poster Apocalipse" />
-                <img src="assets/poster-gil.webp" alt="Poster Gil" />
-                <img src="assets/poster-gil.webp" alt="Poster Gil 2" />
-                <img src="assets/poster-gil.webp" alt="Poster Gil 3" />
+                <img src="assets/poster-apocalipse.webp" alt="Poster Apocalipse" loading="lazy" decoding="async" />
+                <img src="assets/poster-gil.webp" alt="Poster Gil" loading="lazy" decoding="async" />
+                <img src="assets/poster-gil.webp" alt="Poster Gil 2" loading="lazy" decoding="async" />
+                <img src="assets/poster-gil.webp" alt="Poster Gil 3" loading="lazy" decoding="async" />
             </div>
         </section>
 
@@ -70,9 +110,12 @@
                 <button class="carousel-btn next" aria-label="Próximo projeto">›</button>
 
                 <div class="carousel-track" id="carouselTrackProjects">
-                    <!-- Cartão 1 -->
+                    <!-- Cartão 1 - OTIMIZADO -->
                     <div class="card" id="gloriaMariaCard">
-                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/v1748275196/pexels-jonathanborba-13071832_pcdjmt.jpg" alt="Parque das Ruinas" />
+                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/q_auto,f_auto,w_auto,dpr_auto,c_fill,fl_progressive,fl_immutable_cache/v1748275196/pexels-jonathanborba-13071832_pcdjmt.jpg" 
+                             alt="Parque das Ruinas" 
+                             loading="lazy" 
+                             decoding="async" />
                         <div class="overlay"></div>
                         <div class="card-info">
                             <h3>Parque das Ruinas</h3>
@@ -85,7 +128,7 @@
                     </div>
 
                     <a href="./projetos/Paradoxo/paradoxo.html" class="card">
-                        <img src="/assets/outros trabalhos.jpg" alt="Paradoxo" />
+                        <img src="/assets/outros trabalhos.jpg" alt="Paradoxo" loading="lazy" decoding="async" />
                         <div class="overlay"></div>
                         <div class="card-info">
                             <h3>Paradoxo Casa Atelier</h3>
@@ -96,9 +139,12 @@
                         </div>
                     </a>
 
-                    <!-- Cartão 3 -->
+                    <!-- Cartão 3 - OTIMIZADO -->
                     <a href="./projetos/Gil/gil.html" class="card">
-                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/v1747411948/poster-gil_nyvlwc.webp" alt="Gilberto Gil" />
+                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/q_auto,f_auto,w_auto,dpr_auto,c_fill,fl_progressive,fl_immutable_cache/v1747411948/poster-gil_nyvlwc.webp" 
+                             alt="Gilberto Gil" 
+                             loading="lazy" 
+                             decoding="async" />
                         <div class="card-info">
                             <h3>Premiação Honoris Causa para Gilberto Gil</h3>
                             <div class="tags">
@@ -109,9 +155,12 @@
                         </div>
                     </a>
 
-                    <!-- Cartão 4 -->
+                    <!-- Cartão 4 - OTIMIZADO -->
                     <a href="./projetos/Apocalipse/apocalipse.html" class="card">
-                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/v1747412253/poster-apocalipse_i7wbdu.webp" alt="Apocalipse" />
+                        <img src="https://res.cloudinary.com/ddpvact5z/image/upload/q_auto,f_auto,w_auto,dpr_auto,c_fill,fl_progressive,fl_immutable_cache/v1747412253/poster-apocalipse_i7wbdu.webp" 
+                             alt="Apocalipse" 
+                             loading="lazy" 
+                             decoding="async" />
                         <div class="overlay"></div>
                         <div class="card-info">
                             <h3>Projeto Apocalipse</h3>
@@ -122,17 +171,6 @@
                             </div>
                         </div>
                     </a>
-                </div>
-            </div>
-
-            <!-- Modal Glória Maria -->
-            <div id="modalGloriaMaria" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
-                aria-describedby="modalDesc">
-                <div class="modal-content">
-                    <button class="close-btn" aria-label="Fechar modal">&times;</button>
-                    <h3 id="modalTitle">Projeto em Desenvolvimento</h3>
-                    <p id="modalDesc">O projeto "Parque Glória Maria" ainda está sendo desenvolvido e, por isso, não
-                        está disponível publicamente no momento.</p>
                 </div>
             </div>
 
@@ -151,35 +189,178 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script>
-        const scroll = new LocomotiveScroll({
-            el: document.querySelector('[data-scroll-container]'),
-            smooth: true,
-        });
+document.addEventListener("DOMContentLoaded", () => {
+    const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
-        const gallery = document.querySelector('.gallery');
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+    });
+
+    const gallery = document.querySelector('.gallery');
+    if (gallery) {
         scroll.on('scroll', (args) => {
             const scrollY = args.scroll.y;
             gallery.style.transform = `translateX(-${scrollY * 0.4}px)`;
         });
+    }
 
-        const gloriaCard = document.getElementById("gloriaMariaCard");
-        const modal = document.getElementById("modalGloriaMaria");
-        const closeBtn = modal.querySelector(".close-btn");
+    const gloriaCard = document.getElementById("gloriaMariaCard");
+    let currentModal = null;
 
-        gloriaCard.addEventListener("click", () => {
-            modal.style.display = "flex";
-            scroll.stop();
+    if (!gloriaCard) {
+        return;
+    }
+
+    const createModal = () => {
+        const backdrop = document.createElement('div');
+        backdrop.className = 'animate__animated animate__fadeIn';
+        backdrop.style.cssText = `
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            background-color: rgba(0, 0, 0, 0.8) !important;
+            z-index: 999999 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            pointer-events: auto !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            animation-duration: 0.3s !important;
+        `;
+        
+        const modalContent = document.createElement('div');
+        modalContent.className = 'animate__animated animate__zoomIn';
+        modalContent.style.cssText = `
+            width: 480px !important;
+            max-width: 90vw !important;
+            background-color: #ffffff !important;
+            padding: 2rem !important;
+            border-radius: 20px !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+            position: relative !important;
+            text-align: center !important;
+            font-family: 'Rubik', sans-serif !important;
+            animation-duration: 0.4s !important;
+            animation-delay: 0.1s !important;
+        `;
+        
+        const closeBtn = document.createElement('button');
+        closeBtn.innerHTML = '&times;';
+        closeBtn.className = 'animate__animated';
+        closeBtn.style.cssText = `
+            position: absolute !important;
+            top: 1rem !important;
+            right: 1rem !important;
+            font-size: 1.5rem !important;
+            cursor: pointer !important;
+            color: #999 !important;
+            background: rgba(0, 0, 0, 0.1) !important;
+            border: none !important;
+            width: 32px !important;
+            height: 32px !important;
+            border-radius: 50% !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            transition: all 0.2s ease !important;
+        `;
+        
+        closeBtn.addEventListener('mouseenter', () => {
+            closeBtn.classList.add('animate__pulse');
         });
+        
+        closeBtn.addEventListener('mouseleave', () => {
+            closeBtn.classList.remove('animate__pulse');
+        });
+        
+        const title = document.createElement('h3');
+        title.textContent = 'Projeto em Desenvolvimento';
+        title.className = 'animate__animated animate__fadeInUp';
+        title.style.cssText = `
+            font-size: 1.5rem !important;
+            margin-bottom: 1rem !important;
+            font-weight: 600 !important;
+            color: #333 !important;
+            font-family: 'Lora', serif !important;
+            animation-duration: 0.5s !important;
+            animation-delay: 0.3s !important;
+        `;
+        
+        const description = document.createElement('p');
+        description.textContent = 'O projeto "Parque Glória Maria" ainda está sendo desenvolvido e, por isso, não está disponível publicamente no momento.';
+        description.className = 'animate__animated animate__fadeInUp';
+        description.style.cssText = `
+            font-size: 1rem !important;
+            line-height: 1.6 !important;
+            color: #666 !important;
+            font-family: 'Rubik', sans-serif !important;
+            animation-duration: 0.5s !important;
+            animation-delay: 0.4s !important;
+        `;
+        
+        modalContent.appendChild(closeBtn);
+        modalContent.appendChild(title);
+        modalContent.appendChild(description);
+        backdrop.appendChild(modalContent);
+        
+        closeBtn.addEventListener('click', closeModal);
+        backdrop.addEventListener('click', (e) => {
+            if (e.target === backdrop) {
+                closeModal();
+            }
+        });
+        
+        return backdrop;
+    };
 
-        const closeModal = () => {
-            modal.style.display = "none";
-            scroll.start();
-        };
+    const openModal = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (scroll) scroll.stop();
+        
+        currentModal = createModal();
+        document.body.appendChild(currentModal);
+        document.body.style.overflow = "hidden";
+    };
 
-        closeBtn.addEventListener("click", closeModal);
-        window.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
-        window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
-    </script>
+    const closeModal = () => {
+        if (currentModal && currentModal.parentElement) {
+            const modalContent = currentModal.querySelector('div');
+            
+            currentModal.classList.remove('animate__fadeIn');
+            currentModal.classList.add('animate__fadeOut');
+            
+            if (modalContent) {
+                modalContent.classList.remove('animate__zoomIn');
+                modalContent.classList.add('animate__zoomOut');
+            }
+            
+            setTimeout(() => {
+                if (currentModal && currentModal.parentElement) {
+                    currentModal.parentElement.removeChild(currentModal);
+                    currentModal = null;
+                }
+                
+                document.body.style.overflow = "auto";
+                if (scroll) scroll.start();
+            }, 300);
+        }
+    };
+
+    gloriaCard.addEventListener("click", openModal);
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && currentModal) {
+            closeModal();
+        }
+    });
+});
+</script>
 </body>
 
 </html>
