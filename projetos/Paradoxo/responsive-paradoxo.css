@@ -1,0 +1,308 @@
+/* ===== RESPONSIVO ===== */
+
+/* Para telas muito grandes (e.g., 4K TVs, > 1920px) */
+@media (min-width: 1921px) {
+    .masonry-item {
+        width: calc(14.285% - 17.142px);
+        /* 7 colunas, (6 * 20px / 7) = 17.142px */
+    }
+
+    .work-title {
+        font-size: 5.5em;
+        line-height: 5rem;
+    }
+
+    .work-description p {
+        font-size: 1.6rem;
+    }
+
+    .back-btn img {
+        width: 1.5rem;
+        /* Mantém o tamanho fixo em rem */
+    }
+
+    .header-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Para telas grandes (e.g., desktops, > 1400px) */
+@media (min-width: 1401px) and (max-width: 1920px) {
+    .masonry-item {
+        width: calc(16.666% - 16.666px);
+        /* 6 colunas, (5 * 20px / 6) = 16.666px */
+    }
+
+    .header-title {
+        margin-left: 50%;
+    }
+}
+
+/* Para telas médias (e.g., laptops, tablets grandes, > 1024px) */
+@media (max-width: 1400px) {
+    .masonry-item {
+        width: calc(20% - 16px);
+        /* 5 colunas, (4 * 20px / 5) = 16px */
+    }
+
+    .header-title {
+        margin-left: 73%;
+    }
+}
+
+/* Para tablets e desktops menores (e.g., > 810px) */
+@media (max-width: 1024px) {
+    .nav-right {
+        display: none;
+    }
+
+    .back-btn img {
+        width: 1.5rem;
+        /* AJUSTADO: Tamanho da seta diminuído */
+        height: auto;
+        margin-left: -0.5rem;
+        /* Ajuste para centralizar visualmente */
+    }
+
+    .work-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+        /* Ajuste o padding para telas menores */
+    }
+
+    .work-text,
+    .work-img-container {
+        min-width: unset;
+        /* Remove min-width para mobile */
+        max-width: 100%;
+        /* Ocupa a largura total disponível */
+        width: 100%;
+        /* Garante que ocupe 100% */
+    }
+
+    .work-title {
+        font-size: 2.9rem;
+        line-height: 2.6rem;
+        margin-left: 0;
+        /* Removido !important e ajustado para 0 */
+        width: 100%;
+        /* Ocupa 100% do container */
+        text-align: left;
+    }
+
+    .work-description p {
+        width: 100%;
+        /* Ocupa 100% do container */
+        text-align: justify;
+        margin-left: 0;
+        /* Removido !important e ajustado para 0 */
+        margin-right: 0;
+        /* Removido !important e ajustado para 0 */
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+
+    h4 {
+        width: 100%;
+        /* Ocupa 100% do container */
+        text-align: left;
+        margin-left: 0;
+        /* Removido !important e ajustado para 0 */
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .work-img {
+        width: 100%;
+        /* Ocupa 100% do container */
+        margin: 0 auto;
+        /* Centraliza a imagem */
+    }
+
+    .masonry-item {
+        width: calc(33.333% - 13.333px);
+        /* 3 colunas, (2 * 20px / 3) = 13.333px */
+    }
+
+    .gallery-header-top .gallery-container {
+        flex-direction: row;
+        /* ALTERADO: Garante que fiquem em linha */
+        align-items: center;
+        gap: 0.75rem;
+        /* ADICIONADO: Espaçamento entre a seta e o título */
+    }
+
+    .header-title {
+        margin-left: auto;
+        /* ADICIONADO: Empurra o título para a direita */
+        margin: 0;
+    }
+
+    .filter-section {
+        text-align: center;
+    }
+
+    .filter-container {
+        justify-content: flex-start;
+        /* Mantém alinhamento à esquerda */
+        gap: 1rem;
+        /* Ajuste o espaçamento entre botões */
+        flex-direction: row;
+        /* REMOVIDO: flex-wrap: wrap; */
+        padding: 0.5rem;
+        background: #fffcf8;
+        border-radius: 15px;
+        overflow-x: auto;
+        /* Permite rolagem horizontal */
+        white-space: nowrap;
+        /* Impede quebra de linha */
+    }
+
+    .filter-btn {
+        padding: 0.5rem 0.8rem;
+        border-radius: 20px;
+        flex-shrink: 0;
+        /* Impede que os botões encolham */
+    }
+
+    .filter-btn.active::after {
+        bottom: -3px;
+    }
+
+    .modal-content {
+        flex-direction: column;
+        max-width: 95vw;
+        max-height: 95vh;
+        top: 50%;
+        /* Garante centralização vertical */
+        left: 50%;
+        /* Garante centralização horizontal */
+        transform: translate(-50%, -50%);
+        /* Centraliza com base no próprio tamanho */
+    }
+
+    .modal.show .modal-content {
+        transform: translate(-50%, -50%) scale(1);
+        /* Ajustado para não ter translateY extra */
+    }
+
+    .modal-media {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-media img,
+    .modal-media video {
+        max-height: 60vh;
+    }
+
+    .modal-info {
+        padding: 1rem;
+    }
+
+    .modal-meta {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .modal-close {
+        top: 0.75rem;
+        right: 0.75rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* Para celulares (e.g., > 400px) */
+@media (max-width: 600px) {
+    .gallery-container {
+        padding: 0rem;
+    }
+
+    .header-title {
+        margin-left: 35%;
+        font-size: 1.5rem;
+    }
+
+    .filter-section {
+        margin-bottom: 0rem;
+        padding: 0rem 4% 0rem 2.5%;
+    }
+
+    .masonry-item {
+        width: calc(50% - 10px);
+        /* 2 colunas, (1 * 20px / 2) = 10px */
+    }
+
+    .footer-copy {
+        font-size: 0.92rem;
+    }
+}
+
+/* Para celulares pequenos (e.g., iPhone SE, < 400px) */
+@media (max-width: 400px) {
+    .modal-content {
+        max-width: 98vw;
+        /* Centralização já tratada acima */
+    }
+
+    .work-title {
+        font-size: 2.2rem;
+        line-height: 2rem;
+    }
+
+    .work-description p {
+        font-size: 0.9rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+
+    .back-btn img {
+        width: 1.5rem;
+        /* AJUSTADO: Tamanho da seta diminuído */
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+
+    .filter-btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.7rem;
+    }
+
+    .modal-title {
+        font-size: 1.2rem;
+    }
+
+    .modal-description {
+        font-size: 0.8rem;
+    }
+
+    .modal-category {
+        font-size: 0.65rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .modal-date {
+        font-size: 0.75rem;
+    }
+}
+
+/* Blur no fundo quando modal está aberto */
+body.modal-open {
+    overflow: hidden;
+}
+
+body.modal-open .gallery-screen,
+body.modal-open .intro-screen {
+    filter: blur(5px);
+    transition: filter 0.4s ease;
+}

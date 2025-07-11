@@ -52,6 +52,12 @@
         width: 30vw;
     }
 
+    .tag {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+
     .intro-description {
         margin-left: 66rem;
         padding-top: 24rem;
@@ -89,6 +95,10 @@
 
     .gallery img {
         width: 32vw;
+    }
+
+    .tag {
+        padding: 0.3rem 0.8rem;
     }
 
     .footer {
