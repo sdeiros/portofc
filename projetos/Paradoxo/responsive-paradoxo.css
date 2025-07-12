@@ -34,7 +34,7 @@
     }
 
     .header-title {
-        margin-left: 50%;
+        /* Removido margin-left específico, agora gerenciado por flexbox */
     }
 }
 
@@ -46,7 +46,7 @@
     }
 
     .header-title {
-        margin-left: 73%;
+        /* Removido margin-left específico, agora gerenciado por flexbox */
     }
 }
 
@@ -126,17 +126,46 @@
     }
 
     .gallery-header-top .gallery-container {
-        flex-direction: row;
-        /* ALTERADO: Garante que fiquem em linha */
+        flex-direction: column;
+        /* Empilha os elementos em telas menores */
         align-items: center;
-        gap: 0.75rem;
-        /* ADICIONADO: Espaçamento entre a seta e o título */
+        gap: 1rem;
+        /* Espaçamento entre as seções empilhadas */
+        padding: 0.8rem 1.5%;
+        /* Ajusta padding para telas menores */
     }
 
-    .header-title {
-        margin-left: auto;
-        /* ADICIONADO: Empurra o título para a direita */
-        margin: 0;
+    .header-left-group,
+    .search-input-wrapper,
+    .header-right-group {
+        width: 100%;
+        /* Ocupa a largura total em telas menores */
+        justify-content: center;
+        /* Centraliza o conteúdo dentro de cada seção */
+        margin-bottom: 0.5rem;
+        /* Espaçamento entre as seções */
+    }
+
+    .header-left-group {
+        gap: 1rem;
+        /* Reduz o gap entre logo e Discover */
+    }
+
+    .header-nav {
+        display: flex;
+        /* Garante que Discover esteja visível */
+        gap: 1rem;
+    }
+
+    .search-input-wrapper {
+        max-width: 100%;
+        /* Permite que a barra de pesquisa ocupe a largura total disponível */
+        min-width: unset;
+        /* Remove min-width para mobile */
+    }
+
+    .header-right-group {
+        gap: 1rem;
     }
 
     .filter-section {
@@ -216,22 +245,78 @@
         height: 2rem;
         font-size: 1rem;
     }
+
+    .gallery-header .gallery-container {
+        padding: 0.8rem 1.5%;
+        /* Ajusta padding para telas menores */
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .search-input {
+        font-size: 0.9rem;
+    }
+
+    .search-palette-icon svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .auth-link,
+    .sign-up-btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .filter-section {
+        padding: 0.6rem 1.5%;
+        /* Ajusta padding para filtros */
+    }
+
+    .filter-btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery-main {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .masonry-grid {
+        max-width: 100%;
+    }
 }
 
 /* Para celulares (e.g., > 400px) */
 @media (max-width: 600px) {
-    .gallery-container {
-        padding: 0rem;
+    .gallery-header-top {
+        padding: 0.5rem 0%;
+    }
+
+    .logo {
+        display: none !important;
+    }
+
+    .header-right-group {
+        display: none !important;
     }
 
     .header-title {
-        margin-left: 35%;
         font-size: 1.5rem;
+        margin: 0;
+        /* Reset any other margins */
     }
 
-    .filter-section {
+    .filter-section .filter-container {
+        margin-top: 0rem;
         margin-bottom: 0rem;
-        padding: 0rem 4% 0rem 2.5%;
+        padding: 0rem;
+        border-radius: 0;
+        gap: 3rem;
     }
 
     .masonry-item {
@@ -242,6 +327,40 @@
     .footer-copy {
         font-size: 0.92rem;
     }
+
+    .search-input-wrapper {
+        /* Em mobile, a barra de pesquisa pode ocupar mais espaço */
+        max-width: 100%;
+        padding: 0.4rem 1rem;
+    }
+
+    .search-input {
+        font-size: 1rem;
+    }
+
+    .gallery-header .gallery-container {
+        padding: 0.5rem 0rem 0rem 0rem;
+        margin-top: 0rem;
+    }
+
+    .search-input-wrapper {
+        max-width: 80%;
+    }
+
+    .filter-section {
+        padding: 0.5rem 1%;
+    }
+
+    .filter-btn {
+        font-size: 1.15rem;
+        padding: 0.4rem 0;
+    }
+
+    .filter-btn.active {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-radius: 0 !important;
+  }
 }
 
 /* Para celulares pequenos (e.g., iPhone SE, < 400px) */
@@ -270,7 +389,11 @@
     }
 
     .header-title {
-        font-size: 1.5rem;
+        /* Removido margin-left específico, agora gerenciado por flexbox */
+        font-size: 1.3rem;
+        /* Even smaller font size */
+        margin: 0;
+        /* Reset any other margins */
     }
 
     .filter-btn {
@@ -293,6 +416,16 @@
 
     .modal-date {
         font-size: 0.75rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .auth-link,
+    .sign-up-btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
     }
 }
 

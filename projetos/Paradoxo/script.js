@@ -127,6 +127,9 @@ const modalDescription = document.querySelector(".modal-description")
 const modalCategory = document.querySelector(".modal-category")
 const modalDate = document.querySelector(".modal-date")
 
+// New DOM elements for search (now always visible)
+const searchInput = document.getElementById("searchInput")
+
 // Estado atual
 let currentFilter = "all"
 let shuffledItems = [...portfolioItems]
@@ -264,7 +267,7 @@ function renderGallery(filter = "all") {
         itemSelector: ".masonry-item",
         layoutMode: "masonry",
         masonry: {
-          gutter: 20, // Reintroduzido o espaçamento horizontal de 20px
+          gutter: 10, // Reintroduzido o espaçamento horizontal de 20px
           // columnWidth não é necessário se o itemSelector já tem largura definida por CSS
         },
         percentPosition: true, // Habilita posicionamento baseado em porcentagem
@@ -424,4 +427,5 @@ console.log("Elements check:", {
   galleryScreen: !!galleryScreen,
   masonryGrid: !!masonryGrid,
   portfolioItems: portfolioItems.length,
+  searchInput: !!searchInput,
 })

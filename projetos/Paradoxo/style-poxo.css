@@ -7,21 +7,25 @@
 
 html,
 body {
-  height: 100%; /* Alterado para 100% */
+  height: 100%;
+  /* Alterado para 100% */
   width: 100%;
   overflow-x: hidden;
+  /* Garante que não haja rolagem horizontal no body */
   font-family: sans-serif;
   background-color: #fffcf8;
 }
 
 ::selection {
-  background-color: #228b22; /* Verde Brasil */
+  background-color: #228b22;
+  /* Verde Brasil */
   color: #ffffff;
 }
 
 /* ===== NAVEGAÇÃO (igual aos outros projetos) ===== */
 nav {
-  width: 100vw;
+  width: 100%;
+  /* <-- aqui está o conserto */
   height: 8vh;
   top: 0;
   left: 0;
@@ -36,14 +40,17 @@ nav {
   font-weight: 800;
 }
 
+
 .back-btn img {
-  width: 2.5rem; /* Ajustado para um tamanho fixo em rem */
+  width: 2.5rem;
+  /* Ajustado para um tamanho fixo em rem */
   height: auto;
   transition: transform 0.3s ease, opacity 0.2s ease;
 }
 
 .back-btn:hover img {
-  transform: translateX(-0.2rem); /* Ajustado para rem */
+  transform: translateX(-0.2rem);
+  /* Ajustado para rem */
   opacity: 0.8;
 }
 
@@ -70,7 +77,8 @@ nav {
   font-weight: 400;
   margin-bottom: 1rem;
   margin-top: 0rem;
-  color: #228b22; /* Verde Brasil ao invés de vermelho */
+  color: #228b22;
+  /* Verde Brasil ao invés de vermelho */
   font-family: "Lora", sans-serif;
   font-weight: 800;
   letter-spacing: -0.06em;
@@ -101,14 +109,19 @@ h4 {
   align-items: flex-start;
   flex-wrap: wrap;
   margin-bottom: 0rem;
-  min-height: 85vh; /* Garantir altura mínima */
-  padding: 2rem; /* ADICIONADO: Padding para controlar o espaçamento geral */
+  min-height: 85vh;
+  /* Garantir altura mínima */
+  padding: 2rem;
+  /* ADICIONADO: Padding para controlar o espaçamento geral */
 }
 
 .work-text {
-  flex: 1; /* Permite que ocupe o espaço disponível */
-  min-width: 450px; /* Largura mínima para o texto em telas grandes */
-  max-width: 50%; /* Limita a largura máxima em telas grandes */
+  flex: 1;
+  /* Permite que ocupe o espaço disponível */
+  min-width: 450px;
+  /* Largura mínima para o texto em telas grandes */
+  max-width: 50%;
+  /* Limita a largura máxima em telas grandes */
 }
 
 .work-img-container {
@@ -117,15 +130,20 @@ h4 {
   align-items: center;
   gap: 1.5rem;
   position: relative;
-  flex: 1; /* Permite que ocupe o espaço disponível */
-  min-width: 300px; /* Largura mínima para a imagem em telas grandes */
-  max-width: 45%; /* Limita a largura máxima em telas grandes */
+  flex: 1;
+  /* Permite que ocupe o espaço disponível */
+  min-width: 300px;
+  /* Largura mínima para a imagem em telas grandes */
+  max-width: 45%;
+  /* Limita a largura máxima em telas grandes */
 }
 
 .work-img {
-  width: 100%; /* ADICIONADO: Ocupa 100% do seu container flex */
+  width: 100%;
+  /* ADICIONADO: Ocupa 100% do seu container flex */
   height: auto;
-  max-height: 60vh; /* Limitar altura */
+  max-height: 60vh;
+  /* Limitar altura */
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -164,16 +182,21 @@ h4 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* Garante que ocupe a altura total da viewport */
+  height: 100vh;
+  /* Garante que ocupe a altura total da viewport */
   z-index: 9;
-  overflow-y: auto; /* Garante que a galeria possa rolar */
-  display: flex; /* ADICIONADO */
-  flex-direction: column; /* ADICIONADO */
+  overflow-y: auto;
+  /* Garante que a galeria possa rolar */
+  display: flex;
+  /* ADICIONADO */
+  flex-direction: column;
+  /* ADICIONADO */
 }
 
 .gallery-screen.active {
   transform: translateY(0);
-  z-index: 11; /* Garante que a galeria esteja acima da tela inicial */
+  z-index: 11;
+  /* Garante que a galeria esteja acima da tela inicial */
 }
 
 .gallery-container {
@@ -182,30 +205,44 @@ h4 {
 }
 
 .gallery-header {
-  padding: 0; /* Removido padding vertical */
-  border-bottom: none; /* Removida borda */
-  background: #fffcf8; /* Fundo branco */
-  backdrop-filter: none; /* Removido blur */
+  padding: 0;
+  /* Removido padding vertical */
+  border-bottom: none;
+  /* Removida borda */
+  background: #fffcf8;
+  /* Fundo branco */
+  backdrop-filter: none;
+  /* Removido blur */
   position: sticky;
   top: 0;
   z-index: 100;
   display: flex;
-  flex-direction: column; /* Para empilhar a barra superior e os filtros */
+  flex-direction: column;
+  /* Para empilhar a barra superior e os filtros */
 }
 
 .gallery-header-top {
-  padding: 0.5rem 1% 0.5rem 2.5%; /* AJUSTADO: Aumentado padding-right para 4% */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Linha divisória sutil e escura */
-  background: #fffcf8; /* Fundo branco */
+  position: relative;
+  padding: 0.5rem 3rem;
+  /* Reduza o padding vertical */
+  background: #fffcf8;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .gallery-header .gallery-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* ALTERADO: Alinha itens ao início */
-  gap: 0.75rem; /* ADICIONADO: Espaçamento entre a seta e o título */
-  width: 100%; /* Manter largura do container */
+  justify-content: center;
+  width: 100%;
   margin: 0 auto;
+  padding: 0.5rem 1%;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  max-width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+  /* Adicione para usar absolute nos grupos laterais */
 }
 
 /* Estilo para o botão de voltar com imagem */
@@ -213,121 +250,273 @@ h4 {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0; /* Remove padding para que a imagem controle o tamanho */
-  display: flex; /* Para centralizar a imagem se necessário */
+  padding: 0;
+  /* Remove padding para que a imagem controle o tamanho */
+  display: flex;
+  /* Para centralizar a imagem se necessário */
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s ease;
 }
 
 .back-button img {
-  width: 1.5rem; /* AJUSTADO: Tamanho da seta diminuído */
+  width: 1.5rem;
+  /* AJUSTADO: Tamanho da seta diminuído */
   height: auto;
   transition: transform 0.3s ease, opacity 0.2s ease;
 }
 
 .back-button:hover img {
-  transform: translateX(-0.2rem); /* Ajustado para rem */
+  transform: translateX(-0.2rem);
+  /* Ajustado para rem */
   opacity: 0.8;
 }
 
-/* Novo estilo para o título centralizado */
-.header-title {
-  margin-left: 80%; /* ADICIONADO: Empurra o título para a direita */
-  color: #303030; /* Cor escura */
-  font-family: "Lora", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 800;
+/* Seção esquerda: Logo e Discover */
+.header-left-group,
+.header-right-group {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
+.header-left-group {
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  /* Espaço entre seta e logo */
+}
+
+.header-right-group {
+  right: 0;
+}
+
+.logo {
+  font-family: "Lora", sans-serif;
+  /* Ou a fonte do logo da imagem */
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #303030;
+  /* Cor escura para o texto */
+  white-space: nowrap;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.5rem;
+  /* Espaçamento entre links de navegação */
+}
+
+.nav-link {
+  color: #303030;
+  /* Cor escura para os links */
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  /* Impede quebra de linha */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #228b22;
+  /* Verde Brasil no hover */
+}
+
+/* Barra de Pesquisa Centralizada */
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 1rem;
+  padding: 0.8rem 1.5rem;
+  width: clamp(400px, 50%, 400px);
+  margin: 0 auto;
+  /* Centraliza */
+  flex-grow: 0;
+  /* <- Impede que cresça */
+  flex-shrink: 0;
+  /* <- Impede que encolha */
+  z-index: 1;
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  color: #303030;
+  padding: 0;
+  /* Remove padding extra do input */
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.search-palette-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  /* Cor do ícone */
+  margin-left: 0.8rem;
+  /* Espaçamento entre input e ícone */
+  transition: color 0.3s ease;
+}
+
+.search-palette-icon:hover {
+  color: #228b22;
+}
+
+.search-palette-icon svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Seção direita: Shop, Log In e Sign Up */
+.header-right-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* REDUZIDO: de 1.5rem para 1rem */
+  flex-shrink: 0;
+  min-width: 0;
+  /* ADICIONADO: permite encolher se necessário */
+}
+
+.auth-link {
+  color: #303030;
+  /* Cor escura para o link */
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.auth-link:hover {
+  color: #228b22;
+}
+
+.sign-up-btn {
+  background: #303030;
+  /* Fundo escuro para o botão */
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 25px;
+  /* Bordas arredondadas */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Inter", sans-serif;
+  white-space: nowrap;
+}
+
+.sign-up-btn:hover {
+  background: #228b22;
+  /* Verde Brasil no hover */
+}
+
+/* Ajustes para a filter-section */
 .filter-section {
-  margin-bottom: 0; /* Removida margem inferior */
-  padding: 0.8rem 4% 0.8rem 2.5%; /* AJUSTADO: Aumentado padding-right para 4% */
-  background: #fffcf8; /* Fundo branco */
-  text-align: left; /* Alinhar filtros à esquerda */
+  padding: 0.5rem 2.4rem;
+  /* CORRIGIDO: reduzido para 1% */
+  background: #fffcf8;
+  width: 100%;
+  /* ADICIONADO */
+  box-sizing: border-box;
+  /* ADICIONADO */
 }
 
 .filter-section .gallery-container {
-  padding: 0 2.5%; /* Manter padding lateral */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 1%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .filter-container {
   display: flex;
-  justify-content: flex-start; /* Alinhar filtros à esquerda */
-  gap: 1.5rem; /* Espaçamento entre botões */
-  /* REMOVIDO: flex-wrap: wrap; */
-  padding: 0; /* Removido padding interno */
-  background: transparent; /* Fundo transparente */
-  border-radius: 0; /* Removido border-radius */
-  box-shadow: none; /* Removido box-shadow */
-  overflow-x: auto; /* ADICIONADO: Permite rolagem horizontal */
-  white-space: nowrap; /* ADICIONADO: Impede quebra de linha */
-  -webkit-overflow-scrolling: touch; /* Para rolagem suave em iOS */
-  scrollbar-width: none; /* Esconde a barra de rolagem para Firefox */
+  justify-content: flex-start;
+  gap: 3.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  background: none;
 }
 
 .filter-container::-webkit-scrollbar {
-  display: none; /* Esconde a barra de rolagem para Webkit */
+  display: none;
 }
 
 .filter-btn {
   background: none;
   border: none;
-  color: #666; /* Cor padrão dos filtros */
-  font-size: 0.95rem;
-  font-weight: 500;
+  color: #9b9a9a;
+  font-size: 1.14rem;
+  font-weight: 100;
   cursor: pointer;
-  padding: 0.5rem 0; /* Padding vertical, sem padding horizontal */
-  transition: all 0.3s ease;
-  position: relative;
-  font-family: "Inter", sans-serif;
-  border-radius: 0; /* Removido border-radius */
-  flex-shrink: 0; /* ADICIONADO: Impede que os botões encolham */
+  padding: 0.5rem 0;
+  font-family: "Lora", sans-serif;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+  box-shadow: none;
 }
 
 .filter-btn:hover {
-  color: #228b22; /* Verde Brasil no hover */
+  color: #000000;
 }
 
 .filter-btn.active {
-  color: #228b22; /* Verde Brasil para o ativo */
-  font-weight: 600;
-}
-
-.filter-btn.active::after {
-  content: "";
-  position: absolute;
-  bottom: -5px; /* Posição da linha */
-  left: 0;
-  width: 100%;
-  height: 2px; /* Espessura da linha */
-  background-color: #228b22; /* Verde Brasil para a linha */
-  transition: width 0.3s ease;
+  color: #000000;
+  border-bottom: 2.5px solid #000000;
+  font-weight: 700;
+  background: none;
+  box-shadow: none;
 }
 
 .gallery-main {
-  padding: 0.5rem 2.5% 0rem; /* Aplicar padding diretamente aqui */
-  text-align: center; /* Centraliza o masonry-grid */
-  flex-grow: 1; /* ADICIONADO */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 3vw;
+  padding-right: 1vw;
 }
 
 /* ===== GALERIA ISOTOPE ===== */
 .masonry-grid {
-  position: relative;
-  margin: 0 auto; /* Centraliza o grid */
-  /* Isotope gerencia o display e o posicionamento */
-  /* REMOVIDO: display: inline-block; */
-  /* REMOVIDO: max-width: 100%; */
+  width: 100%;
+  margin: 0 auto;
 }
 
 .masonry-item {
   /* Isotope precisa que os itens sejam posicionados absolutamente */
-  position: relative; /* Essencial para conter o overlay */
+  position: relative;
+  /* Essencial para conter o overlay */
   /* Larguras ajustadas para 20px de gutter */
-  width: calc(20% - 16px); /* 5 colunas em desktop, (4 * 20px / 5) = 16px */
-  padding-bottom: 20px; /* Mantido para espaçamento vertical */
+  width: calc(20% - 8px);
+  /* 5 colunas em desktop, (4 * 20px / 5) = 16px */
+  padding-bottom: 10px;
+  /* Mantido para espaçamento vertical */
   cursor: zoom-in;
-  overflow: hidden; /* Mantido para cortar conteúdo que exceda */
+  overflow: hidden;
+  /* Mantido para cortar conteúdo que exceda */
   /* Transições para o Isotope */
   transition: transform 0.4s ease, opacity 0.4s ease;
   box-shadow: none;
@@ -338,7 +527,8 @@ h4 {
 .masonry-item.is-hidden {
   opacity: 0;
   transform: scale(0.001);
-  pointer-events: none; /* Desabilita cliques em itens escondidos */
+  pointer-events: none;
+  /* Desabilita cliques em itens escondidos */
 }
 
 .masonry-item:hover {
@@ -366,8 +556,10 @@ h4 {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 20px; /* Para cobrir apenas a área da imagem, não o padding-bottom */
-  background: rgba(0, 0, 0, 0.2); /* Opacidade reduzida para 0.2 */
+  bottom: 20px;
+  /* Para cobrir apenas a área da imagem, não o padding-bottom */
+  background: rgba(0, 0, 0, 0.2);
+  /* Opacidade reduzida para 0.2 */
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 1;
@@ -382,12 +574,15 @@ h4 {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 20px; /* Para cobrir apenas a área da imagem, não o padding-bottom */
+  bottom: 20px;
+  /* Para cobrir apenas a área da imagem, não o padding-bottom */
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* ALTERADO: Alinha o conteúdo ao final (inferior) */
-  align-items: flex-end; /* ADICIONADO: Alinha o conteúdo ao final (direita) */
+  justify-content: flex-end;
+  /* ALTERADO: Alinha o conteúdo ao final (inferior) */
+  align-items: flex-end;
+  /* ADICIONADO: Alinha o conteúdo ao final (direita) */
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 2;
@@ -404,7 +599,8 @@ h4 {
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   line-height: 1.3;
-  text-align: right; /* ADICIONADO: Alinha o texto do título à direita */
+  text-align: right;
+  /* ADICIONADO: Alinha o texto do título à direita */
 }
 
 /* REMOVIDO: .item-category { ... } */
@@ -448,7 +644,8 @@ h4 {
   max-width: clamp(40rem, 90vw, 80rem);
   width: clamp(20rem, 80vw, 60rem);
   max-height: 90vh;
-  background: #ffffff; /* ALTERADO: Fundo branco */
+  background: #ffffff;
+  /* ALTERADO: Fundo branco */
   border-radius: clamp(1rem, 2vw, 1.25rem);
   overflow: hidden;
   display: flex;
@@ -565,7 +762,7 @@ h4 {
   width: 100%;
   padding: 1rem;
   margin: 0;
-  background-color: #000000;
+  background: #fffcf8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -575,7 +772,7 @@ h4 {
 
 .footer-copy {
   font-size: 1rem;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   font-family: "Inter", serif;
   font-weight: 400;
