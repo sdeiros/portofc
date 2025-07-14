@@ -491,6 +491,7 @@ h4 {
 }
 
 .gallery-main {
+  flex: 1 1 auto;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -556,10 +557,8 @@ h4 {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 20px;
-  /* Para cobrir apenas a área da imagem, não o padding-bottom */
+  bottom: 10px;
   background: rgba(0, 0, 0, 0.2);
-  /* Opacidade reduzida para 0.2 */
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 1;
@@ -574,15 +573,13 @@ h4 {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 20px;
-  /* Para cobrir apenas a área da imagem, não o padding-bottom */
+  bottom: 0;
+  /* <-- alterado de 20px para 0 */
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* ALTERADO: Alinha o conteúdo ao final (inferior) */
   align-items: flex-end;
-  /* ADICIONADO: Alinha o conteúdo ao final (direita) */
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 2;
@@ -768,6 +765,8 @@ h4 {
   align-items: center;
   position: relative;
   z-index: 10;
+  flex-shrink: 0;
+
 }
 
 .footer-copy {
