@@ -41,9 +41,8 @@
         rel="stylesheet">
 
     <!-- Estilos -->
-    <!-- REMOVIDO: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"> -->
     <link rel="stylesheet" href="style-poxo.css">
-    <link rel="stylesheet" href="responsive-paradoxo.css"> <!-- NOVO: Link para o arquivo responsivo -->
+    <link rel="stylesheet" href="responsive-paradoxo.css">
 
     <!-- Preloads estratégicos -->
     <link rel="preload" as="image"
@@ -52,12 +51,10 @@
     <title>Paradoxo Casa Atelier | Davi Medeiros</title>
 </head>
 
-<body> <!-- REMOVIDO: data-scroll-container -->
-    <div> <!-- REMOVIDO: data-scroll-section -->
-
+<body>
+    <div>
         <!-- TELA INICIAL - Layout igual aos outros projetos -->
         <section class="intro-screen" id="introScreen">
-
             <nav class="navbar">
                 <div class="nav-left">
                     <a href="/" class="back-btn" aria-label="Voltar para os projetos">
@@ -66,8 +63,6 @@
                 </div>
                 <div class="nav-right">Projetos</div>
             </nav>
-
-            
 
             <main>
                 <div class="work-container">
@@ -106,16 +101,15 @@
                     </div>
                 </div>
             </main>
-
         </section>
 
         <!-- TELA DA GALERIA - Layout Masonry -->
         <section class="gallery-screen" id="galleryScreen">
-
+            <!-- Header Sticky -->
             <header class="gallery-header">
                 <div class="gallery-header-top">
                     <div class="gallery-container">
-                        <!-- Seção esquerda: Logo e Discover -->
+                        <!-- Seção esquerda: Botão voltar e Logo -->
                         <div class="header-left-group">
                             <button class="back-button" onclick="showIntro()" aria-label="Voltar para a tela inicial">
                                 <img src="https://img.icons8.com/?size=100&id=40217&format=png&color=303030"
@@ -126,27 +120,32 @@
 
                         <!-- Barra de Pesquisa Centralizada -->
                         <div class="search-input-wrapper">
-                            <input type="text" placeholder="Try 'summer days in the mediterranean'" class="search-input"
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            <input type="text" placeholder="Pesquisar trabalhos..." class="search-input"
                                 id="searchInput" />
-                            <button class="search-palette-icon" aria-label="Search options">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-palette">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <path d="M12 6v6l4 2" />
+                            <button class="search-clear" id="searchClear" style="display: none;" aria-label="Limpar pesquisa">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"/>
+                                    <line x1="6" y1="6" x2="18" y2="18"/>
                                 </svg>
                             </button>
                         </div>
 
-                        <!-- Seção direita: Shop, Log In e Sign Up -->
+                        <!-- Seção direita: Menu minimalista -->
                         <div class="header-right-group">
-                            <a href="#" class="nav-link">Shop</a>
-                            <a href="#" class="auth-link">Log In</a>
-                            <button class="sign-up-btn">Sign Up</button>
+                            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <!-- Filtros agora fazem parte do header -->
+
+                <!-- Filtros -->
                 <div class="filter-section">
                     <div class="gallery-container">
                         <div class="filter-container">
@@ -160,6 +159,16 @@
                 </div>
             </header>
 
+            <!-- Cards em Destaque - MOVIDO PARA FORA DO HEADER -->
+            <section class="featured-section">
+                <div class="gallery-container">
+                    <h2 class="featured-title">Trabalhos em Destaque</h2>
+                    <div class="featured-cards" id="featuredCards">
+                        <!-- Cards inseridos via JavaScript -->
+                    </div>
+                </div>
+            </section>
+
             <main class="gallery-main">
                 <!-- Galeria Masonry -->
                 <div class="masonry-grid" id="masonryGrid">
@@ -172,7 +181,6 @@
                     © 2025 Davi Medeiros. Todos os direitos reservados.
                 </div>
             </footer>
-
         </section>
 
         <!-- Modal para visualizar trabalhos -->
@@ -195,12 +203,9 @@
         </div>
 
         <!-- Scripts -->
-        <!-- REMOVIDO: <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script> -->
-        <!-- REMOVIDO: <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
         <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
         <script src="script.js"></script>
-
     </div>
 </body>
 

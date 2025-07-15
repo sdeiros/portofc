@@ -9,6 +9,7 @@ const portfolioItems = [
     type: "image",
     media: "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=400&h=600",
     date: "Janeiro 2024",
+    featured: true,
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const portfolioItems = [
     type: "image",
     media: "https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&w=400&h=500",
     date: "Fevereiro 2024",
+    featured: true,
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const portfolioItems = [
     type: "video",
     media: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
     date: "Março 2024",
+    featured: true,
   },
   {
     id: 4,
@@ -126,21 +129,22 @@ const modalTitle = document.querySelector(".modal-title")
 const modalDescription = document.querySelector(".modal-description")
 const modalCategory = document.querySelector(".modal-category")
 const modalDate = document.querySelector(".modal-date")
+const featuredCards = document.getElementById("featuredCards")
 
-// New DOM elements for search (now always visible)
+// Elementos de pesquisa
 const searchInput = document.getElementById("searchInput")
+const searchClear = document.getElementById("searchClear")
 
 // Estado atual
 let currentFilter = "all"
+let currentSearchTerm = ""
 let shuffledItems = [...portfolioItems]
 let isModalOpen = false
-let iso // Variável para a instância do Isotope (antes era msnry)
-
-// Global variable to store all created item elements
+let iso
 let allMasonryItems = []
 
 // Import Isotope e imagesLoaded
-const Isotope = window.Isotope // Mudança de Masonry para Isotope
+const Isotope = window.Isotope
 const imagesLoaded = window.imagesLoaded
 
 // Função para embaralhar array
@@ -153,14 +157,22 @@ function shuffleArray(array) {
   return shuffled
 }
 
+// Função para filtrar itens por pesquisa
+function filterItemsBySearch(items, searchTerm) {
+  if (!searchTerm.trim()) return items
+
+  const term = searchTerm.toLowerCase().trim()
+  return items.filter(
+    (item) =>
+      item.title.toLowerCase().includes(term) ||
+      item.description.toLowerCase().includes(term) ||
+      getCategoryName(item.category).toLowerCase().includes(term),
+  )
+}
+
 // Função para mostrar galeria
 function showGallery() {
   console.log("showGallery chamada!")
-  console.log("Elementos encontrados:", {
-    introScreen: !!introScreen,
-    galleryScreen: !!galleryScreen,
-    masonryGrid: !!masonryGrid,
-  })
 
   shuffledItems = shuffleArray(portfolioItems)
   console.log("Items embaralhados:", shuffledItems.length)
@@ -168,22 +180,20 @@ function showGallery() {
   introScreen.classList.add("hidden")
   console.log("Classe hidden adicionada ao introScreen")
 
-  // Gerenciar overflow do body
-  document.body.style.overflow = "hidden" // Esconde o scroll do body principal
+  document.body.style.overflow = "hidden"
   console.log("Overflow do body definido para hidden.")
 
   setTimeout(() => {
     galleryScreen.classList.add("active")
     console.log("Classe active adicionada ao galleryScreen")
 
-    // Garante que a galeria possa rolar seu próprio conteúdo
     galleryScreen.style.overflowY = "auto"
     console.log("Overflow-y da galleryScreen definido para auto.")
 
+    renderFeaturedCards()
     renderGallery()
     console.log("renderGallery chamada")
 
-    // Scroll para o topo da página da galeria
     galleryScreen.scrollTop = 0
     console.log("Scroll da galeria resetado para o topo.")
   }, 400)
@@ -197,10 +207,9 @@ function showIntro() {
     introScreen.classList.remove("hidden")
     history.pushState(null, "", window.location.pathname)
 
-    // Gerenciar overflow do body
-    document.body.style.overflow = "auto" // Restaura o scroll do body principal
+    document.body.style.overflow = "auto"
     console.log("Overflow do body restaurado para auto.")
-    galleryScreen.style.overflowY = "hidden" // Esconde o scroll da galeria quando não está ativa
+    galleryScreen.style.overflowY = "hidden"
     console.log("Overflow-y da galleryScreen definido para hidden.")
   }, 400)
 }
@@ -216,10 +225,37 @@ function getCategoryName(category) {
   return names[category] || category
 }
 
+// Função para criar cards em destaque - SIMPLIFICADA
+function renderFeaturedCards() {
+  const featuredItems = portfolioItems.filter((item) => item.featured).slice(0, 3)
+
+  featuredCards.innerHTML = featuredItems
+    .map((item) => {
+      let mediaElement
+      if (item.type === "video") {
+        mediaElement = `<video muted autoplay loop playsinline class="featured-card-image">
+                        <source src="${item.media}" type="video/mp4">
+                      </video>`
+      } else {
+        mediaElement = `<img src="${item.media}" alt="${item.title}" class="featured-card-image">`
+      }
+
+      return `
+      <div class="featured-card" onclick="openModal(portfolioItems.find(p => p.id === ${item.id}))">
+        ${mediaElement}
+        <div class="featured-card-overlay">
+          <h3 class="featured-card-title">${item.title}</h3>
+        </div>
+      </div>
+    `
+    })
+    .join("")
+}
+
 // Função para criar item do portfólio
 function createPortfolioItem(item, index) {
   const div = document.createElement("div")
-  div.className = "masonry-item" // Mantém a classe para o CSS
+  div.className = "masonry-item"
   div.dataset.category = item.category
   div.dataset.id = item.id
 
@@ -236,7 +272,6 @@ function createPortfolioItem(item, index) {
       ${mediaElement}
       <div class="item-overlay">
           <h3 class="item-title">${item.title}</h3>
-          <!-- REMOVIDO: <span class="item-category">${getCategoryName(item.category)}</span> -->
       </div>
   `
 
@@ -244,35 +279,41 @@ function createPortfolioItem(item, index) {
   return div
 }
 
-// Função para renderizar galeria (agora com Isotope)
-function renderGallery(filter = "all") {
-  console.log("renderGallery iniciada com filtro:", filter)
+// Função para renderizar galeria com pesquisa
+function renderGallery(filter = "all", searchTerm = "") {
+  console.log("renderGallery iniciada com filtro:", filter, "e pesquisa:", searchTerm)
+
+  // Filtrar itens por pesquisa primeiro
+  let filteredItems = filterItemsBySearch(shuffledItems, searchTerm)
+
+  // Depois filtrar por categoria se não for "all"
+  if (filter !== "all") {
+    filteredItems = filteredItems.filter((item) => item.category === filter)
+  }
 
   if (!iso) {
-    // Primeira vez renderizando: popula todos os itens e inicializa Isotope
-    masonryGrid.innerHTML = "" // Limpa qualquer conteúdo existente
-    allMasonryItems = [] // Reseta o array de elementos de item
+    // Primeira vez renderizando
+    masonryGrid.innerHTML = ""
+    allMasonryItems = []
 
-    // Cria e anexa todos os itens inicialmente
+    // Cria todos os itens inicialmente (sem filtro de pesquisa na primeira renderização)
     shuffledItems.forEach((item, index) => {
       const portfolioItemElement = createPortfolioItem(item, index)
       masonryGrid.appendChild(portfolioItemElement)
       allMasonryItems.push(portfolioItemElement)
     })
 
-    // Usa imagesLoaded para garantir que todas as imagens tenham suas dimensões antes do Isotope
     imagesLoaded(masonryGrid, () => {
       console.log("Images loaded for isotope grid! Initializing Isotope.")
       iso = new Isotope(masonryGrid, {
         itemSelector: ".masonry-item",
         layoutMode: "masonry",
         masonry: {
-          gutter: 10, // Reintroduzido o espaçamento horizontal de 20px
-          // columnWidth não é necessário se o itemSelector já tem largura definida por CSS
+          gutter: 10,
         },
-        percentPosition: true, // Habilita posicionamento baseado em porcentagem
-        fitWidth: true, // Centraliza o grid e ajusta sua largura ao número de colunas
-        transitionDuration: "0.4s", // Duração da transição para re-layout
+        percentPosition: true,
+        fitWidth: true,
+        transitionDuration: "0.4s",
         hiddenStyle: {
           opacity: 0,
           transform: "scale(0.001)",
@@ -283,32 +324,75 @@ function renderGallery(filter = "all") {
         },
       })
 
-      // Aplica o filtro inicial após o Isotope estar pronto
-      applyFilterToIsotope(filter)
-      iso.layout() // Força um re-layout inicial
+      // Aplica filtros iniciais
+      applyFilters(filter, searchTerm)
+      iso.layout()
       console.log("Isotope initialized and layout forced.")
     })
   } else {
-    // Renderizações subsequentes (filtragem): apenas aplica o filtro
-    applyFilterToIsotope(filter)
-    iso.layout() // Força um re-layout após a filtragem
+    // Renderizações subsequentes
+    applyFilters(filter, searchTerm)
+    iso.layout()
     console.log("Isotope arranged and layout forced after filter.")
   }
 
-  console.log("Galeria renderizada com", allMasonryItems.length, "items e Isotope inicializado/re-layoutado")
+  console.log("Galeria renderizada com filtros aplicados")
 }
 
-// Função para aplicar filtro com Isotope
-function applyFilterToIsotope(filter) {
-  const filterValue = filter === "all" ? "*" : `[data-category="${filter}"]`
-  if (iso) {
-    iso.arrange({ filter: filterValue })
-    // Não precisamos mais de iso.layout() aqui, pois já está no renderGallery
-    console.log("Isotope arranged with filter:", filterValue)
+// Função para aplicar filtros combinados (categoria + pesquisa)
+function applyFilters(categoryFilter, searchTerm) {
+  if (!iso) return
+
+  // Filtrar por pesquisa e categoria
+  const filteredItems = filterItemsBySearch(shuffledItems, searchTerm)
+  const validIds = new Set(filteredItems.map((item) => item.id.toString()))
+
+  // Criar seletor que combina categoria e pesquisa
+  let filterValue = "*"
+
+  if (categoryFilter !== "all" || searchTerm.trim()) {
+    filterValue = (itemElem) => {
+      const itemId = itemElem.dataset.id
+      const itemCategory = itemElem.dataset.category
+
+      // Verificar se o item passa no filtro de pesquisa
+      const passesSearch = !searchTerm.trim() || validIds.has(itemId)
+
+      // Verificar se o item passa no filtro de categoria
+      const passesCategory = categoryFilter === "all" || itemCategory === categoryFilter
+
+      return passesSearch && passesCategory
+    }
   }
+
+  iso.arrange({ filter: filterValue })
+  console.log("Filtros aplicados - Categoria:", categoryFilter, "Pesquisa:", searchTerm)
 }
 
-// A função adjustMasonryColumnWidth foi removida, pois o Isotope gerencia isso via CSS e suas próprias opções.
+// Event listeners para pesquisa
+searchInput.addEventListener("input", (e) => {
+  currentSearchTerm = e.target.value
+
+  // Mostrar/esconder botão de limpar
+  if (currentSearchTerm.trim()) {
+    searchClear.style.display = "flex"
+  } else {
+    searchClear.style.display = "none"
+  }
+
+  // Aplicar filtros com debounce
+  clearTimeout(searchInput.debounceTimer)
+  searchInput.debounceTimer = setTimeout(() => {
+    renderGallery(currentFilter, currentSearchTerm)
+  }, 300)
+})
+
+searchClear.addEventListener("click", () => {
+  searchInput.value = ""
+  currentSearchTerm = ""
+  searchClear.style.display = "none"
+  renderGallery(currentFilter, "")
+})
 
 // Função para abrir modal
 function openModal(item) {
@@ -378,16 +462,14 @@ function openProjectFromURL() {
   }
 }
 
-// Event Listeners (modificado para usar applyFilterToIsotope)
+// Event Listeners para filtros
 filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     filterBtns.forEach((b) => b.classList.remove("active"))
     btn.classList.add("active")
 
-    const filter = btn.dataset.filter
-    currentFilter = filter // Atualiza o estado do filtro atual
-
-    applyFilterToIsotope(filter)
+    currentFilter = btn.dataset.filter
+    renderGallery(currentFilter, currentSearchTerm)
   })
 })
 
@@ -406,11 +488,11 @@ window.addEventListener("popstate", () => {
   }
 })
 
-// Inicialização (modificado para chamar renderGallery diretamente)
+// Inicialização
 document.addEventListener("DOMContentLoaded", () => {
-  shuffledItems = shuffleArray(portfolioItems) // Ainda embaralha para a ordem de exibição inicial
+  shuffledItems = shuffleArray(portfolioItems)
   openProjectFromURL()
-  // A renderGallery inicial agora irá popular todos os itens e inicializar o Isotope
+
   if (!new URLSearchParams(window.location.search).get("projeto")) {
     renderGallery()
   }
@@ -421,11 +503,12 @@ window.showGallery = showGallery
 window.showIntro = showIntro
 window.closeModal = closeModal
 
-// Debug - verificar se elementos existem
+// Debug
 console.log("Elements check:", {
   introScreen: !!introScreen,
   galleryScreen: !!galleryScreen,
   masonryGrid: !!masonryGrid,
   portfolioItems: portfolioItems.length,
   searchInput: !!searchInput,
+  featuredCards: !!featuredCards,
 })
