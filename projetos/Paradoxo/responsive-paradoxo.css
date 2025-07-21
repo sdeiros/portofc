@@ -294,29 +294,13 @@
 /* Para celulares (e.g., > 400px) */
 @media (max-width: 600px) {
   .gallery-header-top {
-    padding: 0.5rem 0%;
+    padding: 2rem 0%;
   }
 
-  .gallery-header .gallery-container {
-    flex-direction: row;
-    /* Garante que os itens fiquem na mesma linha */
-    justify-content: space-between;
-    /* Distribui os itens igualmente */
+  .gallery-header-top .gallery-container {
+    flex-direction: column;
     align-items: center;
-    /* Centraliza verticalmente */
-    padding: 0.5rem 1rem;
-    /* Ajusta o padding para as bordas */
-    margin-top: 0;
-    /* Garante que não haja margem superior indesejada */
-    flex-wrap: nowrap;
-    /* Impede quebra de linha */
-  }
-
-  .header-left-group {
-    position: static;
-    /* Remove posicionamento absoluto para flexbox */
     gap: 0.5rem;
-    /* Ajusta o espaçamento entre a seta e o logo */
   }
 
   .header-right-group {
@@ -324,16 +308,26 @@
   }
 
   .logo {
-    font-size: 1.1rem;
-    /* Ajusta o tamanho da fonte do logo para mobile */
-    display: block;
-    /* Garante que o logo seja visível */
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-right: 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  .header-left-group {
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
   }
 
   .header-title {
     font-size: 1.5rem;
-    margin: 0;
-    /* Reset any other margins */
+    margin: 0rem;
   }
 
   .filter-section .filter-container {
@@ -356,25 +350,22 @@
   .search-input-wrapper {
     flex-grow: 1;
     /* Permite que a barra de pesquisa cresça */
-    max-width: 60%;
+    max-width: 70%;
     /* Limita a largura para não espremer outros elementos */
-    margin: 0 0.5rem;
+    margin: 0rem 5rem 0rem 5rem;
     /* Adiciona margem lateral para espaçamento */
-    padding: 0.4rem 0.8rem;
+    padding: 0.6rem 0.9rem;
     /* Ajusta o padding interno */
+    background-color: rgb(233, 233, 233);
   }
 
   .gallery-header .gallery-container {
-    padding: 0.5rem 0rem 0rem 0rem;
+    padding: 1rem 0rem 0rem 0rem;
     margin-top: 0rem;
   }
 
-  .search-input-wrapper {
-    max-width: 80%;
-  }
-
   .filter-section {
-    padding: 0.5rem 1rem 1%;
+    padding: 0rem 1rem 0rem;
   }
 
   .filter-btn {
@@ -388,7 +379,6 @@
     border-radius: 0 !important;
   }
 
-  /* Ajuste para os cards em destaque em mobile */
   .featured-section {
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     background: #fffcf8;
@@ -421,6 +411,10 @@
   .featured-cards {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  .gallery-btn {
+    margin-left: 5rem;
   }
 }
 

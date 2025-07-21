@@ -285,9 +285,9 @@ h4 {
 }
 
 .search-input-wrapper:focus-within {
-  background: rgba(0, 0, 0, 0.06);
-  border-color: #228b22;
-  box-shadow: 0 0 0 3px rgba(34, 139, 34, 0.1);
+  background: #0000000f;
+  border-color: #8b2274;
+  box-shadow: 0 0 0 3px rgba(139, 34, 125, 0.1);
 }
 
 .search-icon {
@@ -328,30 +328,6 @@ h4 {
 .search-clear:hover {
   background: rgba(0, 0, 0, 0.1);
   color: #333;
-}
-
-/* Menu Toggle - Estilo minimalista */
-.menu-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  transition: all 0.3s ease;
-}
-
-.menu-toggle span {
-  width: 20px;
-  height: 2px;
-  background: #303030;
-  border-radius: 1px;
-  transition: all 0.3s ease;
-}
-
-.menu-toggle:hover span {
-  background: #228b22;
 }
 
 /* Ajustes para a filter-section */
