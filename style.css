@@ -135,7 +135,7 @@ body {
   background: #fffcf8;
 }
 
-.gallery img {
+.gallery .conteudo {
   width: clamp(250px, 30vw, 400px);
   height: 100vh;
   object-fit: cover;
