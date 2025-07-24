@@ -70,4 +70,11 @@
         width: 100vw;
         height: auto;
     }
+
+    section {
+        width: 100%;
+        margin-bottom: 0rem !important;
+        height: auto;
+        margin-right: 0rem;
+    }
 }

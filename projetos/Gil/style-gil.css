@@ -109,19 +109,23 @@ h4 {
 .gif {
     display: block;
     width: 100vw;
+    margin-bottom: none;
     height: auto;
-    margin-bottom: 0rem;
 }
 
 .footer {
     width: 100%;
-    padding: 0rem;
+    padding: 1.5rem;
     background-color: #00dc3b;
+
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 10;
+    margin-top: -4rem;
+    /* se isso for proposital, ok! */
 }
 
 .footer-copy {
