@@ -2,120 +2,116 @@
 const portfolioItems = [
   {
     id: 1,
-    title: "Pôster Exposição Coletiva",
-    description:
-      "Material gráfico A3 para presentear artistas participantes da exposição de arte contemporânea realizada no Paradoxo Casa Atelier.",
-    category: "poster",
-    type: "image",
-    media: "https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=400&h=600",
-    date: "Janeiro 2024",
-    featured: true,
   },
   {
     id: 2,
-    title: "Feed Instagram - Oficina Cultural",
-    description:
-      "Série de posts para divulgação de oficina cultural sobre arte urbana, mantendo a identidade visual do coletivo.",
-    category: "social",
-    type: "image",
-    media: "https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&w=400&h=500",
-    date: "Fevereiro 2024",
-    featured: true,
   },
   {
     id: 3,
-    title: "Registro Audiovisual",
-    description:
-      "Vídeo documentando atividades do coletivo durante evento cultural, incluindo depoimentos dos artistas.",
-    category: "video",
-    type: "video",
-    media: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
-    date: "Março 2024",
-    featured: true,
   },
   {
     id: 4,
-    title: "Identidade Visual Evento",
-    description:
-      "Desenvolvimento visual completo para ação cultural no centro da cidade, incluindo pôster, flyer e material digital.",
-    category: "poster",
+    title: "Karaokê Cantare",
+    description: "Post desenvolvido para divulgação do evento Karaokê Cantere no Paradoxo Casa Atelier. A estética retrô e a tipografia vibrante evocam a energia divertida da noite.",
+    category: "social",
     type: "image",
-    media: "https://images.pexels.com/photos/1366630/pexels-photo-1366630.jpeg?auto=compress&cs=tinysrgb&w=400&h=650",
-    date: "Abril 2024",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753372248/karaoke3_kd8mnm.jpg",
+    date: "Novembro 2024",
+    featured: false
   },
   {
     id: 5,
-    title: "Stories Interativos",
-    description: "Conteúdo para engajamento nas redes sociais com enquetes e quizzes sobre arte contemporânea.",
+    title: "O Ser e o Indivíduo",
+    description: "Post para a divulgação da exposição O Ser e o Indivíduo, realizada no Paradoxo Casa Atelier.",
     category: "social",
-    type: "image",
-    media: "https://images.pexels.com/photos/1366909/pexels-photo-1366909.jpeg?auto=compress&cs=tinysrgb&w=400&h=450",
-    date: "Maio 2024",
+    type: "video",
+    media: "https://res.cloudinary.com/ddpvact5z/video/upload/v1753371683/Composi%C3%A7%C3%A3o_1_1_h4bb0i.mp4",
+    date: "Julho 2025",
+    featured: true
   },
   {
     id: 6,
-    title: "Experimentação Lambe-lambe",
-    description:
-      "Testes para intervenção urbana futura nas ruas do Rio de Janeiro, explorando técnicas de colagem urbana.",
-    category: "experimental",
+    title: "O Ser e o Indivíduo",
+    description: "Poster em A3 para a divulgação da exposição O Ser e o Indivíduo, realizada no Paradoxo Casa Atelier.",
+    category: "poster",
     type: "image",
-    media: "https://images.pexels.com/photos/1366944/pexels-photo-1366944.jpeg?auto=compress&cs=tinysrgb&w=400&h=550",
-    date: "Junho 2024",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753372000/Captura_de_tela_24-7-2025_124617__pld4oc.jpg",
+    date: "Outubro 2024",
+    featured: false
   },
   {
     id: 7,
-    title: "Pôster Oficina de Serigrafia",
-    description: "Material A3 para divulgação de workshop de serigrafia realizado em parceria com artistas locais.",
-    category: "poster",
-    type: "image",
-    media: "https://images.pexels.com/photos/1366943/pexels-photo-1366943.jpeg?auto=compress&cs=tinysrgb&w=400&h=480",
-    date: "Julho 2024",
+    title: "Poeticas Gráficas",
+    description:
+      "Post para a divulgação da turma do curso de Xilografia na UERJ, ministrada pelo artista, professor e montador Hugo Bernabé, realizada no Paradoxo Casa Atelier.",
+    category: "social",
+    type: "video",
+    media: "https://res.cloudinary.com/ddpvact5z/video/upload/v1753369596/Gravuras_FIM__1_lwxft1.mp4",
+    date: "Novembro 2024",
+    featured: false
   },
   {
-    id: 8,
-    title: "Reels Promocional",
-    description: "Vídeo curto para divulgação de evento no Instagram, com edição dinâmica e trilha sonora original.",
-    category: "video",
-    type: "video",
-    media: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4",
-    date: "Agosto 2024",
+    id: 13,
+    title: "Retatos do Tempo Bom",
+    description: "Exposção do artista Yago Chedid, realizada no Paradoxo Casa Atelier.",
+    category: "social",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753371430/final1_l5o5gb.jpg",
+    date: "Março 2025",
+    featured: false
+
   },
   {
     id: 9,
-    title: "Campanha Digital Ambiental",
-    description: "Série de posts para campanha de conscientização ambiental em parceria com coletivos locais.",
+    title: "Retratos do Tempo Bom — Variação de Arte",
+    description: "Versão alternativa do material de divulgação da exposição 'Retratos do Tempo Bom', do artista Yago Chedid. A arte explora novas composições mantendo a estética sensível da mostra.",
     category: "social",
     type: "image",
-    media: "https://images.pexels.com/photos/1366946/pexels-photo-1366946.jpeg?auto=compress&cs=tinysrgb&w=400&h=580",
-    date: "Setembro 2024",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753372936/final2_qqxue0.jpg",
+    date: "Março 2025",
+    featured: false
   },
   {
     id: 10,
-    title: "Arte Urbana Colaborativa",
-    description: "Desenvolvimento de peça para intervenção urbana colaborativa no centro do Rio de Janeiro.",
-    category: "experimental",
+    title: "Karaokê Cantare",
+    description: "Template modular criado para facilitar a divulgação recorrente dos karaokês no Paradoxo. Mantém uma identidade visual coesa, com possibilidade de adaptação para diferentes datas e atrações.",
+    category: "social",
     type: "image",
-    media: "https://images.pexels.com/photos/1366947/pexels-photo-1366947.jpeg?auto=compress&cs=tinysrgb&w=400&h=460",
-    date: "Outubro 2024",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753372719/karaoke-tamplate_sxklim.png",
+    date: "Julho 2025",
+    featured: false
   },
   {
     id: 11,
-    title: "Material Institucional",
-    description: "Peças gráficas para comunicação interna do coletivo, incluindo cartões de visita e papel timbrado.",
-    category: "poster",
+    title: "Oficina de Livro de Artista",
+    description: "Arte criada para divulgar a Oficina de Livro de Artista, ministrada pela artista Malu Mattos, no Paradoxo nas redes sociais. Com visual minimalista e informativo, o design reforça a identidade artesanal e afetiva da experiência.",
+    category: "social",
     type: "image",
-    media: "https://images.pexels.com/photos/1366948/pexels-photo-1366948.jpeg?auto=compress&cs=tinysrgb&w=400&h=520",
-    date: "Novembro 2024",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753372532/oficina-redes_yseqzr.png",
+    date: "Maio 2025",
+    featured: false
   },
   {
     id: 12,
-    title: "Conteúdo Educativo",
-    description: "Posts informativos para redes sociais sobre história da arte brasileira e técnicas artísticas.",
+    title: "Paradoxo do Ser",
+    description:
+      "Post para a divulgação da primeira chamada aberta realizada no Paradoxo Casa Atelier.",
     category: "social",
-    type: "image",
-    media: "https://images.pexels.com/photos/1366949/pexels-photo-1366949.jpeg?auto=compress&cs=tinysrgb&w=400&h=640",
-    date: "Dezembro 2024",
+    type: "video",
+    media: "https://res.cloudinary.com/ddpvact5z/video/upload/Untitled_design_3_ns7qnr.mp4",
+    date: "Julho 2025",
+    featured: true,
   },
+  {
+    id: 13, 
+    title: "Poéticas Gráficas — Pôster A3",
+    description: "Versão impressa da divulgação do curso de Xilografia na UERJ, ministrado por Hugo Bernabé. O pôster em formato A3 adapta a composição original para circulação física, mantendo o equilíbrio entre o toque acadêmico e o experimental.",
+    category: "poster",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753373358/Untitled_design_2_zl4nbg.png",
+    date: "Novembro 2024",
+    featured: false
+  }
 ]
 
 // Elementos DOM
@@ -152,7 +148,7 @@ function shuffleArray(array) {
   const shuffled = [...array]
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
-    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+      ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
   }
   return shuffled
 }
