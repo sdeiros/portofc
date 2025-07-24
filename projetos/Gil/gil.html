@@ -36,7 +36,7 @@
                 </a>
             </div>
 
-            <a href="../../index.html#projetos" class="back-btn" aria-label="Voltar para os projetos">
+            <a href="../../index.html" class="back-btn" aria-label="Voltar para os projetos">
                 <div class="nav-right">Projetos</div>
             </a>
         </nav>
@@ -106,7 +106,17 @@
             scroll.on('scroll', (args) => {
                 const scrollY = args.scroll.y;
                 const scrollSpeed = scrollY * 0.4;
-                gallery.style.transform = `translateX(-${scrollSpeed}px)`;
+                if (gallery) {
+                    gallery.style.transform = `translateX(-${scrollSpeed}px)`;
+                }
+            });
+        </script>
+
+        <script>
+            window.addEventListener('load', function () {
+                setTimeout(() => {
+                    scroll.update();
+                }, 1500); // dá tempo suficiente pros vídeos e imagens se assentarem
             });
         </script>
     </div>
