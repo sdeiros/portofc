@@ -1,22 +1,91 @@
 @media (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .back-btn img {
+    width: 6vw;
+    height: auto;
+    margin-left: -1.5rem;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .work-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Centraliza textos dentro do container */
+    gap: 1.5rem;
+  }
+
+  .work-title {
+    font-size: 2.9rem;
+    line-height: 2.6rem;
+    margin-left: 0.5rem !important;
+    width: 95vw !important;
+    text-align: left;
+  }
+
+  .work-description p {
+    width: 95vw !important;
+    text-align: left;
+    margin-left: 0.6rem !important;
+    margin-right: 1rem !important;
+    margin-top: 1.5rem !important;
+    font-size: 1rem;
+  }
+
+  h4 {
+    width: 95vw !important;
+    text-align: left;
+    margin-left: 0.5rem !important;
+    margin-top: 1.5rem !important;
+    font-size: 0.8rem;
+  }
+
+  .work-img {
+    width: 92vw;
+    margin: 0 auto !important;
+  }
+
+  section {
+        width: 100%;
+        margin-bottom: 0rem !important;
+        height: auto;
+        margin-right: 0rem;
+    }
+
   .gallery-header-top {
     position: relative;
-    padding-top: 0rem; /* Espaço superior para o logo */
-    padding-bottom: 0rem; /* Espaço inferior para a linha de pesquisa */
+    padding-top: 0rem;
+    /* Espaço superior para o logo */
+    padding-bottom: 0rem;
+    /* Espaço inferior para a linha de pesquisa */
     height: auto;
     display: flex;
-    flex-direction: column; /* Empilha o conteúdo verticalmente */
-    align-items: center; /* Centraliza o bloco de conteúdo */
-    gap: 0.5rem; /* Espaçamento entre o logo e a linha de pesquisa */
+    flex-direction: column;
+    /* Empilha o conteúdo verticalmente */
+    align-items: center;
+    /* Centraliza o bloco de conteúdo */
+    gap: 0.5rem;
+    /* Espaçamento entre o logo e a linha de pesquisa */
   }
 
   .gallery-header-top .gallery-container {
     /* Este container agora gerencia a linha do logo e a linha da seta/pesquisa */
     display: flex;
-    flex-wrap: wrap; /* Permite que o logo ocupe 100% e force a quebra de linha */
-    justify-content: center; /* Centraliza os itens na linha atual */
+    flex-wrap: wrap;
+    /* Permite que o logo ocupe 100% e force a quebra de linha */
+    justify-content: center;
+    /* Centraliza os itens na linha atual */
     align-items: center;
-    padding: 0rem; /* Preenchimento horizontal para a linha de pesquisa */
+    padding: 0rem;
+    /* Preenchimento horizontal para a linha de pesquisa */
   }
 
   .header-left-group {
@@ -25,31 +94,41 @@
   }
 
   .logo {
-    order: -2; /* Garante que o logo seja o primeiro item na ordem flex */
-    width: 100%; /* Faz o logo ocupar 100% da largura, forçando a quebra de linha */
-    text-align: center; /* Centraliza o texto do logo */
-    margin-bottom: 0rem; /* Espaço abaixo do logo */
+    order: -2;
+    /* Garante que o logo seja o primeiro item na ordem flex */
+    width: 100%;
+    /* Faz o logo ocupar 100% da largura, forçando a quebra de linha */
+    text-align: center;
+    /* Centraliza o texto do logo */
+    margin-bottom: 0rem;
+    /* Espaço abaixo do logo */
     font-size: 1.5rem;
     z-index: 2;
-    margin-right: 0; /* Remove margem extra */
+    margin-right: 0;
+    /* Remove margem extra */
   }
 
   .back-button {
-    order: -1; /* Coloca a seta antes da barra de pesquisa na nova linha */
-    margin-right: 0rem; /* Espaço entre a seta e a barra de pesquisa */
+    order: -1;
+    /* Coloca a seta antes da barra de pesquisa na nova linha */
+    margin-right: 0rem;
+    /* Espaço entre a seta e a barra de pesquisa */
     z-index: 2;
   }
 
   .search-input-wrapper {
     flex-grow: 1;
-    width: 90%; /* Mantém a largura da barra de pesquisa */
-    margin: 0; /* Remove margens anteriores */
+    max-width: 85%;
+    /* Mantém a largura da barra de pesquisa */
+    margin: 0;
+    /* Remove margens anteriores */
     background-color: rgb(233, 233, 233);
   }
 
   /* Ajusta o padding da seção de filtro para compensar a nova altura do cabeçalho */
   .filter-section {
-    padding-top: 0rem; /* Empurra para baixo do cabeçalho */
+    padding-top: 0rem;
+    /* Empurra para baixo do cabeçalho */
   }
 
   .header-right-group {
@@ -130,25 +209,13 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-
-  .gallery-btn {
-    margin-left: 5rem;
-  }
 }
 
 /* Mobile Grande (480px - 599px) - Ajustes finos */
 @media (max-width: 599px) {
-  .logo {
-    font-size: 1.3rem; /* Logo um pouco menor */
-  }
-
-  .back-button img {
-    width: 1.4rem; /* Seta um pouco menor */
-  }
-
   .search-input-wrapper {
-    max-width: 80%; /* Barra de pesquisa um pouco mais larga */
-    padding: 0.5rem 0.8rem; /* Padding menor */
+    padding: 0.5rem 0.8rem;
+    /* Padding menor */
   }
 
   .search-icon {
@@ -164,16 +231,7 @@
 
 /* Mobile Médio (375px - 479px) - Ajustes finos */
 @media (max-width: 479px) {
-  .logo {
-    font-size: 1.5rem;
-  }
-
-  .back-button img {
-    width: 1.4rem;
-  }
-
   .search-input-wrapper {
-    max-width: 90%;
     padding: 0.4rem 0.7rem;
   }
 
@@ -194,16 +252,7 @@
 
 /* iPhone SE e Mobile Pequeno (até 374px) - Ajustes finos */
 @media (max-width: 374px) {
-  .logo {
-    font-size: 1.1rem;
-  }
-
-  .back-button img {
-    width: 1.2rem;
-  }
-
   .search-input-wrapper {
-    max-width: 95%;
     padding: 0.3rem 0.6rem;
   }
 

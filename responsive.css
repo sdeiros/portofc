@@ -21,7 +21,7 @@
         padding-top: 30rem;
     }
 
-    .gallery img {
+    .gallery .conteudo {
         width: 35vw;
         max-width: 500px;
     }
@@ -48,7 +48,7 @@
         width: 50%;
     }
 
-    .gallery img {
+    .gallery .conteudo {
         width: 30vw;
     }
 
@@ -93,7 +93,7 @@
         padding-top: 26rem;
     }
 
-    .gallery img {
+    .gallery .conteudo {
         width: 32vw;
     }
 
@@ -130,7 +130,7 @@
         /* 2 cards por vez */
     }
 
-    .gallery img {
+    .gallery .conteudo {
         width: 40vw;
     }
 
@@ -239,7 +239,7 @@
         height: 100vh;
     }
 
-    .gallery img {
+    .gallery .conteudo {
         width: 85vw;
         height: 100vh;
     }
@@ -318,7 +318,7 @@
         height: 80vh;
     }
 
-    .gallery img {
+    .gallery .conteudo {
         width: 80vw;
         height: 80vh;
     }
@@ -403,7 +403,7 @@
         padding: 0.5rem;
     }
 
-    .gallery img {
+    .gallery .conteudo {
         width: 80vw;
         height: 70vh;
     }
@@ -510,7 +510,7 @@
         height: 100%;
     }
 
-    .gallery img {
+    .gallery .conteudo {
         width: 80vw;
         height: 100%;
     }
@@ -650,7 +650,7 @@
         height: 85vh;
     }
 
-    .gallery img {
+    .gallery .conteudo {
         width: 90vw;
         height: 79vh;
     }
@@ -795,7 +795,7 @@
         line-height: 1.8rem;
     }
 
-    .gallery img {
+    .gallery .conteudo {
         height: 70vh;
     }
 
@@ -809,7 +809,7 @@
 
     .carousel-track,
     .card,
-    .gallery img {
+    .gallery .conteudo {
         transition: none;
     }
 }
