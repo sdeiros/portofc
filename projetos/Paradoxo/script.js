@@ -103,7 +103,7 @@ const portfolioItems = [
     featured: true,
   },
   {
-    id: 13, 
+    id: 13,
     title: "Poéticas Gráficas — Pôster A3",
     description: "Versão impressa da divulgação do curso de Xilografia na UERJ, ministrado por Hugo Bernabé. O pôster em formato A3 adapta a composição original para circulação física, mantendo o equilíbrio entre o toque acadêmico e o experimental.",
     category: "poster",
@@ -111,7 +111,58 @@ const portfolioItems = [
     media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753373358/Untitled_design_2_zl4nbg.png",
     date: "Novembro 2024",
     featured: false
+  },
+  {
+    id: 21,
+    title: "Projeto Apocalipse — Variação I",
+    description: "Primeira variação visual do cartaz do Projeto Apocalipse, com composição intensa e uso marcante do contraste para transmitir urgência e colapso.",
+    category: "poster",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753392200/Captura_de_tela_24-7-2025_18236__phwun8.jpg",
+    date: "Julho 2025",
+    featured: false
+  },
+  {
+    id: 22,
+    title: "Projeto Apocalipse — Variação II",
+    description: "Segunda variação do cartaz do Projeto Apocalipse, com ênfase na tipografia e elementos gráficos descentrados, evocando ruído, falha e desorientação.",
+    category: "poster",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753392006/Captura_de_tela_24-7-2025_181911__wj3vnr.jpg",
+    date: "Julho 2025",
+    featured: false
+  },
+  {
+    id: 23,
+    title: "Projeto Apocalipse — Variação III",
+    description: "Terceira abordagem visual do cartaz do Projeto Apocalipse, com uma estética mais limpa e espaçada, convidando a uma leitura contemplativa do fim e da reconstrução.",
+    category: "poster",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753391593/Captura_de_tela_24-7-2025_181144__mddbgn.jpg",
+    date: "Julho 2025",
+    featured: false
+  },
+  {
+    id: 24,
+    title: "Projeto Apocalipse — Post para Redes",
+    description: "Versão adaptada do Projeto Apocalipse para circulação nas redes sociais. O design verticalizado e de alto contraste busca impacto imediato no feed, mantendo a identidade visual crítica da série.",
+    category: "social",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753393405/WhatsApp_Image_2025-07-24_at_18.43.02_d7r1rn.jpg",
+    date: "Julho 2025",
+    featured: false
+  },
+  {
+    id: 25,
+    title: "Convite — Exposição no Donna Gastrobar",
+    description: "Peça desenvolvida para divulgar a participação do Paradoxo Casa Atelier em uma exposição no Donna Gastrobar. A arte mescla sofisticação e identidade visual autoral para comunicar a presença do coletivo em um novo espaço.",
+    category: "social",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753393581/DONNA_kolmnq.png",
+    date: "Julho 2025",
+    featured: false
   }
+
 ]
 
 // Elementos DOM
