@@ -78,10 +78,11 @@
                     <p class="intro-description">Oi, sou Davi Medeiros, designer e artista. Crio experiências visuais
                         que
                         unem arte e psicologia.</p>
-                    <p class="hover-link">Bora conversar?</p>
+                    <p class="hover-link" id="contactTrigger">Bora conversar?</p>
                 </div>
             </div>
         </section>
+
 
         <!-- Galeria Horizontal -->
         <section class="scroll-wrapper">
@@ -105,7 +106,14 @@
                     Seu navegador não suporta vídeos HTML5.
                 </video>
 
-                <img class="conteudo" src="assets/poster-gil.webp" alt="Poster Gil 2" loading="lazy" decoding="async" />
+                <video class="conteudo"
+                    poster="https://res.cloudinary.com/ddpvact5z/image/upload/v1753410800/ezgif-frame-001_3_wh8fur.jpg"
+                    autoplay loop muted playsinline preload="metadata" loading="lazy" decoding="async">
+                    <source
+                        src="https://res.cloudinary.com/ddpvact5z/video/upload/v1753410632/Composi%C3%A7%C3%A3o_1_rofvua.mp4"
+                        type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
 
 
                 <video class="conteudo"
@@ -117,7 +125,7 @@
                     Seu navegador não suporta vídeos HTML5.
                 </video>
 
-                 <video class="conteudo"
+                <video class="conteudo"
                     poster="https://res.cloudinary.com/ddpvact5z/image/upload/v1753370293/ezgif-frame-001_1_uimmec.jpg"
                     autoplay loop muted playsinline preload="metadata" loading="lazy" decoding="async">
                     <source
@@ -224,6 +232,42 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script>
+document.getElementById("contactTrigger").addEventListener("click", function () {
+    const email = "davimedeirosdesign@gmail.com";
+
+    // Copia o email silenciosamente (não avisa)
+    navigator.clipboard.writeText(email).catch(() => {
+        // fallback com input invisível
+        const tempInput = document.createElement("input");
+        tempInput.value = email;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        try {
+            document.execCommand("copy");
+        } catch {}
+        document.body.removeChild(tempInput);
+    });
+
+    // Tenta abrir o mailto
+    window.location.href = `mailto:${email}`;
+
+    // Depois de 2.5s, pergunta se o app não abriu
+    setTimeout(() => {
+        const confirmCopy = confirm("Parece que seu dispositivo não abriu o app de e-mail. Deseja copiar o e-mail?");
+        if (confirmCopy) {
+            alert("E-mail copiado! Você pode colar onde quiser.");
+        }
+    }, 2500);
+});
+
+
+
+
+
+
+
+
+
         document.addEventListener("DOMContentLoaded", () => {
             const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
