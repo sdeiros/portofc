@@ -2,12 +2,25 @@
 const portfolioItems = [
   {
     id: 1,
+    title: "Pesadelo — Teaser de Evento",
+    description: "Vídeo teaser criado para divulgar o evento 'Pesadelo', que acontecerá em setembro no Paradoxo Casa Atelier. A estética onírica e inquietante antecipa o clima do evento, propondo uma imersão visual e sensorial.",
+    category: "experimental",
+    type: "video",
+    media: "https://res.cloudinary.com/ddpvact5z/video/upload/v1753402915/Untitled_design_4_i9zaqz.mp4",
+    date: "Julho 2025",
+    featured: false
   },
   {
     id: 2,
+    title: "Projeto Apocalipse",
+    description: "Material audiovisual criado como expansão do Projeto Apocalipse. Com estética experimental e narrativa simbólica, o vídeo atua como manifesto visual do conceito, ampliando sua presença para além do impresso.",
+    category: "video",
+    type: "video",
+    media: "https://res.cloudinary.com/ddpvact5z/video/upload/v1753402928/APOCALIPSE_n9iikt.mp4",
+    date: "Julho 2025",
+    featured: false
   },
   {
-    id: 3,
   },
   {
     id: 4,
@@ -274,7 +287,7 @@ function getCategoryName(category) {
 
 // Função para criar cards em destaque - SIMPLIFICADA
 function renderFeaturedCards() {
-  const featuredItems = portfolioItems.filter((item) => item.featured).slice(0, 3)
+  const featuredItems = portfolioItems.filter((item) => [1, 2, 3].includes(item.id))
 
   featuredCards.innerHTML = featuredItems
     .map((item) => {
@@ -344,11 +357,13 @@ function renderGallery(filter = "all", searchTerm = "") {
     allMasonryItems = []
 
     // Cria todos os itens inicialmente (sem filtro de pesquisa na primeira renderização)
-    shuffledItems.forEach((item, index) => {
-      const portfolioItemElement = createPortfolioItem(item, index)
-      masonryGrid.appendChild(portfolioItemElement)
-      allMasonryItems.push(portfolioItemElement)
-    })
+    shuffledItems
+      .filter((item) => ![1, 2, 3].includes(item.id))
+      .forEach((item, index) => {
+        const portfolioItemElement = createPortfolioItem(item, index)
+        masonryGrid.appendChild(portfolioItemElement)
+        allMasonryItems.push(portfolioItemElement)
+      })
 
     imagesLoaded(masonryGrid, () => {
       console.log("Images loaded for isotope grid! Initializing Isotope.")

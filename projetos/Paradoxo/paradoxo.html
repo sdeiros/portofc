@@ -4,7 +4,7 @@
 <head>
     <!-- Charset e Viewport -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- SEO básico -->
     <meta name="theme-color" content="#FFFFFF">
@@ -45,9 +45,7 @@
     <link rel="stylesheet" href="responsive-paradoxo.css">
 
     <!-- Preloads estratégicos -->
-    <link rel="preload" as="image"
-        href="https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=400&h=600">
-
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
     <title>Paradoxo Casa Atelier | Davi Medeiros</title>
 </head>
 
@@ -202,7 +200,7 @@
         <!-- Scripts -->
         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
         <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </div>
 </body>
 
