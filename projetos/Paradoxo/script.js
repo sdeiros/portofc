@@ -17,10 +17,8 @@ const portfolioItems = [
     category: "video",
     type: "video",
     media: "https://res.cloudinary.com/ddpvact5z/video/upload/v1753402928/APOCALIPSE_n9iikt.mp4",
-    date: "Julho 2025",
+    date: "Julho 2024",
     featured: false
-  },
-  {
   },
   {
     id: 4,
@@ -132,7 +130,7 @@ const portfolioItems = [
     category: "poster",
     type: "image",
     media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753392200/Captura_de_tela_24-7-2025_18236__phwun8.jpg",
-    date: "Julho 2025",
+    date: "Julho 2024",
     featured: false
   },
   {
@@ -142,7 +140,7 @@ const portfolioItems = [
     category: "poster",
     type: "image",
     media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753392006/Captura_de_tela_24-7-2025_181911__wj3vnr.jpg",
-    date: "Julho 2025",
+    date: "Julho 2024",
     featured: false
   },
   {
@@ -152,7 +150,7 @@ const portfolioItems = [
     category: "poster",
     type: "image",
     media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753391593/Captura_de_tela_24-7-2025_181144__mddbgn.jpg",
-    date: "Julho 2025",
+    date: "Julho 2024",
     featured: false
   },
   {
@@ -162,7 +160,7 @@ const portfolioItems = [
     category: "social",
     type: "image",
     media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753393405/WhatsApp_Image_2025-07-24_at_18.43.02_d7r1rn.jpg",
-    date: "Julho 2025",
+    date: "Julho 2024",
     featured: false
   },
   {
@@ -174,7 +172,80 @@ const portfolioItems = [
     media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753393581/DONNA_kolmnq.png",
     date: "Julho 2025",
     featured: false
+  },
+  {
+    id: 28,
+    title: "Retratos Urbanos — Exposição Fotográfica",
+    description: "Peça de divulgação para a exposição 'Retratos Urbanos', com curadoria do Paradoxo Casa Atelier. A mostra reúne fotografias que capturam o cotidiano das ruas com olhar sensível e poético, propondo novas leituras sobre o espaço urbano.",
+    category: "social",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753404267/fotografiasfim1_on90rq.png",
+    date: "Abril 2025",
+    featured: false
+  },
+  {
+    id: 29,
+    title: "Retratos Urbanos — Variação de Arte",
+    description: "Segunda versão do material de divulgação da exposição 'Retratos Urbanos'. A arte mantém o caráter documental da série, adaptando a composição para outros formatos de circulação e ampliando o alcance da mostra.",
+    category: "social",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753404395/fotografiasfim2_dgjlb3.png",
+    date: "Abril 2025",
+    featured: false
+  },
+  {
+    id: 30,
+    title: "Retratos Urbanos — Pôster A3",
+    description: "Versão impressa em A3 criada para divulgação física da exposição 'Retratos Urbanos'. O pôster amplia o alcance da mostra para o espaço público, mantendo a linguagem visual sensível e urbana da série.",
+    category: "poster",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753404987/Untitled_design_3_i4xvfy.png",
+    date: "Abril 2025",
+    featured: false
+  },
+  {
+    id: 31,
+    title: "Projeto Apocalipse — Animação para Redes",
+    description: "Versão animada do cartaz do Projeto Apocalipse, desenvolvida para circulação em redes sociais. A movimentação gráfica amplia o impacto visual da proposta e reforça a urgência do conceito em ambientes digitais.",
+    category: "social",
+    type: "video",
+    media: "https://res.cloudinary.com/ddpvact5z/video/upload/v1747413525/VIDEO_2_jdby44.mp4",
+    date: "Julho 2024",
+    featured: false
+  },
+  {
+    id: 32,
+    title: "Projeto Apocalipse — Variação IV",
+    description: "Quarta variação do cartaz do Projeto Apocalipse, com nova abordagem tipográfica e composição centralizada. Essa versão busca reforçar a força simbólica do título e ampliar a legibilidade em ambientes urbanos.",
+    category: "poster",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753405340/Untitled_design_4_gifmg3.png",
+    date: "Julho 2024",
+    featured: false
+  },
+  {
+    id: 33,
+    title: "Projeto Apocalipse — Teaser Animado",
+    description: "Teaser em formato GIF criado como parte da campanha do Projeto Apocalipse. Com estética glitch e televisiva, a peça instiga o público e antecipa o clima distópico da série.",
+    category: "social",
+    type: "image",
+    media: "https://sdeiros.github.io/portofc/assets/Apocalipse/apocalipsetv.gif",
+    date: "Julho 2024",
+    featured: false
+  },
+  {
+    id: 34,
+    title: "Convite Especial — Duas Exposições no Paradoxo",
+    description: "Convite institucional do Paradoxo Casa Atelier para um marco importante em sua história: a realização simultânea das exposições individuais 'A Própria Consequência', de @gapo.o, e 'Corposições', de @chedid_tattoo. A arte celebra a força do coletivo e o diálogo entre corpo, espaço e expressão urbana.",
+    category: "social",
+    type: "image",
+    media: "https://res.cloudinary.com/ddpvact5z/image/upload/v1753406000/Paradoxo_Casa_Atelier_tem_o_prazer_em_convid%C3%A1-los_para_um_momento_muito_especial_de_sua_hist%C3%B3ri_ffbakv.jpg",
+    date: "Fevereiro 2025",
+    featured: false
   }
+
+
+
 
 ]
 
