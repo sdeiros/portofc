@@ -10,6 +10,25 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#fffcf8" />
 
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:title" content="Davi Medeiros | Designer e Artista" />
+    <meta property="og:description"
+        content="Designer e artista que une arte e psicologia. Veja meu portfólio com posters e campanhas visuais." />
+    <meta property="og:image"
+        content="https://res.cloudinary.com/ddpvact5z/image/upload/v1753411299/Captura_de_tela_24-7-2025_234118_127.0.0.1_vgdwtt.jpg" />
+    <meta property="og:url" content="https://sdeiros.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Davi Medeiros | Designer e Artista" />
+    <meta name="twitter:description"
+        content="Designer e artista que une arte e psicologia. Veja meu portfólio com posters e campanhas visuais." />
+    <meta name="twitter:image"
+        content="https://res.cloudinary.com/ddpvact5z/image/upload/v1753411299/Captura_de_tela_24-7-2025_234118_127.0.0.1_vgdwtt.jpg" />
+    <meta name="twitter:url" content="https://sdeiros.github.io/portfolio/" />
+
+
     <!-- SEO e Performance -->
     <meta name="description"
         content="Davi Medeiros - Designer e artista que une arte e psicologia. Portfolio com projetos de design gráfico, posters e campanhas visuais." />
@@ -231,42 +250,35 @@
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
     <script>
-document.getElementById("contactTrigger").addEventListener("click", function () {
-    const email = "davimedeirosdesign@gmail.com";
+        document.getElementById("contactTrigger").addEventListener("click", function () {
+            const email = "davimedeirosdesign@gmail.com";
 
-    // Copia o email silenciosamente (não avisa)
-    navigator.clipboard.writeText(email).catch(() => {
-        // fallback com input invisível
-        const tempInput = document.createElement("input");
-        tempInput.value = email;
-        document.body.appendChild(tempInput);
-        tempInput.select();
-        try {
-            document.execCommand("copy");
-        } catch {}
-        document.body.removeChild(tempInput);
-    });
+            // Copia o email silenciosamente (não avisa)
+            navigator.clipboard.writeText(email).catch(() => {
+                // fallback com input invisível
+                const tempInput = document.createElement("input");
+                tempInput.value = email;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                try {
+                    document.execCommand("copy");
+                } catch { }
+                document.body.removeChild(tempInput);
+            });
 
-    // Tenta abrir o mailto
-    window.location.href = `mailto:${email}`;
+            // Tenta abrir o mailto
+            window.location.href = `mailto:${email}`;
 
-    // Depois de 2.5s, pergunta se o app não abriu
-    setTimeout(() => {
-        const confirmCopy = confirm("Parece que seu dispositivo não abriu o app de e-mail. Deseja copiar o e-mail?");
-        if (confirmCopy) {
-            alert("E-mail copiado! Você pode colar onde quiser.");
-        }
-    }, 2500);
-});
-
-
-
-
-
-
-
-
+            // Depois de 2.5s, pergunta se o app não abriu
+            setTimeout(() => {
+                const confirmCopy = confirm("Parece que seu dispositivo não abriu o app de e-mail. Deseja copiar o e-mail?");
+                if (confirmCopy) {
+                    alert("E-mail copiado! Você pode colar onde quiser.");
+                }
+            }, 2500);
+        });
 
         document.addEventListener("DOMContentLoaded", () => {
             const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
@@ -452,13 +464,7 @@ document.getElementById("contactTrigger").addEventListener("click", function () 
         });
 
     </script>
-    <script>
-        window.addEventListener('load', function () {
-            setTimeout(() => {
-                scroll.update();
-            }, 1500); // dá tempo suficiente pros vídeos e imagens se assentarem
-        });
-    </script>
+
 </body>
 
 </html>

@@ -54,11 +54,11 @@
   }
 
   section {
-        width: 100%;
-        margin-bottom: 0rem !important;
-        height: auto;
-        margin-right: 0rem;
-    }
+    width: 100%;
+    margin-bottom: 0rem !important;
+    height: auto;
+    margin-right: 0rem;
+  }
 
   .gallery-header-top {
     position: relative;
@@ -210,7 +210,7 @@
     scrollbar-width: none;
   }
 
-.modal-content {
+  .modal-content {
     flex-direction: column;
     width: 95vw;
     height: auto;
@@ -250,6 +250,17 @@
     background: #ffffff;
     color: #000;
     border: 1px solid #ccc;
+  }
+
+  .gallery-btn {
+    position: static;
+    transform: none;
+    margin-top: 1.5rem;
+  }
+
+  .work-img-container {
+    align-items: center;
+    text-align: center;
   }
 }
 
